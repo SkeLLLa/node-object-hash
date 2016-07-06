@@ -1,0 +1,25 @@
+{
+  "name": "node-object-hash",
+  "version": "0.1.0",
+  "description": "Node.js constant object hash library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.betlab.com:super_translator/node-object-hash.git"
+  },
+  "keywords": [
+    "node",
+    "es6",
+    "hash"
+  ],
+  "author": "",
+  "license": "ISC"
+}
