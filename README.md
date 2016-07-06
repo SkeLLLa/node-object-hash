@@ -1,10 +1,13 @@
 # node-object-hash
 
 Node object hash library. Built on top of node's crypto module.
+
 ### Installation
 `npm i node-object-hash`
+
 ### Features
 - Supports object property sorting for constant hashes for objects with same properties, but different order.
+  - NOTE: object arrays should be sorted manually if needed
 - Supports ES6 Maps and Sets.
 - Supports type coercion (e.g. 1 and "1" will be the same)
   - rules:
