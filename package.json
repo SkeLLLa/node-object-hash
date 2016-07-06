@@ -7,19 +7,25 @@
     "test": "test"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.betlab.com:super_translator/node-object-hash.git"
+    "url": "git@github.com:SkeLLLa/node-object-hash.git"
   },
   "keywords": [
+    "hash",
     "node",
     "es6",
-    "hash"
+    "crypto"
   ],
-  "author": "",
+  "author": "Alexander Kureniov",
+  "email": "s@zxc.pp.ua",
+  "url": "https://github.com/SkeLLLa",
   "license": "ISC"
 }
