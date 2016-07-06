@@ -63,4 +63,4 @@ const hashStringSha512 = hash(object, {alg:'sha512'});
     * Only `>=node-6.0.0` supported
 
 ### License
-ICS
+ISC
