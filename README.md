@@ -61,5 +61,6 @@ const hashStringSha512 = hash(object, {alg:'sha512'});
     * no memory leak when using in sync flow
   * Cons:
     * Only `>=node-6.0.0` supported
+
 ### License
 ICS
