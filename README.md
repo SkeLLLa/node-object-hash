@@ -36,6 +36,7 @@ Returns sorted string generated from object
 
 ### Requirements
 - `>=nodejs-6.0.0`
+- `>=nodejs-4.0.0` (requires to run node with `--harmony` flag)
 
 ### Example
 ```js
@@ -61,9 +62,9 @@ const hashStringSha512 = hash(object, {alg:'sha512'});
   * Pros:
     * node-object-hash has twice smaller memory footprint
     * five times faster
-    * no memory leak when using in sync flow
+    * ~~no memory leak when using in sync flow~~ (fixed in last version of `object-hash`)
   * Cons:
-    * Only `>=node-6.0.0` supported
+    * Only `>=node-4.0.0` supported
 
 ### License
 ISC

@@ -10,11 +10,14 @@ const crypto = require('crypto');
 /**
  * Sorts object fields
  * @param {Object|Array|string|function} obj Initial object
- * @param {boolean} [coerce=true] Perform coercion
- * @param {boolean} [sort=true] Perform Array, Set, Object sorting
+ * @param {Object} options Options
+ * @param {boolean} [options.coerce=true] Perform coercion
+ * @param {boolean} [options.sort=true] Perform Array, Set, Object sorting
  * @returns {string}
  */
-exports.sortedObjectString = (obj, {coerce = true, sort = true}) => {
+exports.sortedObjectString = (obj, options) => {
+  const coerce = typeof options.coerce == 'undefined' ? true : options.coerce;
+  const sort = typeof options.sort == 'undefined' ? true : options.sort;
   if (typeof obj == 'object') {
     if (Array.isArray(obj)) {
       let tmp = [...obj];
@@ -60,13 +63,19 @@ exports.sortedObjectString = (obj, {coerce = true, sort = true}) => {
 /**
  * Calculates object hash
  * @param {Object} obj Object to hash
- * @param {string} [alg="sha256"] Crypto algorithm to use
- * @param {string} [enc="hex"] Hash string encoding
- * @param {boolean} [coerce=true] Perform coercion
- * @param {boolean} [sort=true] Perform Array, Set, Object sorting
+ * @param {Object} options Options
+ * @param {string} [options.alg="sha256"] Crypto algorithm to use
+ * @param {string} [options.enc="hex"] Hash string encoding
+ * @param {boolean} [options.coerce=true] Perform coercion
+ * @param {boolean} [options.sort=true] Perform Array, Set, Object sorting
  * @returns {string} Hash string
  */
-exports.hash = (obj, {alg='sha256', enc='hex', coerce=true, sort=true} = {}) => {
+exports.hash = (obj, options) => {
+  const alg = options.alg || 'sha256';
+  const enc = options.enc || 'hex';
+  const coerce = typeof options.coerce == 'undefined' ? true : options.coerce;
+  const sort = typeof options.sort == 'undefined' ? true : options.sort;
+
   if (~crypto.getHashes().indexOf(alg)) {
     const sorted = exports.sortedObjectString(obj, {coerce, sort});
     return crypto.createHash(alg)

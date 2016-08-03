@@ -55,3 +55,23 @@ describe(`node-object-hash`, () => {
     });
   });
 });
+
+describe(`node-object-hash`, () => {
+  describe(`#sortedObjectString(obj, {coerce: false, sort: false}) Array`, () => {
+    it(`should return properly sorted object string`, () => {
+      const src = [5,'4',3,'1',2];
+      let options = {coerce: true, sort: true};
+      assert.equal(sortedObjectString(src, options), `[1,2,3,4,5]`);
+    });
+  });
+});
+
+describe(`node-object-hash`, () => {
+  describe(`#sortedObjectString(obj, {coerce: false, sort: false}) Object`, () => {
+    it(`should return properly sorted object string`, () => {
+      const src = {'b': 1, a:2, c:'5', d:1};
+      let options = {coerce: true, sort: true};
+      assert.equal(sortedObjectString(src, options), `{a,2,b,1,c,5,d,1}`);
+    });
+  });
+});

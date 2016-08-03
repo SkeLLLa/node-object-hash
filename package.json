@@ -1,6 +1,6 @@
 {
   "name": "node-object-hash",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Node.js object hash library with properties/arrays sorting to provide constant hashes",
   "main": "index.js",
   "directories": {
@@ -12,7 +12,7 @@
     "mocha": "^2.5.3"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --harmony"
   },
   "repository": {
     "type": "git",
@@ -28,5 +28,8 @@
   "author": "Alexander Kureniov",
   "email": "s@zxc.pp.ua",
   "url": "https://github.com/SkeLLLa",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=4.0.0"
+  }
 }
