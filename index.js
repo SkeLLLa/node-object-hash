@@ -63,7 +63,7 @@ exports.sortedObjectString = (obj, options) => {
 /**
  * Calculates object hash
  * @param {Object} obj Object to hash
- * @param {Object} options Options
+ * @param {Object} [options] Options
  * @param {string} [options.alg="sha256"] Crypto algorithm to use
  * @param {string} [options.enc="hex"] Hash string encoding
  * @param {boolean} [options.coerce=true] Perform coercion
@@ -71,6 +71,7 @@ exports.sortedObjectString = (obj, options) => {
  * @returns {string} Hash string
  */
 exports.hash = (obj, options) => {
+  options = options || {};
   const alg = options.alg || 'sha256';
   const enc = options.enc || 'hex';
   const coerce = typeof options.coerce == 'undefined' ? true : options.coerce;
@@ -85,4 +86,3 @@ exports.hash = (obj, options) => {
     throw new Error(`Algorithm ${alg} not supported by "ctypto" module`);
   }
 };
-
