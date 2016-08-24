@@ -97,10 +97,10 @@ Bench data - array of 100000 complex objects
 
 #### Results
 
-|   | node-object-hash-0.2.1 | node-object-hash-1.0.0 | object-hash-1.1.4 |
-|---|---|---|---|
-| Time | 5773.869ms | 2961.812ms | 534528.254ms |
-| Memory | ~35Mb | ~33Mb | ~41Mb |
+|   | node-object-hash-0.2.1 | node-object-hash-1.0.0 | object-hash-1.1.4 | object-hash-1.1.3 |
+|---|---|---|---|---|
+| Time | 5773.869ms | 2961.812ms | 534528.254ms | Error: Out of memory
+| Memory | ~35Mb | ~33Mb | ~41Mb | ~1.5Gb |
 
 
 ### Similar libraries
