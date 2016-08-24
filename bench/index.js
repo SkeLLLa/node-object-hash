@@ -5,6 +5,7 @@
 const faker = require('faker');
 
 const data = [];
+let dataStairs = {end: 'is near'};
 const datacount = 100000;
 
 const objectHash = require('object-hash');
@@ -13,7 +14,7 @@ const nodeObjectHash2 = require('../hash2')();
 
 console.log('Creating fake data...');
 
-for (let i = 0; i < datacount; i++){
+for (let i = 0; i < datacount; i++) {
   data.push({
     name: faker.name.firstName(),
     date: new Date(),
@@ -40,24 +41,31 @@ for (let i = 0; i < datacount; i++){
       {
         number: faker.random.number(),
         avatar: faker.internet.avatar()
-      },{
+      }, {
         number: faker.random.number(),
         avatar: faker.internet.avatar()
-      },{
+      }, {
         number: faker.random.number(),
         avatar: faker.internet.avatar()
-      },{
+      }, {
         number: faker.random.number(),
         avatar: faker.internet.avatar()
       }
     ]
   });
 }
+var tmp;
+for (let i = 0; i < datacount / 1000; i++) {
+  tmp = {
+    data: dataStairs
+  };
+  dataStairs = tmp;
+}
 
 var memStats;
 var memMaxHeap = 0;
 var memHeapStart;
-
+var bigHash;
 var data1 = data.slice(0);
 var data2 = data.slice(0);
 var data3 = data.slice(0);
@@ -74,13 +82,15 @@ data1.forEach((it, idx) => {
     if (memMaxHeap < memStats.heapUsed) {
       memMaxHeap = memStats.heapUsed;
     }
-    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024*1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024*1024))}Mb`)
+    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024 * 1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024 * 1024))}Mb`)
   }
 });
+bigHash = nodeObjectHash2.hash(dataStairs);
+console.log(bigHash);
 console.timeEnd('node-object-hash-2');
 memStats = process.memoryUsage();
 memMaxHeap = memMaxHeap < memStats.heapUsed ? memStats.heapUsed : memMaxHeap;
-console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap-memHeapStart) / (1024*1024))}Mb`);
+console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap - memHeapStart) / (1024 * 1024))}Mb`);
 
 console.log('Collecting garbage...');
 gc();
@@ -96,13 +106,15 @@ data2.forEach((it, idx) => {
     if (memMaxHeap < memStats.heapUsed) {
       memMaxHeap = memStats.heapUsed;
     }
-    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024*1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024*1024))}Mb`)
+    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024 * 1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024 * 1024))}Mb`)
   }
 });
+bigHash = nodeObjectHash.hash(dataStairs);
+console.log(bigHash);
 console.timeEnd('node-object-hash-1');
 memStats = process.memoryUsage();
 memMaxHeap = memMaxHeap < memStats.heapUsed ? memStats.heapUsed : memMaxHeap;
-console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap-memHeapStart) / (1024*1024))}Mb`);
+console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap - memHeapStart) / (1024 * 1024))}Mb`);
 
 console.log('Collecting garbage...');
 gc();
@@ -118,10 +130,13 @@ data3.forEach((it, idx) => {
     if (memMaxHeap < memStats.heapUsed) {
       memMaxHeap = memStats.heapUsed;
     }
-    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024*1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024*1024))}Mb`)
+    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024 * 1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024 * 1024))}Mb`)
   }
 });
+bigHash = objectHash(dataStairs, {algorithm: 'sha256', encoding: 'hex', unorderedArrays: true});
+console.log(bigHash);
 console.timeEnd('object-hash');
 memStats = process.memoryUsage();
 memMaxHeap = memMaxHeap < memStats.heapUsed ? memStats.heapUsed : memMaxHeap;
-console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap-memHeapStart) / (1024*1024))}Mb`);
+console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap - memHeapStart) / (1024 * 1024))}Mb`);
+console.log(dataStairs);
