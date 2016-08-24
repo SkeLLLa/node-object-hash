@@ -1,18 +1,21 @@
 {
   "name": "node-object-hash",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "Node.js object hash library with properties/arrays sorting to provide constant hashes",
-  "main": "index.js",
+  "main": "hash2.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {},
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "faker": "^3.1.0",
+    "mocha": "^2.5.3",
+    "object-hash": "^1.1.4"
   },
   "scripts": {
-    "test": "mocha --harmony"
+    "test": "mocha --harmony",
+    "bench": "node --expose-gc ./bench/index.js"
   },
   "repository": {
     "type": "git",
