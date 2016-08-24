@@ -27,6 +27,8 @@ like browserify or use crypto functions polyfills).
   - Now module returns 'constructor' function, where you can set
   default parameters: ```var objectHash = require('node-object-hash')(options);```
 
+In case if you still need an old 0.x.x version it's available in `hash.js`
+file.
 ### API
 
 #### Constructor `require('node-object-hash')([options])`
