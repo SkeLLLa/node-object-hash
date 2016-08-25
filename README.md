@@ -5,6 +5,9 @@ Node.js object hash library with properties/arrays sorting to provide constant h
 Built on top of node's crypto module (so for using in browser use something
 like browserify or use crypto functions polyfills). 
 
+[![NPM](https://nodei.co/npm/node-object-hash.png?downloads=true)](https://nodei.co/npm/node-object-hash/)
+
+
 ### Installation
 `npm i node-object-hash`
 
