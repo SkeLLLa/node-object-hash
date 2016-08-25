@@ -65,6 +65,7 @@ Returns sorted string generated from object
 - `>=nodejs-6.0.0`
 - `>=nodejs-4.0.0` (requires to run node with `--harmony` flag)
 - nodejs `crypto` module
+
 ### Example
 ```js
 var hasher = require('node-object-hash');
