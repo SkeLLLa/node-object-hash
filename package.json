@@ -15,7 +15,7 @@
     "object-hash": "^1.1.4"
   },
   "scripts": {
-    "test": "mocha --harmony",
+    "test": "mocha",
     "bench": "node --expose-gc ./bench/index.js"
   },
   "repository": {
