@@ -3,7 +3,7 @@
 Node.js object hash library with properties/arrays sorting to provide constant hashes.
 
 Built on top of node's crypto module (so for using in browser use something
-like browserify or use crypto functions polyfills). 
+like browserify or use crypto functions polyfills).
 
 [![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=2592000&style=flat-square)]()
 [![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://npmjs.org/packages/node-object-hash)
@@ -17,7 +17,7 @@ like browserify or use crypto functions polyfills).
 
 ### Features
 - Supports object property sorting for constant hashes for objects with same properties, but different order.
-- Supports ES6 Maps and Sets.
+- Supports ES6 (Weak)Maps and (Weak)Sets.
 - Supports type coercion (e.g. 1 and "1" will be the same)
   - rules:
     - numbers and strings represented without quotes;
@@ -61,10 +61,16 @@ Returns sorted string generated from object
 *  `object`:`<*>` - object for sorting;
 
 ### Requirements
-- `>=nodejs-0.10.0` (starting from version 1.0.0)
+
+#### version \>=1.0.0
+- `>=nodejs-0.10.0`
+
+#### version \>=0.1.0 && <1.0.0
 - `>=nodejs-6.0.0`
 - `>=nodejs-4.0.0` (requires to run node with `--harmony` flag)
-- nodejs `crypto` module
+
+#### browsers
+- nodejs `crypto` module (for browsers)
 
 ### Example
 ```js
