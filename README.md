@@ -102,15 +102,19 @@ Bench data - array of 100000 complex objects
 `npm run bench`
 
 #### Results
-
-|   | node-object-hash-0.2.1 | node-object-hash-1.0.0 | object-hash-1.1.4 | object-hash-1.1.3 |
-|---|---|---|---|---|
-| Time | 5773.869ms | 2961.812ms | 534528.254ms | Error: Out of memory
-| Memory | ~35Mb | ~33Mb | ~41Mb | ~1.5Gb |
-
+| Library                | Time (ms)  | Memory (Mb)        |
+|------------------------|------------|--------------------|
+| node-object-hash-0.2.1 | 2805.581   | 27                 |
+| node-object-hash-1.0.0 | 5813.575   | 34                 |
+| object-hash-1.1.4      | 534528.254 | 41                 |
+| object-hash-1.1.3      | ERROR      | Out of heap memory |
+| hash-object-0.1.7      | 9219.826   | 42                 |
 
 ### Similar libraries
-* https://www.npmjs.com/package/object-hash
+* https://www.npmjs.com/package/object-hash (Slow, but browser-ready
+ and most js types supported)
+* https://www.npmjs.com/package/hash-object (no ES6 types support)
+
 
 ### License
 ISC

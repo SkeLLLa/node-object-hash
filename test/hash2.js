@@ -41,6 +41,18 @@ const objects = {
   g: {
     b: ['a', 1, {}, undefined],
     a: [{c: '2', b: {b: false, c: 2, a: '3'}, a: true}]
+  },
+  h: {
+    type: 'ui',
+    key: {
+      code: 'BLA'
+    }
+  },
+  i: {
+    type: 'ui',
+    key: {
+      code: 'BLA'
+    }
   }
 };
 
@@ -74,6 +86,12 @@ describe(`${libName}`, () => {
   describe(`#sortObject() on multitype array: [sort=true, coerce=true]`, () => {
     it(`should return sorted array`, () => {
       assert.equal(hashSC.sortObject(objects.e), '[0,1,2,3,4]');
+    });
+  });
+
+  describe(`#hash() on complex objects: [sort=true, coerce=true]`, () => {
+    it(`should return equal hashes`, () => {
+      assert.equal(hashSC.hash(objects.h), hashSC.hash(objects.i));
     });
   });
 });

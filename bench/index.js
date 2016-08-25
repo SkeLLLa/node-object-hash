@@ -11,6 +11,7 @@ const datacount = 100000;
 const objectHash = require('object-hash');
 const nodeObjectHash = require('../hash');
 const nodeObjectHash2 = require('../hash2')();
+const hashObject = require('hash-object');
 
 console.log('Creating fake data...');
 
@@ -61,6 +62,7 @@ for (let i = 0; i < datacount / 1000; i++) {
   };
   dataStairs = tmp;
 }
+dataStairs.map = new Map([[1,1], [2,2]]);
 
 var memStats;
 var memMaxHeap = 0;
@@ -112,6 +114,31 @@ data2.forEach((it, idx) => {
 bigHash = nodeObjectHash.hash(dataStairs);
 console.log(bigHash);
 console.timeEnd('node-object-hash-1');
+memStats = process.memoryUsage();
+memMaxHeap = memMaxHeap < memStats.heapUsed ? memStats.heapUsed : memMaxHeap;
+console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap - memHeapStart) / (1024 * 1024))}Mb`);
+
+console.log('Collecting garbage...');
+gc();
+memMaxHeap = 0;
+
+memStats = process.memoryUsage();
+memHeapStart = memStats.heapUsed;
+console.time('hash-object');
+const hashObjectOpts = {algorithm: 'sha256'};
+data2.forEach((it, idx) => {
+  it.hash = hashObject(it, hashObjectOpts);
+  if (idx % 10000 === 0) {
+    memStats = process.memoryUsage();
+    if (memMaxHeap < memStats.heapUsed) {
+      memMaxHeap = memStats.heapUsed;
+    }
+    console.log(`${idx} items processed: RSS:${Math.round(memStats.rss / (1024 * 1024))}Mb / HEAP: ${Math.round(memStats.heapUsed / (1024 * 1024))}Mb`)
+  }
+});
+bigHash = hashObject(dataStairs, hashObjectOpts);
+console.log(bigHash);
+console.timeEnd('hash-object');
 memStats = process.memoryUsage();
 memMaxHeap = memMaxHeap < memStats.heapUsed ? memStats.heapUsed : memMaxHeap;
 console.log(`Memory footprint:\n MAX HEAP DIFF:${Math.round((memMaxHeap - memHeapStart) / (1024 * 1024))}Mb`);
