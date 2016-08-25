@@ -4,16 +4,16 @@
 'use strict';
 
 
-const hash = require('../hash2');
-const assert = require('chai').assert;
+var hash = require('../hash2');
+var assert = require('chai').assert;
 
-const hashSC = hash();
-const hashS = hash({coerce: false});
-const hashC = hash({sort: false});
+var hashSC = hash();
+var hashS = hash({coerce: false});
+var hashC = hash({sort: false});
 
-const libName = 'node-object-hash-v2';
+var libName = 'node-object-hash-v2';
 
-const objects = {
+var objects = {
   a: {
     b: 1,
     c: 3,
@@ -56,41 +56,41 @@ const objects = {
   }
 };
 
-describe(`${libName}`, () => {
-  describe(`#hash() on objects: [sort=true, coerce=true]`, () => {
-    it(`should return equal hashes`, () => {
+describe(libName, () => {
+  describe('#hash() on objects: [sort=true, coerce=true]', () => {
+    it('should return equal hashes', () => {
       assert.equal(hashSC.hash(objects.a), hashSC.hash(objects.c));
     });
   });
-  describe(`#hash() on objects: [sort=true, coerce=false]`, () => {
-    it(`should return equal hashes`, () => {
+  describe('#hash() on objects: [sort=true, coerce=false]', () => {
+    it('should return equal hashes', () => {
       assert.equal(hashS.hash(objects.a), hashS.hash(objects.b));
     });
   });
-  describe(`#hash() on objects: [sort=false, coerce=true]`, () => {
-    it(`should return equal hashes`, () => {
+  describe('#hash() on objects: [sort=false, coerce=true]', () => {
+    it('should return equal hashes', () => {
       assert.equal(hashC.hash(objects.c), hashC.hash(objects.b));
     });
   });
-  describe(`#hash() on arrays: [sort=true, coerce=true]`, () => {
-    it(`should return equal hashes`, () => {
+  describe('#hash() on arrays: [sort=true, coerce=true]', () => {
+    it('should return equal hashes', () => {
       assert.equal(hashSC.hash(objects.d), hashSC.hash(objects.e));
     });
   });
-  describe(`#hash() on complex objects: [sort=true, coerce=true]`, () => {
-    it(`should return equal hashes`, () => {
+  describe('#hash() on complex objects: [sort=true, coerce=true]', () => {
+    it('should return equal hashes', () => {
       assert.equal(hashSC.hash(objects.f), hashSC.hash(objects.g));
     });
   });
 
-  describe(`#sortObject() on multitype array: [sort=true, coerce=true]`, () => {
-    it(`should return sorted array`, () => {
+  describe('#sortObject() on multitype array: [sort=true, coerce=true]', () => {
+    it('should return sorted array', () => {
       assert.equal(hashSC.sortObject(objects.e), '[0,1,2,3,4]');
     });
   });
 
-  describe(`#hash() on complex objects: [sort=true, coerce=true]`, () => {
-    it(`should return equal hashes`, () => {
+  describe('#hash() on complex objects: [sort=true, coerce=true]', () => {
+    it('should return equal hashes', () => {
       assert.equal(hashSC.hash(objects.h), hashSC.hash(objects.i));
     });
   });
