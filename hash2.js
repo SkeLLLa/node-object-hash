@@ -22,8 +22,9 @@ var objectSorter = require('./objectSorter');
  * @returns {API} API object
  */
 module.exports = function Hash(options) {
-  var api = {};
-  var defaults = options || {};
+  var api = {},
+      defaults = options || {};
+
   defaults.coerce = typeof defaults.coerce === 'undefined' ? true : defaults.coerce;
   defaults.sort = typeof defaults.sort === 'undefined' ? true : defaults.sort;
   defaults.alg = defaults.alg || 'sha256';
@@ -41,10 +42,10 @@ module.exports = function Hash(options) {
    */
   api.hash = function hash(obj, opts) {
     opts = opts || {};
-    var alg = opts.alg || defaults.alg;
-    var enc = opts.enc || defaults.enc;
+    var alg = opts.alg || defaults.alg,
+        enc = opts.enc || defaults.enc,
+        sorted = sortObjectToString(obj);
 
-    var sorted = sortObjectToString(obj);
     return crypto.createHash(alg)
       .update(sorted)
       .digest(enc);

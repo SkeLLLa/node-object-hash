@@ -3,7 +3,6 @@
  */
 'use strict';
 
-
 var hash = require('../hash2');
 var assert = require('chai').assert;
 

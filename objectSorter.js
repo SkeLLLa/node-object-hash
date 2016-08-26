@@ -36,22 +36,23 @@ function guessObjectType(obj) {
  */
 function guessType(obj) {
   var type = typeof obj;
+
   return type !== 'object' ? type : guessObjectType(obj);
 }
 
 /**
  * Creates object sorter function
  * @param {Object} [options] Sorter options
- * @param {string} [options.coerce="true"] Performs type coercion (e.g sorter(true) === ("1"); sorter(1) === ("1"))
+ * @param {string} [options.coerce="true"] Performs type coercion (e.g sorter(1) === ("1"))
  * @param {string} [options.sort="true"] Performs array, object, etc. sorting
  * @returns {string} Sorted object string
  */
-var objectSorter = function (options) {
+function objectSorter(options) {
   options = options || {};
-  var coerce = typeof options.coerce === 'undefined' ? true : options.coerce;
-  var sort = typeof options.sort === 'undefined' ? true : options.sort;
+  var coerce = typeof options.coerce === 'undefined' ? true : options.coerce,
+      sort = typeof options.sort === 'undefined' ? true : options.sort,
+      self = {};
 
-  var self = {};
   self.string = function sortString(obj) {
     if (coerce) {
       return obj;
@@ -92,15 +93,17 @@ var objectSorter = function (options) {
   };
 
   self.function = function sortFunction(obj) {
-    if (coerce){
+    if (coerce) {
       return obj.name + '=>' + obj.toString();
     }
     return '<:func>:' + obj.name + '=>' + obj.toString();
   };
 
   self.array = function sortArray(obj) {
-    var item, itemType;
-    var result = [];
+    var item,
+        itemType,
+        result = [];
+
     for (var i = 0; i < obj.length; i++) {
       item = obj[i];
       itemType = guessType(item);
@@ -116,6 +119,7 @@ var objectSorter = function (options) {
 
   self.date = function sortDate(obj) {
     var dateStr = obj.toISOString();
+
     if (coerce) {
       return dateStr;
     }
@@ -123,23 +127,26 @@ var objectSorter = function (options) {
   };
 
   self.object = function sortObject(obj) {
-    var keys = sort ? Object.keys(obj).sort() : Object.keys(obj);
-    var objArray = [];
-    var key, value, valueType;
-    for (var i = 0; i < keys.length; i++) {
+    var keys = sort ? Object.keys(obj).sort() : Object.keys(obj),
+        objArray = [],
+        key, value, valueType,
+        i;
+
+    for (i = 0; i < keys.length; i++) {
       key = keys[i];
       value = obj[key];
       valueType = guessType(value);
-      objArray.push(key + ':' + self[valueType](value))
+      objArray.push(key + ':' + self[valueType](value));
     }
     return '{' + objArray.toString() + '}';
   };
 
   self.map = function sortMap(obj) {
-    var arr = Array.from(obj);
-    var key, value, item;
+    var arr = Array.from(obj),
+        key, value, item,
+        i;
 
-    for (var i = 0; i < arr.length; i++) {
+    for (i = 0; i < arr.length; i++) {
       item = arr[i];
       key = item[0];
       value = item[1];
@@ -158,6 +165,6 @@ var objectSorter = function (options) {
   }
 
   return obj2string;
-};
+}
 
 module.exports = objectSorter;

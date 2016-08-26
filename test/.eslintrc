@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "it": true,
+    "describe": false
+  },
+  "rules":{
+    "func-names": 0,
+    "no-magic-numbers": 0,
+    "no-undefined": 0
+  }
+}
