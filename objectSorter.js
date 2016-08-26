@@ -43,8 +43,8 @@ function guessType(obj) {
 /**
  * Creates object sorter function
  * @param {Object} [options] Sorter options
- * @param {string} [options.coerce="true"] Performs type coercion (e.g sorter(1) === ("1"))
- * @param {string} [options.sort="true"] Performs array, object, etc. sorting
+ * @param {boolean} [options.coerce="true"] Performs type coercion (e.g sorter(1) === ("1"))
+ * @param {boolean} [options.sort="true"] Performs array, object, etc. sorting
  * @returns {string} Sorted object string
  */
 function objectSorter(options) {

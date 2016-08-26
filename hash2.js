@@ -23,14 +23,13 @@ var objectSorter = require('./objectSorter');
  */
 module.exports = function Hash(options) {
   var api = {},
-      defaults = options || {};
+      defaults;
 
-  defaults.coerce = typeof defaults.coerce === 'undefined' ? true : defaults.coerce;
-  defaults.sort = typeof defaults.sort === 'undefined' ? true : defaults.sort;
+  var sortObjectToString = objectSorter(options);
+
+  defaults = options || {};
   defaults.alg = defaults.alg || 'sha256';
   defaults.enc = defaults.enc || 'hex';
-
-  var sortObjectToString = objectSorter(defaults);
 
   /**
    * Creates hash from given object

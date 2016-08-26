@@ -12,12 +12,14 @@
     "eslint": "^3.3.1",
     "faker": "^3.1.0",
     "hash-object": "^0.1.7",
+    "istanbul": "^0.4.5",
     "mocha": "^2.5.3",
     "object-hash": "^1.1.4"
   },
   "scripts": {
     "test": "mocha",
     "lint": "eslint .",
+    "cover": "istanbul cover _mocha",
     "bench": "node --expose-gc ./bench/index.js"
   },
   "repository": {

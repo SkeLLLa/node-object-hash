@@ -1,3 +1,4 @@
 bench/
 hash.js
 node_modules/
+coverage/
