@@ -16,7 +16,7 @@
     "object-hash": "^1.1.4"
   },
   "scripts": {
-    "test": "npm run lint && mocha",
+    "test": "mocha",
     "lint": "eslint .",
     "bench": "node --expose-gc ./bench/index.js"
   },
