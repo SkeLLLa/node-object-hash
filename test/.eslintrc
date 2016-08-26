@@ -6,6 +6,7 @@
   "rules":{
     "func-names": 0,
     "no-magic-numbers": 0,
-    "no-undefined": 0
+    "no-undefined": 0,
+    "max-len": 0
   }
 }

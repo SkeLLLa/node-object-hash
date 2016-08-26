@@ -30,7 +30,9 @@ var testData = {
       k: new Map([[1, 1], [2, 2], [3, 3]]),
       l: new Date(0),
       m: Symbol(),
-      n: function n() {return 'n';},
+      n: function n() {
+        return 'n';
+      },
       o: [5, 4, 3, 2, 1, 0]
     },
     noCoerce: {
@@ -48,7 +50,9 @@ var testData = {
       k: new Map([[1, 1], [2, 2], [3, 3]]),
       l: new Date(0),
       m: Symbol(),
-      n: function n() {return 'n';},
+      n: function n() {
+        return 'n';
+      },
       o: [5, 4, 3, 2, 1, 0]
     },
     sort: {
@@ -63,7 +67,9 @@ var testData = {
       g: 0,
       o: [4, 2, 1, 3, 5, 0],
       h: undefined,
-      n: function n() {return 'n';},
+      n: function n() {
+        return 'n';
+      },
       j: new Set([2, 4, 3, 5, 1]),
       l: new Date(0),
       i: null,
@@ -84,12 +90,16 @@ var testData = {
       k: new Map([['1', 1], [2, '2'], [3, 3]]),
       l: new Date(0),
       m: Symbol(),
-      n: function n() {return 'n';},
+      n: function n() {
+        return 'n';
+      },
       o: ['5', 4, '3', 2, true, false]
     },
     sortCoerce: {
       b: 2,
-      n: function n() {return 'n';},
+      n: function n() {
+        return 'n';
+      },
       g: false,
       j: new Set([4, 2, 1, 3, 5]),
       a: true,
