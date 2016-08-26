@@ -145,7 +145,7 @@ var objectSorter = function (options) {
       value = item[1];
       item = [
         self[guessType(key)](key),
-        self[guessType(value)](value),
+        self[guessType(value)](value)
       ];
       arr[i] = item;
     }
