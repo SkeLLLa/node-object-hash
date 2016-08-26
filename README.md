@@ -9,8 +9,9 @@ like browserify or use crypto functions polyfills).
 [![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://npmjs.org/packages/node-object-hash)
 [![NPM Downloads](https://img.shields.io/npm/dt/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://npmjs.org/packages/node-object-hash)
 [![Build Status](https://img.shields.io/travis/SkeLLLa/node-object-hash.svg?branch=master&style=flat-square)](https://travis-ci.org/SkeLLLa/node-object-hash)
-[![Known Vulnerabilities](https://snyk.io/test/github/skellla/node-object-hash/badge.svg?style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
-[![Code Climate](https://img.shields.io/codeclimate/github/kabisaict/flow.svg?maxAge=2592000&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash)
+[![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
+[![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash)
+[![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash)
 
 ### Installation
 `npm i node-object-hash`
