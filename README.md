@@ -1,17 +1,18 @@
 # node-object-hash
 
 Node.js object hash library with properties/arrays sorting to provide constant hashes.
+It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
 
-Built on top of node's crypto module (so for using in browser use something
-like browserify or use crypto functions polyfills).
+Hashes are built on top of node's crypto module 
+(so for using in browser use something like browserify or use crypto functions polyfills).
 
-[![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=2592000&style=flat-square)]()
-[![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://npmjs.org/packages/node-object-hash)
-[![NPM Downloads](https://img.shields.io/npm/dt/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://npmjs.org/packages/node-object-hash)
-[![Build Status](https://img.shields.io/travis/SkeLLLa/node-object-hash.svg?branch=master&style=flat-square)](https://travis-ci.org/SkeLLLa/node-object-hash)
-[![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
-[![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
-[![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=2592000&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
+[![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)]()
+[![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
+[![NPM Downloads](https://img.shields.io/npm/dt/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
+[![Build Status](https://img.shields.io/travis/SkeLLLa/node-object-hash.svg?maxAge=21600&branch=master&style=flat-square)](https://travis-ci.org/SkeLLLa/node-object-hash)
+[![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?maxAge=21600&style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
+[![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
+[![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
 
 ### Installation
 `npm i node-object-hash`
@@ -50,15 +51,16 @@ e.g. `hash(true) == hash('1') == hash(1)`, `hash(false) == hash('0') == hash(0)`
 *  `options.alg`:`<string>` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
 *  `options.enc`:`<string>` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
 
-#### `hash(object[, options])`
+#### API methods
+##### `hash(object[, options])`
 Returns hash string.
 *  `object`:`<*>` object for calculating hash;
 *  `options`:`<object>` object with options;
 *  `options.alg`:`<string>` - hash algorithm (default: `'sha256'`);
 *  `options.enc`:`<string>` - hash encoding (default: `'hex'`);
 
-#### `sortObject(object)`
-Returns sorted string generated from object
+##### `sortObject(object)`
+Returns sorted string generated from object (can be used for object comparison)
 *  `object`:`<*>` - object for sorting;
 
 ### Requirements
