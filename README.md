@@ -106,6 +106,8 @@ hashSortCoerce.sortObject(object.c)
 // returns '[0,1,2,3,4]'
 ```
 
+For more example you can see [tests file](https://github.com/SkeLLLa/node-object-hash/blob/master/test/hash2.js)
+
 ### Benchmark results
 Bench data - array of 100000 complex objects
 
