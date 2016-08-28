@@ -1,5 +1,7 @@
 test/
 bench/
+coverage/
+.idea
 .eslintrc
 .eslintignore
 .*.yml
