@@ -8,6 +8,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "benchmark": "^2.1.1",
     "chai": "^3.5.0",
     "eslint": "^3.3.1",
     "faker": "^3.1.0",
@@ -20,7 +21,8 @@
     "test": "mocha",
     "lint": "eslint .",
     "cover": "istanbul cover _mocha",
-    "bench": "node --expose-gc ./bench/index.js"
+    "bench": "node --expose-gc ./bench/index.js",
+    "bench2": "node --expose-gc ./bench/bench.js"
   },
   "repository": {
     "type": "git",
