@@ -4,7 +4,7 @@ Node.js object hash library with properties/arrays sorting to provide constant h
 It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
 
 Hashes are built on top of node's crypto module 
-(so for using in browser use something like browserify or use crypto functions polyfills).
+(so for using in browser use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills).
 
 [![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)]()
 [![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
@@ -15,7 +15,7 @@ Hashes are built on top of node's crypto module
 [![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
 
 ### Installation
-`npm i node-object-hash`
+`npm i node-object-hash -S`
 
 ### Features
 - Supports object property sorting for constant hashes for objects with same properties, but different order.
@@ -124,10 +124,8 @@ Bench data - array of 100000 complex objects
 | hash-object-0.1.7      | 9219.826   | 42                 |
 
 ### Similar libraries
-* https://www.npmjs.com/package/object-hash (Slow, but browser-ready
- and most js types supported)
+* https://www.npmjs.com/package/object-hash (Slow, useful for browsers because it not uses node's crypto library)
 * https://www.npmjs.com/package/hash-object (no ES6 types support)
-
 
 ### License
 ISC
