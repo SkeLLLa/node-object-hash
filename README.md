@@ -4,7 +4,7 @@ Node.js object hash library with properties/arrays sorting to provide constant h
 It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
 
 Hashes are built on top of node's crypto module 
-(so for using in browser use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills).
+(so for using in browser use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills). Or you can use only `objectSorter` ([source](https://github.com/SkeLLLa/node-object-hash/blob/master/objectSorter.js)) for getting your objects' string representation and compare or pass them to your own hash function.
 
 [![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)]()
 [![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
