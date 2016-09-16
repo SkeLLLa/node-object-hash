@@ -107,6 +107,7 @@ hashSortCoerce.sortObject(object.c)
 ```
 
 For more examples you can see [tests file](https://github.com/SkeLLLa/node-object-hash/blob/master/test/hash2.js)
+or try it out online at [runkit](https://runkit.com/skellla/57dbb57c29bc3f1300d6e6cd)
 
 ### Benchmark results
 Bench data - array of 100000 complex objects
