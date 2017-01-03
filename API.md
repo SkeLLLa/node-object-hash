@@ -20,7 +20,7 @@ Creates sorted string from given object
 **Kind**: instance method of <code>[node-object-hash](#module_node-object-hash)</code>  
 **Returns**: <code>string</code> - Sorted object string  
 **Access:** public  
-**See**: [module:node-object-hash/objectSorter~makeObjectSorter~objectToString](module:node-object-hash/objectSorter~makeObjectSorter~objectToString)  
+**See**: [module:node-object-hash/objectSorter~apiConstructor~objectToString](module:node-object-hash/objectSorter~apiConstructor~objectToString)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -68,6 +68,6 @@ Node object hash API object
 
 | Name | Type | Description |
 | --- | --- | --- |
-| hash | <code>function</code> | Returns object hash string (see [module:node-object-hash+hash](module:node-object-hash+hash)) |
-| sort | <code>function</code> | Returns sorted object string (see [module:node-object-hash+sort](module:node-object-hash+sort)) |
+| hash | <code>function</code> | Returns object hash string (see [hash](#module_node-object-hash+hash)) |
+| sort | <code>function</code> | Returns sorted object string (see [sort](#module_node-object-hash+sort)) |
 
