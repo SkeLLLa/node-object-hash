@@ -26,7 +26,7 @@ var objectSorter = require('./objectSorter');
  */
 function apiConstructor(options) {
   var defaults = options || {},
-    _sortObject;
+      _sortObject;
 
   defaults.alg = defaults.alg || 'sha256';
   defaults.enc = defaults.enc || 'hex';
@@ -62,8 +62,8 @@ function apiConstructor(options) {
   function hashObject(obj, opts) {
     opts = opts || {};
     var alg = opts.alg || defaults.alg,
-      enc = opts.enc || defaults.enc,
-      sorted = sortObject(obj);
+        enc = opts.enc || defaults.enc,
+        sorted = sortObject(obj);
 
     return crypto.createHash(alg)
       .update(sorted)
