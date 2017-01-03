@@ -2,8 +2,9 @@
 
 Node.js object hash library with properties/arrays sorting to provide constant hashes.
 It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
+One of the fastest among other analogues (see [benchmarks](#Benchmarks)).
 
-Hashes are built on top of node's crypto module 
+Hashes are built on top of node's crypto module
 (so for using in browser use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills). Or you can use only `objectSorter` ([source](https://github.com/SkeLLLa/node-object-hash/blob/master/objectSorter.js)) for getting your objects' string representation and compare or pass them to your own hash function.
 
 [![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)]()
@@ -14,10 +15,11 @@ Hashes are built on top of node's crypto module
 [![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
 [![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
 
-### Installation
+# Installation
+
 `npm i node-object-hash -S`
 
-### Features
+# Features
 - Supports object property sorting for constant hashes for objects with same properties, but different order.
 - Supports ES6 (Weak)Maps and (Weak)Sets.
 - Supports type coercion (e.g. 1 and "1" will be the same)
@@ -26,9 +28,12 @@ Hashes are built on top of node's crypto module
     - boolean values converted to numbers;
 - Supports all hashes and encodings of crypto library
 - Supports large objects and arrays
+- Very fast comparing to other libs (see [Benchmarks](#Benchmarks) section)
 
-### Changes
-#### v0.x.x -> v1.0.0
+# Changes
+
+## v0.x.x -> v1.0.0
+
 - Sorting mechanism rewritten form ES6 Maps to simple arrays
  (add <=node-4.0.0 support)
 - Performance optimization (~2 times faster than 0.x.x)
@@ -38,9 +43,23 @@ Hashes are built on top of node's crypto module
 
 In case if you still need an old 0.x.x version it's available in `hash.js`
 file.
-### API
 
-#### Constructor `require('node-object-hash')([options])`
+## v1.0.X -> v1.1.0
+
+Mainly all changes affected codestyle and documentation to provide better
+experience using this library. There are no changes that should affect
+functionality.
+
+- Renamed `sortObject` function to `sort` (old one is still present in code
+for backward compatibility).
+- Performed some refactoring for better codestyle and documentation.
+- Old version (`0.X.X`) moved to subfolder (`./v0`).
+- Advanced API reference added: [link](#Full API docs).
+
+# API overview
+
+## Constructor `require('node-object-hash')([options])`
+
 Returns preconfigured object with API
 
 Parameters:
@@ -51,31 +70,210 @@ e.g. `hash(true) == hash('1') == hash(1)`, `hash(false) == hash('0') == hash(0)`
 *  `options.alg`:`<string>` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
 *  `options.enc`:`<string>` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
 
-#### API methods
-##### `hash(object[, options])`
+## API methods
+
+### `hash(object[, options])`
+
 Returns hash string.
 *  `object`:`<*>` object for calculating hash;
 *  `options`:`<object>` object with options;
 *  `options.alg`:`<string>` - hash algorithm (default: `'sha256'`);
 *  `options.enc`:`<string>` - hash encoding (default: `'hex'`);
 
-##### `sortObject(object)`
+### `sort(object)`
+
 Returns sorted string generated from object (can be used for object comparison)
 *  `object`:`<*>` - object for sorting;
 
-### Requirements
+# Full API docs
 
-#### version \>=1.0.0
+## Modules
+
+<dl>
+<dt><a href="#module_node-object-hash/objectSorter">node-object-hash/objectSorter</a> : <code><a href="#module_node-object-hash/objectSorter..makeObjectSorter..objectToString">objectToString</a></code></dt>
+<dd><p>Object sorter module.
+It provides object sorter function constructor.</p>
+</dd>
+<dt><a href="#module_node-object-hash">node-object-hash</a> : <code><a href="#module_node-object-hash..apiConstructor">apiConstructor</a></code></dt>
+<dd><p>Node object hash module.
+It provides a methods that return object hash or sorted object string.</p>
+</dd>
+</dl>
+
+<a name="module_node-object-hash/objectSorter"></a>
+
+## node-object-hash/objectSorter : <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code>
+Object sorter module.
+It provides object sorter function constructor.
+
+
+* [node-object-hash/objectSorter](#module_node-object-hash/objectSorter) : <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code>
+    * [~_guessObjectType(obj)](#module_node-object-hash/objectSorter.._guessObjectType) ⇒ <code>string</code> ℗
+    * [~_guessType(obj)](#module_node-object-hash/objectSorter.._guessType) ⇒ <code>string</code> ℗
+    * [~makeObjectSorter([options])](#module_node-object-hash/objectSorter..makeObjectSorter) ⇒ <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code> ℗
+        * [~objectToString(obj)](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString) ⇒ <code>string</code> ℗
+
+<a name="module_node-object-hash/objectSorter.._guessObjectType"></a>
+
+### node-object-hash/objectSorter~_guessObjectType(obj) ⇒ <code>string</code> ℗
+Guesses object's type
+
+**Kind**: inner method of <code>[node-object-hash/objectSorter](#module_node-object-hash/objectSorter)</code>  
+**Returns**: <code>string</code> - Object type  
+**Access:** private  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| obj | <code>Object</code> | Object to guess type |
+
+**Example**  
+```js
+var a = [];
+_guessObjectType(a) === 'array'; // true
+```
+<a name="module_node-object-hash/objectSorter.._guessType"></a>
+
+### node-object-hash/objectSorter~_guessType(obj) ⇒ <code>string</code> ℗
+Guesses variable type
+
+**Kind**: inner method of <code>[node-object-hash/objectSorter](#module_node-object-hash/objectSorter)</code>  
+**Returns**: <code>string</code> - Variable type  
+**Access:** private  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| obj | <code>\*</code> | Variable to guess type |
+
+**Example**  
+```js
+var a = '';
+_guessType(a) === 'string'; // true
+```
+<a name="module_node-object-hash/objectSorter..makeObjectSorter"></a>
+
+### node-object-hash/objectSorter~makeObjectSorter([options]) ⇒ <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code> ℗
+Creates object sorter function
+
+**Kind**: inner method of <code>[node-object-hash/objectSorter](#module_node-object-hash/objectSorter)</code>  
+**Returns**: <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code> - Object sorting function  
+**Access:** private  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> |  | Sorter options |
+| [options.coerce] | <code>boolean</code> | <code>&quot;true&quot;</code> | Performs type coercion |
+| [options.sort] | <code>boolean</code> | <code>&quot;true&quot;</code> | Performs array, object, etc. sorting |
+
+**Example**  
+```js
+// with coercion
+var sorter = makeObjectSorter({coerce: true, sort: false});
+sorter(1) === "1"; // true
+// with sort
+var sorter = makeObjectSorter({coerce: false, sort: true});
+sorter([2, 3, 1]) === [1, 2, 3]; // true
+```
+<a name="module_node-object-hash/objectSorter..makeObjectSorter..objectToString"></a>
+
+#### makeObjectSorter~objectToString(obj) ⇒ <code>string</code> ℗
+Object sorting function
+
+**Kind**: inner method of <code>[makeObjectSorter](#module_node-object-hash/objectSorter..makeObjectSorter)</code>  
+**Returns**: <code>string</code> - Sorted string  
+**Access:** private  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| obj | <code>Object</code> | Object to sort |
+
+<a name="module_node-object-hash"></a>
+
+## node-object-hash : <code>[apiConstructor](#module_node-object-hash..apiConstructor)</code>
+Node object hash module.
+It provides a methods that return object hash or sorted object string.
+
+
+* [node-object-hash](#module_node-object-hash) : <code>[apiConstructor](#module_node-object-hash..apiConstructor)</code>
+    * _instance_
+        * [.sort(obj)](#module_node-object-hash+sort) ⇒ <code>string</code>
+        * [.hash(obj, [opts])](#module_node-object-hash+hash) ⇒ <code>string</code>
+    * _inner_
+        * [~apiConstructor([options])](#module_node-object-hash..apiConstructor) ⇒ <code>[API](#module_node-object-hash..API)</code>
+        * [~API](#module_node-object-hash..API) : <code>Object</code>
+
+<a name="module_node-object-hash+sort"></a>
+
+### node-object-hash.sort(obj) ⇒ <code>string</code>
+Creates sorted string from given object
+
+**Kind**: instance method of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Returns**: <code>string</code> - Sorted object string  
+**Access:** public  
+**See**: [objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| obj | <code>\*</code> | JS object to be sorted |
+
+<a name="module_node-object-hash+hash"></a>
+
+### node-object-hash.hash(obj, [opts]) ⇒ <code>string</code>
+Creates hash from given object
+
+**Kind**: instance method of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Returns**: <code>string</code> - Object hash value  
+**Access:** public  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| obj | <code>\*</code> |  | JS object to hash |
+| [opts] | <code>Object</code> |  | Options |
+| [opts.alg] | <code>string</code> | <code>&quot;sha256&quot;</code> | Crypto algorithm to use |
+| [opts.enc] | <code>string</code> | <code>&quot;hex&quot;</code> | Hash string encoding |
+
+<a name="module_node-object-hash..apiConstructor"></a>
+
+### node-object-hash~apiConstructor([options]) ⇒ <code>[API](#module_node-object-hash..API)</code>
+Generates node-object-hash API object
+
+**Kind**: inner method of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Returns**: <code>[API](#module_node-object-hash..API)</code> - Node object hash API instance  
+
+| Param | Type | Default | Description |
+| --- | --- | --- | --- |
+| [options] | <code>Object</code> |  | Library options |
+| [options.coerce] | <code>boolean</code> | <code>true</code> | Performs type coercion |
+| [options.sort] | <code>boolean</code> | <code>true</code> | Performs array, object, etc. sorting |
+| [options.alg] | <code>string</code> | <code>&quot;sha256&quot;</code> | Default crypto algorithm to use (can be overridden) |
+| [options.enc] | <code>string</code> | <code>&quot;hex&quot;</code> | Hash string encoding (can be overridden) |
+
+<a name="module_node-object-hash..API"></a>
+
+### node-object-hash~API : <code>Object</code>
+Node object hash API object
+
+**Kind**: inner typedef of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hash | <code>function</code> | Returns object hash string (see [hash](#module_node-object-hash+hash)) |
+| sort | <code>function</code> | Returns sorted object string (see [sort](#module_node-object-hash+sort)) |
+
+
+# Requirements
+
+## version \>=1.0.0
 - `>=nodejs-0.10.0`
 
-#### version \>=0.1.0 && <1.0.0
+## version \>=0.1.0 && <1.0.0
 - `>=nodejs-6.0.0`
 - `>=nodejs-4.0.0` (requires to run node with `--harmony` flag)
 
-#### browsers
-- nodejs `crypto` module (for browsers)
+## browsers
+- nodejs `crypto` module for browsers (e.g. [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify)).
 
-### Example
+# Example
 ```js
 var hasher = require('node-object-hash');
 
@@ -102,31 +300,50 @@ var objects = {
 hashSortCoerce.hash(objects.a) === hashSortCoerce.hash(objects.b);
 // returns true
 
-hashSortCoerce.sortObject(object.c)
+hashSortCoerce.sort(object.c);
 // returns '[0,1,2,3,4]'
 ```
 
 For more examples you can see [tests file](https://github.com/SkeLLLa/node-object-hash/blob/master/test/hash2.js)
 or try it out online at [runkit](https://runkit.com/skellla/node-object-hash-example)
 
-### Benchmark results
+# Benchmarks
+
 Bench data - array of 100000 complex objects
 
-#### Usage
-`npm run bench`
+## Usage
 
-#### Results
+* `npm run bench` to run custom benchmark
+* `npm run bench2` to run benchmark suite
+
+## Results
+
+### Custom benchmark ([code](bench/index.js))
+
 | Library                | Time (ms)  | Memory (Mb)        |
 |------------------------|------------|--------------------|
 | node-object-hash-0.2.1 | 5813.575   | 34                 |
 | node-object-hash-1.0.0 | 2805.581   | 27                 |
+| node-object-hash-2.0.0 | 2555.583   | 27                 |
+| object-hash-1.1.5      | 28115.553  | 39                 |
 | object-hash-1.1.4      | 534528.254 | 41                 |
 | object-hash-1.1.3      | ERROR      | Out of heap memory |
 | hash-object-0.1.7      | 9219.826   | 42                 |
 
-### Similar libraries
+### Benchmark suite module ([code](bench/bench.js))
+
+```
+    node-object-hash x 844 ops/sec ±2.51% (82 runs sampled)
+    node-object-hash-v0 x 540 ops/sec ±1.34% (82 runs sampled)
+    hash-object x 310 ops/sec ±0.88% (81 runs sampled)
+    object-hash x 107 ops/sec ±1.66% (72 runs sampled)
+```
+
+## Links
+
 * https://www.npmjs.com/package/object-hash (Slow, useful for browsers because it not uses node's crypto library)
 * https://www.npmjs.com/package/hash-object (no ES6 types support)
 
-### License
+# License
+
 ISC

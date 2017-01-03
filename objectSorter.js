@@ -1,14 +1,17 @@
-/**
- * Created on 8/22/16.
- */
 'use strict';
 
 /**
  * Guesses object's type
- * @param {Object} obj Object
- * @returns {string}
+ * @memberOf module:node-object-hash/objectSorter
+ * @inner
+ * @private
+ * @param {Object} obj Object to guess type
+ * @returns {string} Object type
+ * @example
+ * var a = [];
+ * _guessObjectType(a) === 'array'; // true
  */
-function guessObjectType(obj) {
+function _guessObjectType(obj) {
   var hasMapSet = typeof Map !== 'undefined';
 
   if (obj === null) {
@@ -31,23 +34,39 @@ function guessObjectType(obj) {
 
 /**
  * Guesses variable type
- * @param {*} obj
- * @returns {string}
+ * @memberOf module:node-object-hash/objectSorter
+ * @inner
+ * @private
+ * @param {*} obj Variable to guess type
+ * @returns {string} Variable type
+ * @example
+ * var a = '';
+ * _guessType(a) === 'string'; // true
  */
-function guessType(obj) {
+function _guessType(obj) {
   var type = typeof obj;
 
-  return type !== 'object' ? type : guessObjectType(obj);
+  return type !== 'object' ? type : _guessObjectType(obj);
 }
 
 /**
  * Creates object sorter function
+ * @memberOf module:node-object-hash/objectSorter
+ * @inner
+ * @private
  * @param {Object} [options] Sorter options
- * @param {boolean} [options.coerce="true"] Performs type coercion (e.g sorter(1) === ("1"))
+ * @param {boolean} [options.coerce="true"] Performs type coercion
  * @param {boolean} [options.sort="true"] Performs array, object, etc. sorting
- * @returns {string} Sorted object string
+ * @returns {module:node-object-hash/objectSorter~makeObjectSorter~objectToString} Object sorting function
+ * @example
+ * // with coercion
+ * var sorter = makeObjectSorter({coerce: true, sort: false});
+ * sorter(1) === "1"; // true
+ * // with sort
+ * var sorter = makeObjectSorter({coerce: false, sort: true});
+ * sorter([2, 3, 1]) === [1, 2, 3]; // true
  */
-function objectSorter(options) {
+function makeObjectSorter(options) {
   options = options || {};
   var coerce = typeof options.coerce === 'undefined' ? true : options.coerce,
       sort = typeof options.sort === 'undefined' ? true : options.sort,
@@ -106,7 +125,7 @@ function objectSorter(options) {
 
     for (var i = 0; i < obj.length; i++) {
       item = obj[i];
-      itemType = guessType(item);
+      itemType = _guessType(item);
       result.push(self[itemType](item));
     }
 
@@ -135,7 +154,7 @@ function objectSorter(options) {
     for (i = 0; i < keys.length; i++) {
       key = keys[i];
       value = obj[key];
-      valueType = guessType(value);
+      valueType = _guessType(value);
       objArray.push(key + ':' + self[valueType](value));
     }
     return '{' + objArray.toString() + '}';
@@ -151,8 +170,8 @@ function objectSorter(options) {
       key = item[0];
       value = item[1];
       item = [
-        self[guessType(key)](key),
-        self[guessType(value)](value)
+        self[_guessType(key)](key),
+        self[_guessType(value)](value)
       ];
       arr[i] = item;
     }
@@ -160,11 +179,23 @@ function objectSorter(options) {
     return sort ? '[' + arr.sort().join(';') + ']' : '[' + arr.join(';') + ']';
   };
 
-  function obj2string(obj) {
-    return self[guessType(obj)](obj);
+  /**
+   * Object sorting function
+   * @private
+   * @param {Object} obj Object to sort
+   * @returns {string} Sorted string
+   */
+  function objectToString(obj) {
+    return self[_guessType(obj)](obj);
   }
 
-  return obj2string;
+  return objectToString;
 }
 
-module.exports = objectSorter;
+/**
+ * Object sorter module.
+ * It provides object sorter function constructor.
+ * @module node-object-hash/objectSorter
+ * @type {module:node-object-hash/objectSorter~makeObjectSorter~objectToString}
+ */
+module.exports = makeObjectSorter;
