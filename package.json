@@ -24,7 +24,7 @@
     "cover": "istanbul cover _mocha",
     "bench": "node --expose-gc ./bench/index.js",
     "bench2": "node --expose-gc ./bench/bench.js",
-    "jsdoc": "jsdoc2md -t ./README.hbs --private 'objectSorter.js' 'index.js' > README.md"
+    "jsdoc": "jsdoc2md -t ./README.hbs --private 'objectSorter.js' 'index.js' > README.md && jsdoc2md --private 'objectSorter.js' 'index.js' > API.md"
   },
   "repository": {
     "type": "git",

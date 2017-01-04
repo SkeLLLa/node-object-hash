@@ -23,6 +23,30 @@ var objectSorter = require('./objectSorter');
  * @returns {module:node-object-hash~API} Node object hash API instance
  * @memberOf module:node-object-hash
  * @inner
+ * @example
+ * var apiConstructor = require('node-object-hash');
+ * var hashSortCoerce = apiConstructor({sort:true, coerce:true});
+ * // or
+ * var hashSort = apiConstructor({sort:true, coerce:false});
+ * // or
+ * var hashCoerce = apiConstructor({sort:false, coerce:true});
+ *
+ * var objects = {
+ *    a: {
+ *      a: [{c: 2, a: 1, b: {a: 3, c: 2, b: 0}}],
+ *      b: [1, 'a', {}, null],
+ *    },
+ *    b: {
+ *      b: ['a', 1, {}, undefined],
+ *      a: [{c: '2', b: {b: false, c: 2, a: '3'}, a: true}]
+ *    },
+ *    c: ['4', true, 0, 2, 3]
+ * };
+ * hashSortCoerce.hash(objects.a) === hashSortCoerce.hash(objects.b);
+ * // returns true
+ *
+ * hashSortCoerce.sort(object.c);
+ * // returns '[0,1,2,3,4]'
  */
 function apiConstructor(options) {
   var defaults = options || {},
@@ -42,6 +66,12 @@ function apiConstructor(options) {
    * @instance
    * @public
    * @alias sort
+   * @example
+   * var apiConstructor = require('node-object-hash');
+   * var sorter = apiConstructor({sort:true, coerce:true}).sort;
+   *
+   * sort({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
+   * // "{a:[1,3,5],b:{b:1,d:x},c:2}"
    */
   function sortObject(obj) {
     return _sortObject(obj);
@@ -58,6 +88,12 @@ function apiConstructor(options) {
    * @instance
    * @public
    * @alias hash
+   * @example
+   * var apiConstructor = require('node-object-hash');
+   * var hasher = apiConstructor({sort:true, coerce:true}).hash;
+   *
+   * hash({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
+   * // "4c18ce0dcb1696b329c8568d94a9830da810437d8c9e6cecf5d969780335a26b"
    */
   function hashObject(obj, opts) {
     opts = opts || {};

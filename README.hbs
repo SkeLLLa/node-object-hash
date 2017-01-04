@@ -63,27 +63,27 @@ for backward compatibility).
 Returns preconfigured object with API
 
 Parameters:
-*  `options`:`<object>` - object with hasher config options
-*  `options.coerce`:`<boolean>` - if true performs type coercion (default: `true`);
+*  `options`:`object` - object with hasher config options
+*  `options.coerce`:`boolean` - if true performs type coercion (default: `true`);
 e.g. `hash(true) == hash('1') == hash(1)`, `hash(false) == hash('0') == hash(0)`
-*  `options.sort`:`<boolean>` - if true performs sorting on objects, arrays, etc. (default: `true`);
-*  `options.alg`:`<string>` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
-*  `options.enc`:`<string>` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
+*  `options.sort`:`boolean` - if true performs sorting on objects, arrays, etc. (default: `true`);
+*  `options.alg`:`string` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
+*  `options.enc`:`string` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
 
 ## API methods
 
 ### `hash(object[, options])`
 
 Returns hash string.
-*  `object`:`<*>` object for calculating hash;
-*  `options`:`<object>` object with options;
-*  `options.alg`:`<string>` - hash algorithm (default: `'sha256'`);
-*  `options.enc`:`<string>` - hash encoding (default: `'hex'`);
+*  `object`:`*` object for calculating hash;
+*  `options`:`object` object with options;
+*  `options.alg`:`string` - hash algorithm (default: `'sha256'`);
+*  `options.enc`:`string` - hash encoding (default: `'hex'`);
 
 ### `sort(object)`
 
 Returns sorted string generated from object (can be used for object comparison)
-*  `object`:`<*>` - object for sorting;
+*  `object`:`*` - object for sorting;
 
 # Full API docs
 

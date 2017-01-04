@@ -2,17 +2,20 @@
 
 <dl>
 <dt><a href="#module_node-object-hash/objectSorter">node-object-hash/objectSorter</a> : <code><a href="#module_node-object-hash/objectSorter..makeObjectSorter..objectToString">objectToString</a></code></dt>
-<dd><p>Object sorter module. Returns object sorter function constructor.</p>
+<dd><p>Object sorter module.
+It provides object sorter function constructor.</p>
 </dd>
 <dt><a href="#module_node-object-hash">node-object-hash</a> : <code><a href="#module_node-object-hash..apiConstructor">apiConstructor</a></code></dt>
-<dd><p>Node object hash module.</p>
+<dd><p>Node object hash module.
+It provides a methods that return object hash or sorted object string.</p>
 </dd>
 </dl>
 
 <a name="module_node-object-hash/objectSorter"></a>
 
 ## node-object-hash/objectSorter : <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code>
-Object sorter module. Returns object sorter function constructor.
+Object sorter module.
+It provides object sorter function constructor.
 
 
 * [node-object-hash/objectSorter](#module_node-object-hash/objectSorter) : <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code>
@@ -98,6 +101,7 @@ Object sorting function
 
 ## node-object-hash : <code>[apiConstructor](#module_node-object-hash..apiConstructor)</code>
 Node object hash module.
+It provides a methods that return object hash or sorted object string.
 
 
 * [node-object-hash](#module_node-object-hash) : <code>[apiConstructor](#module_node-object-hash..apiConstructor)</code>
@@ -122,6 +126,14 @@ Creates sorted string from given object
 | --- | --- | --- |
 | obj | <code>\*</code> | JS object to be sorted |
 
+**Example**  
+```js
+var apiConstructor = require('node-object-hash');
+var sorter = apiConstructor({sort:true, coerce:true}).sort;
+
+sort({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
+// "{a:[1,3,5],b:{b:1,d:x},c:2}"
+```
 <a name="module_node-object-hash+hash"></a>
 
 ### node-object-hash.hash(obj, [opts]) ⇒ <code>string</code>
@@ -138,6 +150,14 @@ Creates hash from given object
 | [opts.alg] | <code>string</code> | <code>&quot;sha256&quot;</code> | Crypto algorithm to use |
 | [opts.enc] | <code>string</code> | <code>&quot;hex&quot;</code> | Hash string encoding |
 
+**Example**  
+```js
+var apiConstructor = require('node-object-hash');
+var hasher = apiConstructor({sort:true, coerce:true}).hash;
+
+hash({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
+// "4c18ce0dcb1696b329c8568d94a9830da810437d8c9e6cecf5d969780335a26b"
+```
 <a name="module_node-object-hash..apiConstructor"></a>
 
 ### node-object-hash~apiConstructor([options]) ⇒ <code>[API](#module_node-object-hash..API)</code>
@@ -154,6 +174,32 @@ Generates node-object-hash API object
 | [options.alg] | <code>string</code> | <code>&quot;sha256&quot;</code> | Default crypto algorithm to use (can be overridden) |
 | [options.enc] | <code>string</code> | <code>&quot;hex&quot;</code> | Hash string encoding (can be overridden) |
 
+**Example**  
+```js
+var apiConstructor = require('node-object-hash');
+var hashSortCoerce = apiConstructor({sort:true, coerce:true});
+// or
+var hashSort = apiConstructor({sort:true, coerce:false});
+// or
+var hashCoerce = apiConstructor({sort:false, coerce:true});
+
+var objects = {
+   a: {
+     a: [{c: 2, a: 1, b: {a: 3, c: 2, b: 0}}],
+     b: [1, 'a', {}, null],
+   },
+   b: {
+     b: ['a', 1, {}, undefined],
+     a: [{c: '2', b: {b: false, c: 2, a: '3'}, a: true}]
+   },
+   c: ['4', true, 0, 2, 3]
+};
+hashSortCoerce.hash(objects.a) === hashSortCoerce.hash(objects.b);
+// returns true
+
+hashSortCoerce.sort(object.c);
+// returns '[0,1,2,3,4]'
+```
 <a name="module_node-object-hash..API"></a>
 
 ### node-object-hash~API : <code>Object</code>

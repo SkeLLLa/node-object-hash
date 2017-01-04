@@ -63,27 +63,27 @@ for backward compatibility).
 Returns preconfigured object with API
 
 Parameters:
-*  `options`:`<object>` - object with hasher config options
-*  `options.coerce`:`<boolean>` - if true performs type coercion (default: `true`);
+*  `options`:`object` - object with hasher config options
+*  `options.coerce`:`boolean` - if true performs type coercion (default: `true`);
 e.g. `hash(true) == hash('1') == hash(1)`, `hash(false) == hash('0') == hash(0)`
-*  `options.sort`:`<boolean>` - if true performs sorting on objects, arrays, etc. (default: `true`);
-*  `options.alg`:`<string>` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
-*  `options.enc`:`<string>` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
+*  `options.sort`:`boolean` - if true performs sorting on objects, arrays, etc. (default: `true`);
+*  `options.alg`:`string` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
+*  `options.enc`:`string` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
 
 ## API methods
 
 ### `hash(object[, options])`
 
 Returns hash string.
-*  `object`:`<*>` object for calculating hash;
-*  `options`:`<object>` object with options;
-*  `options.alg`:`<string>` - hash algorithm (default: `'sha256'`);
-*  `options.enc`:`<string>` - hash encoding (default: `'hex'`);
+*  `object`:`*` object for calculating hash;
+*  `options`:`object` object with options;
+*  `options.alg`:`string` - hash algorithm (default: `'sha256'`);
+*  `options.enc`:`string` - hash encoding (default: `'hex'`);
 
 ### `sort(object)`
 
 Returns sorted string generated from object (can be used for object comparison)
-*  `object`:`<*>` - object for sorting;
+*  `object`:`*` - object for sorting;
 
 # Full API docs
 
@@ -215,6 +215,14 @@ Creates sorted string from given object
 | --- | --- | --- |
 | obj | <code>\*</code> | JS object to be sorted |
 
+**Example**  
+```js
+var apiConstructor = require('node-object-hash');
+var sorter = apiConstructor({sort:true, coerce:true}).sort;
+
+sort({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
+// "{a:[1,3,5],b:{b:1,d:x},c:2}"
+```
 <a name="module_node-object-hash+hash"></a>
 
 ### node-object-hash.hash(obj, [opts]) ⇒ <code>string</code>
@@ -231,6 +239,14 @@ Creates hash from given object
 | [opts.alg] | <code>string</code> | <code>&quot;sha256&quot;</code> | Crypto algorithm to use |
 | [opts.enc] | <code>string</code> | <code>&quot;hex&quot;</code> | Hash string encoding |
 
+**Example**  
+```js
+var apiConstructor = require('node-object-hash');
+var hasher = apiConstructor({sort:true, coerce:true}).hash;
+
+hash({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
+// "4c18ce0dcb1696b329c8568d94a9830da810437d8c9e6cecf5d969780335a26b"
+```
 <a name="module_node-object-hash..apiConstructor"></a>
 
 ### node-object-hash~apiConstructor([options]) ⇒ <code>[API](#module_node-object-hash..API)</code>
@@ -247,6 +263,32 @@ Generates node-object-hash API object
 | [options.alg] | <code>string</code> | <code>&quot;sha256&quot;</code> | Default crypto algorithm to use (can be overridden) |
 | [options.enc] | <code>string</code> | <code>&quot;hex&quot;</code> | Hash string encoding (can be overridden) |
 
+**Example**  
+```js
+var apiConstructor = require('node-object-hash');
+var hashSortCoerce = apiConstructor({sort:true, coerce:true});
+// or
+var hashSort = apiConstructor({sort:true, coerce:false});
+// or
+var hashCoerce = apiConstructor({sort:false, coerce:true});
+
+var objects = {
+   a: {
+     a: [{c: 2, a: 1, b: {a: 3, c: 2, b: 0}}],
+     b: [1, 'a', {}, null],
+   },
+   b: {
+     b: ['a', 1, {}, undefined],
+     a: [{c: '2', b: {b: false, c: 2, a: '3'}, a: true}]
+   },
+   c: ['4', true, 0, 2, 3]
+};
+hashSortCoerce.hash(objects.a) === hashSortCoerce.hash(objects.b);
+// returns true
+
+hashSortCoerce.sort(object.c);
+// returns '[0,1,2,3,4]'
+```
 <a name="module_node-object-hash..API"></a>
 
 ### node-object-hash~API : <code>Object</code>
