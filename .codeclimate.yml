@@ -11,5 +11,5 @@ engines:
     enabled: true
 ratings:
   paths:
-  - "hash2.js"
+  - "index.js"
   - "objectSorter.js"
