@@ -3,7 +3,7 @@
  */
 'use strict';
 
-var hash = require('../hash2');
+var hash = require('../index');
 var assert = require('chai').assert;
 
 var hashSC = hash();
@@ -120,47 +120,47 @@ var testData = {
 
 describe(libName, function () {
   describe('[sort=false, coerce=false]', function () {
-    describe('#sortObject(<object>)', function () {
+    describe('#sort(<object>)', function () {
       it('should return different strings', function () {
-        assert.notEqual(hashNoSC.sortObject(testData.objects.noSort), hashNoSC.sortObject(testData.objects.sort));
+        assert.notEqual(hashNoSC.sort(testData.objects.noSort), hashNoSC.sort(testData.objects.sort));
       });
       it('should return different strings', function () {
-        assert.notEqual(hashNoSC.sortObject(testData.objects.noCoerce), hashNoSC.sortObject(testData.objects.coerce));
+        assert.notEqual(hashNoSC.sort(testData.objects.noCoerce), hashNoSC.sort(testData.objects.coerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashNoSC.sortObject(testData.objects.noCoerce), hashNoSC.sortObject(testData.objects.noSort));
+        assert.equal(hashNoSC.sort(testData.objects.noCoerce), hashNoSC.sort(testData.objects.noSort));
       });
     });
   });
   describe('[sort=false, coerce=true]', function () {
-    describe('#sortObject(<object>)', function () {
+    describe('#sort(<object>)', function () {
       it('should return different strings', function () {
-        assert.notEqual(hashC.sortObject(testData.objects.noSort), hashC.sortObject(testData.objects.sort));
+        assert.notEqual(hashC.sort(testData.objects.noSort), hashC.sort(testData.objects.sort));
       });
       it('should return different strings', function () {
-        assert.notEqual(hashC.sortObject(testData.objects.noCoerce), hashC.sortObject(testData.objects.sortCoerce));
+        assert.notEqual(hashC.sort(testData.objects.noCoerce), hashC.sort(testData.objects.sortCoerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashC.sortObject(testData.objects.noCoerce), hashC.sortObject(testData.objects.coerce));
+        assert.equal(hashC.sort(testData.objects.noCoerce), hashC.sort(testData.objects.coerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashC.sortObject(testData.objects.noCoerce), hashC.sortObject(testData.objects.noSort));
+        assert.equal(hashC.sort(testData.objects.noCoerce), hashC.sort(testData.objects.noSort));
       });
     });
   });
   describe('[sort=true, coerce=false]', function () {
-    describe('#sortObject(<object>)', function () {
+    describe('#sort(<object>)', function () {
       it('should return different strings', function () {
-        assert.notEqual(hashS.sortObject(testData.objects.noCoerce), hashS.sortObject(testData.objects.coerce));
+        assert.notEqual(hashS.sort(testData.objects.noCoerce), hashS.sort(testData.objects.coerce));
       });
       it('should return different strings', function () {
-        assert.notEqual(hashS.sortObject(testData.objects.noSort), hashS.sortObject(testData.objects.sortCoerce));
+        assert.notEqual(hashS.sort(testData.objects.noSort), hashS.sort(testData.objects.sortCoerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashS.sortObject(testData.objects.noSort), hashS.sortObject(testData.objects.sort));
+        assert.equal(hashS.sort(testData.objects.noSort), hashS.sort(testData.objects.sort));
       });
       it('should return equal strings', function () {
-        assert.equal(hashS.sortObject(testData.objects.noCoerce), hashS.sortObject(testData.objects.noSort));
+        assert.equal(hashS.sort(testData.objects.noCoerce), hashS.sort(testData.objects.noSort));
       });
     });
   });
@@ -182,62 +182,22 @@ describe(libName, function () {
         assert.equal(hashSC.hash(testData.objects.coerce), hashSC.hash(testData.objects.sortCoerce));
       });
     });
-    describe('#sortObject(<object>)', function () {
+    describe('#sort(<object>)', function () {
       it('should return equal strings', function () {
-        assert.equal(hashSC.sortObject(testData.objects.noSort), hashSC.sortObject(testData.objects.sort));
+        assert.equal(hashSC.sort(testData.objects.noSort), hashSC.sort(testData.objects.sort));
       });
       it('should return equal strings', function () {
-        assert.equal(hashSC.sortObject(testData.objects.noCoerce), hashSC.sortObject(testData.objects.coerce));
+        assert.equal(hashSC.sort(testData.objects.noCoerce), hashSC.sort(testData.objects.coerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashSC.sortObject(testData.objects.sort), hashSC.sortObject(testData.objects.sortCoerce));
+        assert.equal(hashSC.sort(testData.objects.sort), hashSC.sort(testData.objects.sortCoerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashSC.sortObject(testData.objects.coerce), hashSC.sortObject(testData.objects.sortCoerce));
+        assert.equal(hashSC.sort(testData.objects.coerce), hashSC.sort(testData.objects.sortCoerce));
       });
       it('should return equal strings', function () {
-        assert.equal(hashSC.sortObject(testData.objects.coerce), hashSC.sortObject(testData.objects.sortCoerce));
+        assert.equal(hashSC.sort(testData.objects.coerce), hashSC.sort(testData.objects.sortCoerce));
       });
     });
   });
 });
-
-// describe(libName, function () {
-//   describe('#hash() on objects: [sort=true, coerce=true]', function () {
-//     it('should return equal hashes', function () {
-//       assert.equal(hashSC.hash(objects.a), hashSC.hash(objects.c));
-//     });
-//   });
-//   describe('#hash() on objects: [sort=true, coerce=false]', function () {
-//     it('should return equal hashes', function () {
-//       assert.equal(hashS.hash(objects.a), hashS.hash(objects.b));
-//     });
-//   });
-//   describe('#hash() on objects: [sort=false, coerce=true]', function () {
-//     it('should return equal hashes', function () {
-//       assert.equal(hashSC.hash(objects.c), hashC.hash(objects.b));
-//     });
-//   });
-//   describe('#hash() on arrays: [sort=true, coerce=true]', function () {
-//     it('should return equal hashes', function () {
-//       assert.equal(hashSC.hash(objects.d), hashSC.hash(objects.e));
-//     });
-//   });
-//   describe('#hash() on complex objects: [sort=true, coerce=true]', function () {
-//     it('should return equal hashes', function () {
-//       assert.equal(hashSC.hash(objects.f), hashSC.hash(objects.g));
-//     });
-//   });
-//
-//   describe('#sortObject() on multitype array: [sort=true, coerce=true]', function () {
-//     it('should return sorted array', function () {
-//       assert.equal(hashSC.sortObject(objects.e), '[0,1,2,3,4]');
-//     });
-//   });
-//
-//   describe('#hash() on complex objects: [sort=true, coerce=true]', function () {
-//     it('should return equal hashes', function () {
-//       assert.equal(hashSC.hash(objects.h), hashSC.hash(objects.i));
-//     });
-//   });
-// });

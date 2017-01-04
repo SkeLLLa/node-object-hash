@@ -9,8 +9,8 @@ let dataStairs = {end: 'is near'};
 const datacount = 100000;
 
 const objectHash = require('object-hash');
-const nodeObjectHash = require('../hash');
-const nodeObjectHash2 = require('../hash2')();
+const nodeObjectHash = require('../v0/index');
+const nodeObjectHash2 = require('../index')();
 const hashObject = require('hash-object');
 
 console.log('Creating fake data...');
