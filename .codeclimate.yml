@@ -1,6 +1,10 @@
 engines:
   duplication:
     enabled: true
+    exclude_fingerprints:
+        - 70388304146f13809d718b6c600e30c9
+        - 6448c06faf6b59c82de8af8c9241922c
+        - c4e38849a1f6b37dab44edc19246a495
     config:
       languages:
       - javascript
