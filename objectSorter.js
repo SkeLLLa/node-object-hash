@@ -55,8 +55,8 @@ function _guessType(obj) {
  * @inner
  * @private
  * @param {Object} [options] Sorter options
- * @param {boolean} [options.coerce="true"] Performs type coercion
- * @param {boolean} [options.sort="true"] Performs array, object, etc. sorting
+ * @param {boolean} [options.coerce=true] Performs type coercion
+ * @param {boolean} [options.sort=true] Performs array, object, etc. sorting
  * @returns {module:node-object-hash/objectSorter~makeObjectSorter~objectToString}
  * Object sorting function
  * @example

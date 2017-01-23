@@ -14,6 +14,7 @@ Hashes are built on top of node's crypto module
 [![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?maxAge=21600&style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
 [![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
 [![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
+[![Analytics](https://ga-beacon.appspot.com/UA-90571586-1/node-object-hash/readme?pixel)](https://github.com/igrigorik/ga-beacon)
 
 # Installation
 
@@ -44,7 +45,7 @@ Hashes are built on top of node's crypto module
 In case if you still need an old 0.x.x version it's available in `hash.js`
 file.
 
-## v1.0.X -> v1.1.0
+## v1.0.X -> v1.1.X
 
 Mainly all changes affected codestyle and documentation to provide better
 experience using this library. There are no changes that should affect
@@ -161,8 +162,8 @@ Creates object sorter function
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> |  | Sorter options |
-| [options.coerce] | <code>boolean</code> | <code>&quot;true&quot;</code> | Performs type coercion |
-| [options.sort] | <code>boolean</code> | <code>&quot;true&quot;</code> | Performs array, object, etc. sorting |
+| [options.coerce] | <code>boolean</code> | <code>true</code> | Performs type coercion |
+| [options.sort] | <code>boolean</code> | <code>true</code> | Performs array, object, etc. sorting |
 
 **Example**  
 ```js
@@ -362,15 +363,15 @@ Bench data - array of 100000 complex objects
 
 ### Custom benchmark ([code](bench/index.js))
 
-| Library                | Time (ms)  | Memory (Mb)        |
-|------------------------|------------|--------------------|
-| node-object-hash-0.2.1 | 5813.575   | 34                 |
-| node-object-hash-1.0.0 | 2805.581   | 27                 |
-| node-object-hash-2.0.0 | 2555.583   | 27                 |
-| object-hash-1.1.5      | 28115.553  | 39                 |
-| object-hash-1.1.4      | 534528.254 | 41                 |
-| object-hash-1.1.3      | ERROR      | Out of heap memory |
-| hash-object-0.1.7      | 9219.826   | 42                 |
+| Library                               | Time (ms)  | Memory (Mb)        |
+|---------------------------------------|------------|--------------------|
+| node-object-hash-0.2.1                | 5813.575   | 34                 |
+| node-object-hash-1.0.X                | 2805.581   | 27                 |
+| node-object-hash-1.1.X (node v7)      | 2555.583   | 27                 |
+| object-hash-1.1.5  (node v7)          | 28115.553  | 39                 |
+| object-hash-1.1.4                     | 534528.254 | 41                 |
+| object-hash-1.1.3                     | ERROR      | Out of heap memory |
+| hash-object-0.1.7                     | 9219.826   | 42                 |
 
 ### Benchmark suite module ([code](bench/bench.js))
 

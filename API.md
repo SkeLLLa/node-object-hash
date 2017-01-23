@@ -72,8 +72,8 @@ Creates object sorter function
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | [options] | <code>Object</code> |  | Sorter options |
-| [options.coerce] | <code>boolean</code> | <code>&quot;true&quot;</code> | Performs type coercion |
-| [options.sort] | <code>boolean</code> | <code>&quot;true&quot;</code> | Performs array, object, etc. sorting |
+| [options.coerce] | <code>boolean</code> | <code>true</code> | Performs type coercion |
+| [options.sort] | <code>boolean</code> | <code>true</code> | Performs array, object, etc. sorting |
 
 **Example**  
 ```js
