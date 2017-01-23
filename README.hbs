@@ -1,6 +1,6 @@
 # node-object-hash
 
-Node.js object hash library with properties/arrays sorting to provide constant hashes.
+Tiny and fast node.js object hash library with properties/arrays sorting to provide constant hashes.
 It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
 One of the fastest among other analogues (see [benchmarks](#Benchmarks)).
 
