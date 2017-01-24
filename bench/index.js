@@ -2,20 +2,20 @@
  * Created on 8/23/16.
  */
 'use strict';
-const faker = require('faker');
+var faker = require('faker');
 
-const data = [];
-let dataStairs = {end: 'is near'};
-const datacount = 100000;
+var data = [];
+var dataStairs = {end: 'is near'};
+var datacount = 100000;
 
-const objectHash = require('object-hash');
-const nodeObjectHash = require('../v0/index');
-const nodeObjectHash2 = require('../index')();
-const hashObject = require('hash-object');
+var objectHash = require('object-hash');
+var nodeObjectHash = require('../v0/index');
+var nodeObjectHash2 = require('../index')();
+var hashObject = require('hash-object');
 
 console.log('Creating fake data...');
-
-for (let i = 0; i < datacount; i++) {
+var i;
+for (i = 0; i < datacount; i++) {
   data.push({
     name: faker.name.firstName(),
     date: new Date(),
@@ -56,7 +56,7 @@ for (let i = 0; i < datacount; i++) {
   });
 }
 var tmp;
-for (let i = 0; i < datacount / 1000; i++) {
+for (i = 0; i < datacount / 1000; i++) {
   tmp = {
     data: dataStairs
   };
@@ -125,7 +125,7 @@ memMaxHeap = 0;
 memStats = process.memoryUsage();
 memHeapStart = memStats.heapUsed;
 console.time('hash-object');
-const hashObjectOpts = {algorithm: 'sha256'};
+var hashObjectOpts = {algorithm: 'sha256'};
 data2.forEach((it, idx) => {
   it.hash = hashObject(it, hashObjectOpts);
   if (idx % 10000 === 0) {

@@ -9,10 +9,10 @@ var faker = require('faker');
 var dataArray = [];
 var dataStairs = {end: 'is near'};
 
-const objectHash = require('object-hash');
-const nodeObjectHash = require('../v0/index');
-const nodeObjectHash2 = require('../index')();
-const hashObject = require('hash-object');
+var objectHash = require('object-hash');
+var nodeObjectHash = require('../v0/index');
+var nodeObjectHash2 = require('../index')();
+var hashObject = require('hash-object');
 
 console.log('Creating fake data...');
 var i;
