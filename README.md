@@ -7,14 +7,14 @@ One of the fastest among other analogues (see [benchmarks](#Benchmarks)).
 Hashes are built on top of node's crypto module
 (so for using in browser use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills). Or you can use only `objectSorter` ([source](https://github.com/SkeLLLa/node-object-hash/blob/master/objectSorter.js)) for getting your objects' string representation and compare or pass them to your own hash function.
 
-[![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)]()
+[![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://nodejs.org/download/release/latest)
 [![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
 [![NPM Downloads](https://img.shields.io/npm/dt/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
 [![Build Status](https://img.shields.io/travis/SkeLLLa/node-object-hash.svg?maxAge=21600&branch=master&style=flat-square)](https://travis-ci.org/SkeLLLa/node-object-hash)
 [![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?maxAge=21600&style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
 [![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
 [![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
-[![Analytics](https://ga-beacon.appspot.com/UA-90571586-1/node-object-hash/readme?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-90571586-1?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)
 
 # Installation
 
@@ -33,29 +33,7 @@ Hashes are built on top of node's crypto module
 
 # Changes
 
-## v0.x.x -> v1.0.0
-
-- Sorting mechanism rewritten form ES6 Maps to simple arrays
- (add <=node-4.0.0 support)
-- Performance optimization (~2 times faster than 0.x.x)
-- API changes:
-  - Now module returns 'constructor' function, where you can set
-  default parameters: ```var objectHash = require('node-object-hash')(options);```
-
-In case if you still need an old 0.x.x version it's available in `hash.js`
-file.
-
-## v1.0.X -> v1.1.X
-
-Mainly all changes affected codestyle and documentation to provide better
-experience using this library. There are no changes that should affect
-functionality.
-
-- Renamed `sortObject` function to `sort` (old one is still present in code
-for backward compatibility).
-- Performed some refactoring for better codestyle and documentation.
-- Old version (`0.X.X`) moved to subfolder (`./v0`).
-- Advanced API reference added: [link](#Full API docs).
+See [changelog](CHANGELOG.md)
 
 # API overview
 
@@ -384,8 +362,8 @@ Bench data - array of 100000 complex objects
 
 ## Links
 
-* https://www.npmjs.com/package/object-hash (Slow, useful for browsers because it not uses node's crypto library)
-* https://www.npmjs.com/package/hash-object (no ES6 types support)
+* [object-hash](https://www.npmjs.com/package/object-hash) - Slow, useful for browsers because it not uses node's crypto library
+* [hash-object](https://www.npmjs.com/package/hash-object) - no ES6 types support
 
 # License
 
