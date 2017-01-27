@@ -10,6 +10,7 @@ Hashes are built on top of node's crypto module
 [![node](https://img.shields.io/node/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://nodejs.org/download/release/latest)
 [![NPM](https://img.shields.io/npm/v/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
 [![NPM Downloads](https://img.shields.io/npm/dt/node-object-hash.svg?maxAge=21600&style=flat-square)](https://npmjs.org/packages/node-object-hash)
+[![npms.io Score](https://badges.npms.io/node-object-hash.svg?style=flat-square)](https://npms.io/search?q=node-object-hash)
 [![Build Status](https://img.shields.io/travis/SkeLLLa/node-object-hash.svg?maxAge=21600&branch=master&style=flat-square)](https://travis-ci.org/SkeLLLa/node-object-hash)
 [![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?maxAge=21600&style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
 [![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
