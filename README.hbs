@@ -15,6 +15,7 @@ Hashes are built on top of node's crypto module
 [![Known Vulnerabilities](https://snyk.io/test/github/SkeLLLa/node-object-hash/badge.svg?maxAge=21600&style=flat-square)](https://snyk.io/test/github/skellla/node-object-hash)
 [![Code Climate](https://img.shields.io/codeclimate/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/code)
 [![Coverage](https://img.shields.io/codeclimate/coverage/github/SkeLLLa/node-object-hash.svg?maxAge=21600&style=flat-square)](https://codeclimate.com/github/SkeLLLa/node-object-hash/coverage)
+[![Inline docs](http://inch-ci.org/github/SkeLLLa/node-object-hash.svg?branch=master&style=flat-square)](http://inch-ci.org/github/SkeLLLa/node-object-hash)
 [![Analytics](https://ga-beacon.appspot.com/UA-90571586-1/node-object-hash?pixel&useReferer)](https://github.com/igrigorik/ga-beacon)
 
 # Installation
