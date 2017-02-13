@@ -2,7 +2,7 @@
 
 Tiny and fast node.js object hash library with properties/arrays sorting to provide constant hashes.
 It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
-One of the fastest among other analogues (see [benchmarks](#Benchmarks)).
+One of the fastest among other analogues (see [benchmarks](#benchmarks)).
 
 Hashes are built on top of node's crypto module
 (so for using in browser use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills). Or you can use only `objectSorter` ([source](https://github.com/SkeLLLa/node-object-hash/blob/master/objectSorter.js)) for getting your objects' string representation and compare or pass them to your own hash function.
@@ -30,7 +30,7 @@ Hashes are built on top of node's crypto module
     - boolean values converted to numbers;
 - Supports all hashes and encodings of crypto library
 - Supports large objects and arrays
-- Very fast comparing to other libs (see [Benchmarks](#Benchmarks) section)
+- Very fast comparing to other libs (see [Benchmarks](#benchmarks) section)
 
 # Changes
 
@@ -65,7 +65,7 @@ Returns hash string.
 Returns sorted string generated from object (can be used for object comparison)
 *  `object`:`*` - object for sorting;
 
-# Full API docs
+# Full API docs ([separate page](API.md))
 
 {{>main}}
 
