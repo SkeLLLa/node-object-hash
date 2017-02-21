@@ -16,13 +16,62 @@ Hashes are built on top of node's crypto module
 # Features
 - Supports object property sorting for constant hashes for objects with same properties, but different order.
 - Supports ES6 (Weak)Maps and (Weak)Sets.
-- Supports type coercion (e.g. 1 and "1" will be the same)
-  - rules:
-    - numbers and strings represented without quotes;
-    - boolean values converted to numbers;
+- Supports type coercion (see table below)
 - Supports all hashes and encodings of crypto library
 - Supports large objects and arrays
 - Very fast comparing to other libs (see [Benchmarks](#benchmarks) section)
+
+## Type map
+| Initial type              | Mapped type  |
+|---------------------------|--------------|
+| Array ([])                | array        |
+| ArrayObject (new Array()) |              |
+| Int8Array                 |              |
+| Uint8Array                |              |
+| Uint8ClampedArray         |              |
+| Int16Array                |              |
+| Uint16Array               |              |
+| Int32Array                |              |
+| Uint32Array               |              |
+| Float32Array              |              |
+| Float64Array              |              |
+| Buffer                    |              |
+| Set                       |              |
+| WeakSet                   |              |
+| | |
+| string ('') | string      | string       |
+| String (new String())     |              |
+| | |
+| boolean (true)            | boolean      |
+| Boolean (new Boolean())   |              |
+| | |
+| number (true)             | number       |
+| Number (new Number())     |              |
+| | |
+| Date                      | date         |
+| | |
+| Symbol                    | symbol       |
+| | |
+| undefined                 | undefined    |
+| | |
+| null                      | null         |
+| | |
+| function                  | function     |
+| | |
+| Object ({})               | object       |
+| Object (new Object())     |              |
+| | |
+| other                     | unknown      |
+
+
+## Coercion map
+| Initial "type" | Coerced type   | Example      |
+|----------------|----------------|--------------|
+| boolean        | string         | true -> 1    |
+| number         | string         | '1' -> 1     |
+| string         | string         | 'a' -> a     |
+| null           | string (empty) | null ->      |
+| undefined      | string (empty) | undefined -> |
 
 # Changes
 
