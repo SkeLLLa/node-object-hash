@@ -16,7 +16,8 @@ var libName = 'node-object-hash';
 var UnknownClass = function UnknownClass() {
   this.name = 'unknown';
 };
-UnknownClass.prototype.toString = function XToString(){
+
+UnknownClass.prototype.toString = function XToString() {
   return JSON.stringify(this);
 };
 

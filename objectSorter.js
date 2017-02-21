@@ -200,7 +200,6 @@ function makeObjectSorter(options) {
 
   stringifier.unknown = function unknownToString(obj) {
     return '<:' + obj.constructor.name + '>:' + obj.toString();
-
   };
 
   /**
