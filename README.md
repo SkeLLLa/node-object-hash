@@ -22,6 +22,10 @@ Hashes are built on top of node's crypto module
 - Very fast comparing to other libs (see [Benchmarks](#benchmarks) section)
 
 ## Type map
+
+This map displays what types will have identical string representation (e.g. new Set([1, 2, 3]) and [1, 2, 3] will have
+equal string representations and hashes.
+
 | Initial type              | Mapped type  |
 |---------------------------|--------------|
 | Array ([])                | array        |
