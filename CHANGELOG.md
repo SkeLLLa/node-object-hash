@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.X -> 1.2.X
+
+Sorter refactoring and performance improvements
+
+- Added typed arrays support
+- Added primitive type constructors support
+- Add more docs about type mapping and type coercion
+
 ## v1.0.X -> v1.1.X
 
 Mainly all changes affected codestyle and documentation to provide better

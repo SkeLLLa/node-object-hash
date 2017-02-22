@@ -12,24 +12,42 @@
  * _guessObjectType(a) === 'array'; // true
  */
 function _guessObjectType(obj) {
-  var hasMapSet = typeof Map !== 'undefined';
-
   if (obj === null) {
     return 'null';
   }
-  if (Array.isArray(obj)) {
-    return 'array';
+
+  switch (obj.constructor.name) {
+    case 'Array':
+    case 'Int8Array':
+    case 'Uint8Array':
+    case 'Uint8ClampedArray':
+    case 'Int16Array':
+    case 'Uint16Array':
+    case 'Int32Array':
+    case 'Uint32Array':
+    case 'Float32Array':
+    case 'Float64Array':
+    case 'Buffer':
+      return 'array';
+    case 'Map':
+    case 'WeakMap':
+      return 'map';
+    case 'Set':
+    case 'WeakSet':
+      return 'set';
+    case 'Date':
+      return 'date';
+    case 'String':
+      return 'string';
+    case 'Number':
+      return 'number';
+    case 'Boolean':
+      return 'boolean';
+    case 'Object':
+      return 'object';
+    default:
+      return 'unknown';
   }
-  if (hasMapSet && (obj instanceof Map || obj instanceof WeakMap)) {
-    return 'map';
-  }
-  if (hasMapSet && (obj instanceof Set || obj instanceof WeakSet)) {
-    return 'set';
-  }
-  if (obj instanceof Date) {
-    return 'date';
-  }
-  return 'object';
 }
 
 /**
@@ -71,55 +89,55 @@ function makeObjectSorter(options) {
   options = options || {};
   var coerce = typeof options.coerce === 'undefined' ? true : options.coerce,
       sort = typeof options.sort === 'undefined' ? true : options.sort,
-      self = {};
+      stringifier = {};
 
-  self.string = function sortString(obj) {
+  stringifier.string = function sortString(obj) {
     if (coerce) {
       return obj;
     }
     return '<:s>:' + obj;
   };
 
-  self.number = function sortNumber(obj) {
+  stringifier.number = function sortNumber(obj) {
     if (coerce) {
       return obj.toString();
     }
     return '<:n>:' + obj;
   };
 
-  self.boolean = function sortBoolean(obj) {
+  stringifier.boolean = function sortBoolean(obj) {
     if (coerce) {
-      return obj ? '1' : '0';
+      return obj.valueOf() ? '1' : '0';
     }
-    return obj ? '<:b>:true' : '<:b>:false';
+    return obj.valueOf() ? '<:b>:true' : '<:b>:false';
   };
 
-  self.symbol = function sortSymbol() {
+  stringifier.symbol = function sortSymbol() {
     return '<:smbl>';
   };
 
-  self.undefined = function sortUndefined() {
+  stringifier.undefined = function sortUndefined() {
     if (coerce) {
       return '';
     }
     return '<:undf>';
   };
 
-  self.null = function sortNull() {
+  stringifier.null = function sortNull() {
     if (coerce) {
       return '';
     }
     return '<:null>';
   };
 
-  self.function = function sortFunction(obj) {
+  stringifier.function = function sortFunction(obj) {
     if (coerce) {
       return obj.name + '=>' + obj.toString();
     }
     return '<:func>:' + obj.name + '=>' + obj.toString();
   };
 
-  self.array = function sortArray(obj) {
+  stringifier.array = function sortArray(obj) {
     var item,
         itemType,
         result = [];
@@ -127,17 +145,17 @@ function makeObjectSorter(options) {
     for (var i = 0; i < obj.length; i++) {
       item = obj[i];
       itemType = _guessType(item);
-      result.push(self[itemType](item));
+      result.push(stringifier[itemType](item));
     }
 
     return sort ? '[' + result.sort().toString() + ']' : '[' + result.toString() + ']';
   };
 
-  self.set = function sortSet(obj) {
-    return self.array(Array.from(obj));
+  stringifier.set = function sortSet(obj) {
+    return stringifier.array(Array.from(obj));
   };
 
-  self.date = function sortDate(obj) {
+  stringifier.date = function sortDate(obj) {
     var dateStr = obj.toISOString();
 
     if (coerce) {
@@ -146,7 +164,7 @@ function makeObjectSorter(options) {
     return '<:date>:' + dateStr;
   };
 
-  self.object = function sortObject(obj) {
+  stringifier.object = function sortObject(obj) {
     var keys = sort ? Object.keys(obj).sort() : Object.keys(obj),
         objArray = [],
         key, value, valueType,
@@ -156,12 +174,12 @@ function makeObjectSorter(options) {
       key = keys[i];
       value = obj[key];
       valueType = _guessType(value);
-      objArray.push(key + ':' + self[valueType](value));
+      objArray.push(key + ':' + stringifier[valueType](value));
     }
     return '{' + objArray.toString() + '}';
   };
 
-  self.map = function sortMap(obj) {
+  stringifier.map = function sortMap(obj) {
     var arr = Array.from(obj),
         key, value, item,
         i;
@@ -171,13 +189,17 @@ function makeObjectSorter(options) {
       key = item[0];
       value = item[1];
       item = [
-        self[_guessType(key)](key),
-        self[_guessType(value)](value)
+        stringifier[_guessType(key)](key),
+        stringifier[_guessType(value)](value)
       ];
       arr[i] = item;
     }
 
     return sort ? '[' + arr.sort().join(';') + ']' : '[' + arr.join(';') + ']';
+  };
+
+  stringifier.unknown = function unknownToString(obj) {
+    return '<:' + obj.constructor.name + '>:' + obj.toString();
   };
 
   /**
@@ -187,7 +209,7 @@ function makeObjectSorter(options) {
    * @returns {string} Sorted string
    */
   function objectToString(obj) {
-    return self[_guessType(obj)](obj);
+    return stringifier[_guessType(obj)](obj);
   }
 
   return objectToString;

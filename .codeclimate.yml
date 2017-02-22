@@ -2,6 +2,8 @@ engines:
   duplication:
     enabled: true
     exclude_fingerprints:
+        - 817ae0cab126ae089a16ee45b86c28f6
+        - 9f527086542a4ed73995587d12e3c277
         - 70388304146f13809d718b6c600e30c9
         - 6448c06faf6b59c82de8af8c9241922c
         - c4e38849a1f6b37dab44edc19246a495
@@ -18,6 +20,9 @@ engines:
   eslint:
     enabled: true
     channel: "eslint-2"
+    checks:
+      complexity:
+        enabled: false
   fixme:
     enabled: true
 ratings:

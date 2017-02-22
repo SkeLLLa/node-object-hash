@@ -13,6 +13,14 @@ var hashNoSC = hash({sort: false, coerce: false});
 
 var libName = 'node-object-hash';
 
+var UnknownClass = function UnknownClass() {
+  this.name = 'unknown';
+};
+
+UnknownClass.prototype.toString = function XToString() {
+  return JSON.stringify(this);
+};
+
 var testData = {
   objects: {
     noSort: {
@@ -33,7 +41,9 @@ var testData = {
       n: function n() {
         return 'n';
       },
-      o: [5, 4, 3, 2, 1, 0]
+      o: [5, 4, 3, 2, 1, 0],
+      x: new UnknownClass(),
+      y: true,
     },
     noCoerce: {
       a: 1,
@@ -53,7 +63,9 @@ var testData = {
       n: function n() {
         return 'n';
       },
-      o: [5, 4, 3, 2, 1, 0]
+      o: [5, 4, 3, 2, 1, 0],
+      x: new UnknownClass(),
+      y: true
     },
     sort: {
       d: {
@@ -73,14 +85,16 @@ var testData = {
       j: new Set([2, 4, 3, 5, 1]),
       l: new Date(0),
       i: null,
-      m: Symbol()
+      m: Symbol(),
+      x: new UnknownClass(),
+      y: new Boolean(true)
     },
     coerce: {
       a: true,
       b: '2',
-      c: '3',
+      c: new String('3'),
       d: {
-        e: 4,
+        e: new Number(4),
         f: '5'
       },
       g: false,
@@ -93,7 +107,9 @@ var testData = {
       n: function n() {
         return 'n';
       },
-      o: ['5', 4, '3', 2, true, false]
+      o: ['5', 4, '3', 2, true, false],
+      x: new UnknownClass(),
+      y: true
     },
     sortCoerce: {
       b: 2,
@@ -108,12 +124,14 @@ var testData = {
         f: 5,
         e: '4'
       },
+      x: new UnknownClass(),
       o: ['5', 4, '3', 2, true, false],
       c: '3',
       l: new Date(0),
       k: new Map([[2, 2], [3, 3], [1, 1]]),
       h: null,
-      m: Symbol()
+      m: Symbol(),
+      y: new Number(1)
     }
   }
 };

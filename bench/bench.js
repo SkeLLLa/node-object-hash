@@ -70,13 +70,13 @@ var objectHashOpts = {algorithm: 'sha256', encoding: 'hex', unorderedArrays: tru
 
 // add tests
 suite
-  .add('node-object-hash-v1', function () {
-    nodeObjectHash2.hash(dataStairs);
-    nodeObjectHash2.hash(dataArray);
-  })
   .add('node-object-hash-v0', function () {
     nodeObjectHash.hash(dataStairs);
     nodeObjectHash.hash(dataArray);
+  })
+  .add('node-object-hash-v1', function () {
+    nodeObjectHash2.hash(dataStairs);
+    nodeObjectHash2.hash(dataArray);
   })
   .add('hash-object', function () {
     hashObject(dataStairs, hashObjectOpts);
