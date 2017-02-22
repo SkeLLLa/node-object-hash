@@ -43,6 +43,9 @@ equal string representations and hashes.
 | Set                       |              |
 | WeakSet                   |              |
 | | |
+| Map                       | array[array] |
+| WeakMap                   |              |
+| | |
 | string ('') | string      | string       |
 | String (new String())     |              |
 | | |
