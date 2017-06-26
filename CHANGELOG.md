@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.X -> 1.3.X
+
+* Add definition types to support typescript
+* Add >=node-8.0.0 support in tests.
+
 ## v1.1.X -> 1.2.X
 
 Sorter refactoring and performance improvements

@@ -1,23 +1,26 @@
 {
   "name": "node-object-hash",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Node.js object hash library with properties/arrays sorting to provide constant hashes",
   "main": "index.js",
   "homepage": "https://github.com/SkeLLLa/node-object-hash",
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
-    "benchmark": "^2.1.3",
-    "chai": "^3.5.0",
-    "eslint": "^3.14.0",
-    "faker": "^3.1.0",
+    "benchmark": "^2.1.4",
+    "chai": "^4.0.2",
+    "eslint": "^4.1.1",
+    "faker": "^4.1.0",
     "hash-object": "^0.1.7",
     "istanbul": "^0.4.5",
     "jsdoc-to-markdown": "^3.0.0",
-    "mocha": "^3.2.0",
-    "object-hash": "^1.1.5"
+    "mocha": "^3.4.2",
+    "object-hash": "^1.1.8",
+    "typings": "^2.1.1",
+    "@types/node": "^8.0.2"
   },
   "scripts": {
     "test": "mocha",
@@ -25,7 +28,10 @@
     "cover": "istanbul cover _mocha",
     "bench": "node --expose-gc ./bench/index.js",
     "bench2": "node --expose-gc ./bench/bench.js",
-    "jsdoc": "jsdoc2md -t ./README.hbs --private 'objectSorter.js' 'index.js' > README.md && jsdoc2md --private 'objectSorter.js' 'index.js' > API.md"
+    "jsdoc": "jsdoc2md -t ./README.hbs --private 'objectSorter.js' 'index.js' > README.md && jsdoc2md --private 'objectSorter.js' 'index.js' > API.md",
+    "tsc": "tsc index.d.ts objectSorter.d.ts --noImplicitAny",
+    "typings": "typings install",
+    "outdated": "npm outdate || true"
   },
   "repository": {
     "type": "git",
@@ -43,9 +49,9 @@
     "crypto"
   ],
   "author": {
-    "name" : "Alexander Kureniov",
-    "email" : "s@zxc.pp.ua",
-    "url" : "https://github.com/SkeLLLa"
+    "name": "Alexander Kureniov",
+    "email": "s@zxc.pp.ua",
+    "url": "https://github.com/SkeLLLa"
   },
   "license": "ISC",
   "engines": {

@@ -8,13 +8,17 @@ node_js:
   - "6"
   - "7.0"
   - "7"
+  - "8.0"
+  - "8"
 addons:
     code_climate:
         repo_token: aa8e46e24b3cb246433fba82c654cee400c6220bf1dc0202d73ca2b2c9e6b101
 before_script:
   - npm install codeclimate-test-reporter -g
 script:
+  - npm run outdated
   - npm run lint
+  - npm run tsc
   - npm run cover
 after_script:
   - codeclimate-test-reporter < ./coverage/lcov.info
