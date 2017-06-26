@@ -15,6 +15,7 @@ addons:
         repo_token: aa8e46e24b3cb246433fba82c654cee400c6220bf1dc0202d73ca2b2c9e6b101
 before_script:
   - npm install codeclimate-test-reporter -g
+  - npm install typescript
 script:
   - npm run outdated
   - npm run lint
