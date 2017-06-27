@@ -1,4 +1,4 @@
-// / <reference types="node" />
+/// <reference types="node" />
 'use strict';
 
 var crypto = require('crypto');
