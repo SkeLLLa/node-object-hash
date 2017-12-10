@@ -9,17 +9,17 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "benchmark": "^2.1.4",
-    "chai": "^4.0.2",
-    "eslint": "^4.1.1",
-    "faker": "^4.1.0",
-    "hash-object": "^0.1.7",
-    "istanbul": "^0.4.5",
-    "jsdoc-to-markdown": "^3.0.0",
-    "mocha": "^3.4.2",
-    "object-hash": "^1.1.8",
-    "typings": "^2.1.1",
-    "@types/node": "^8.0.2"
+    "benchmark": "2.1.4",
+    "chai": "4.1.2",
+    "eslint": "4.13.0",
+    "faker": "4.1.0",
+    "hash-object": "0.1.7",
+    "istanbul": "0.4.5",
+    "jsdoc-to-markdown": "3.0.2",
+    "mocha": "3.5.3",
+    "object-hash": "1.2.0",
+    "typings": "2.1.1",
+    "@types/node": "8.0.57"
   },
   "scripts": {
     "test": "mocha",
