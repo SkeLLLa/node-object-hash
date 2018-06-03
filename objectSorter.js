@@ -17,7 +17,7 @@ function _guessObjectType(obj) {
     return 'null';
   }
 
-  switch (obj.constructor.name) {
+  switch (obj.constructor && obj.constructor.name) {
     case 'Array':
     case 'Int8Array':
     case 'Uint8Array':
@@ -200,7 +200,10 @@ function makeObjectSorter(options) {
   };
 
   stringifier.unknown = function unknownToString(obj) {
-    return '<:' + obj.constructor.name + '>:' + obj.toString();
+    const constructorName = obj.constructor ? obj.constructor.name : 'no `constructor`';
+    const objectName = typeof obj.toString === 'function' ? obj.toString() : 'no `toString`';
+
+    return '<:' + constructorName + '>:' + objectName;
   };
 
   /**
