@@ -13,15 +13,15 @@ It provides a methods that return object hash or sorted object string.</p>
 
 <a name="module_node-object-hash/objectSorter"></a>
 
-## node-object-hash/objectSorter : <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code>
+## node-object-hash/objectSorter : [<code>objectToString</code>](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)
 Object sorter module.
 It provides object sorter function constructor.
 
 
-* [node-object-hash/objectSorter](#module_node-object-hash/objectSorter) : <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code>
+* [node-object-hash/objectSorter](#module_node-object-hash/objectSorter) : [<code>objectToString</code>](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)
     * [~_guessObjectType(obj)](#module_node-object-hash/objectSorter.._guessObjectType) ⇒ <code>string</code> ℗
     * [~_guessType(obj)](#module_node-object-hash/objectSorter.._guessType) ⇒ <code>string</code> ℗
-    * [~makeObjectSorter([options])](#module_node-object-hash/objectSorter..makeObjectSorter) ⇒ <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code> ℗
+    * [~makeObjectSorter([options])](#module_node-object-hash/objectSorter..makeObjectSorter) ⇒ [<code>objectToString</code>](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString) ℗
         * [~objectToString(obj)](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString) ⇒ <code>string</code> ℗
 
 <a name="module_node-object-hash/objectSorter.._guessObjectType"></a>
@@ -29,9 +29,9 @@ It provides object sorter function constructor.
 ### node-object-hash/objectSorter~_guessObjectType(obj) ⇒ <code>string</code> ℗
 Guesses object's type
 
-**Kind**: inner method of <code>[node-object-hash/objectSorter](#module_node-object-hash/objectSorter)</code>  
+**Kind**: inner method of [<code>node-object-hash/objectSorter</code>](#module_node-object-hash/objectSorter)  
 **Returns**: <code>string</code> - Object type  
-**Access:** private  
+**Access**: private  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -47,9 +47,9 @@ _guessObjectType(a) === 'array'; // true
 ### node-object-hash/objectSorter~_guessType(obj) ⇒ <code>string</code> ℗
 Guesses variable type
 
-**Kind**: inner method of <code>[node-object-hash/objectSorter](#module_node-object-hash/objectSorter)</code>  
+**Kind**: inner method of [<code>node-object-hash/objectSorter</code>](#module_node-object-hash/objectSorter)  
 **Returns**: <code>string</code> - Variable type  
-**Access:** private  
+**Access**: private  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -62,12 +62,12 @@ _guessType(a) === 'string'; // true
 ```
 <a name="module_node-object-hash/objectSorter..makeObjectSorter"></a>
 
-### node-object-hash/objectSorter~makeObjectSorter([options]) ⇒ <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code> ℗
+### node-object-hash/objectSorter~makeObjectSorter([options]) ⇒ [<code>objectToString</code>](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString) ℗
 Creates object sorter function
 
-**Kind**: inner method of <code>[node-object-hash/objectSorter](#module_node-object-hash/objectSorter)</code>  
-**Returns**: <code>[objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)</code> - Object sorting function  
-**Access:** private  
+**Kind**: inner method of [<code>node-object-hash/objectSorter</code>](#module_node-object-hash/objectSorter)  
+**Returns**: [<code>objectToString</code>](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString) - Object sorting function  
+**Access**: private  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -89,9 +89,9 @@ sorter([2, 3, 1]) === [1, 2, 3]; // true
 #### makeObjectSorter~objectToString(obj) ⇒ <code>string</code> ℗
 Object sorting function
 
-**Kind**: inner method of <code>[makeObjectSorter](#module_node-object-hash/objectSorter..makeObjectSorter)</code>  
+**Kind**: inner method of [<code>makeObjectSorter</code>](#module_node-object-hash/objectSorter..makeObjectSorter)  
 **Returns**: <code>string</code> - Sorted string  
-**Access:** private  
+**Access**: private  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -99,17 +99,17 @@ Object sorting function
 
 <a name="module_node-object-hash"></a>
 
-## node-object-hash : <code>[apiConstructor](#module_node-object-hash..apiConstructor)</code>
+## node-object-hash : [<code>apiConstructor</code>](#module_node-object-hash..apiConstructor)
 Node object hash module.
 It provides a methods that return object hash or sorted object string.
 
 
-* [node-object-hash](#module_node-object-hash) : <code>[apiConstructor](#module_node-object-hash..apiConstructor)</code>
+* [node-object-hash](#module_node-object-hash) : [<code>apiConstructor</code>](#module_node-object-hash..apiConstructor)
     * _instance_
         * [.sort(obj)](#module_node-object-hash+sort) ⇒ <code>string</code>
         * [.hash(obj, [opts])](#module_node-object-hash+hash) ⇒ <code>string</code>
     * _inner_
-        * [~apiConstructor([options])](#module_node-object-hash..apiConstructor) ⇒ <code>[API](#module_node-object-hash..API)</code>
+        * [~apiConstructor([options])](#module_node-object-hash..apiConstructor) ⇒ [<code>API</code>](#module_node-object-hash..API)
         * [~API](#module_node-object-hash..API) : <code>Object</code>
 
 <a name="module_node-object-hash+sort"></a>
@@ -117,9 +117,9 @@ It provides a methods that return object hash or sorted object string.
 ### node-object-hash.sort(obj) ⇒ <code>string</code>
 Creates sorted string from given object
 
-**Kind**: instance method of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Kind**: instance method of [<code>node-object-hash</code>](#module_node-object-hash)  
 **Returns**: <code>string</code> - Sorted object string  
-**Access:** public  
+**Access**: public  
 **See**: [objectToString](#module_node-object-hash/objectSorter..makeObjectSorter..objectToString)  
 
 | Param | Type | Description |
@@ -139,9 +139,9 @@ sort({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
 ### node-object-hash.hash(obj, [opts]) ⇒ <code>string</code>
 Creates hash from given object
 
-**Kind**: instance method of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Kind**: instance method of [<code>node-object-hash</code>](#module_node-object-hash)  
 **Returns**: <code>string</code> - Object hash value  
-**Access:** public  
+**Access**: public  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -160,11 +160,11 @@ hash({b: {b: 1, d: 'x'}, c: 2, a: [3, 5, 1]});
 ```
 <a name="module_node-object-hash..apiConstructor"></a>
 
-### node-object-hash~apiConstructor([options]) ⇒ <code>[API](#module_node-object-hash..API)</code>
+### node-object-hash~apiConstructor([options]) ⇒ [<code>API</code>](#module_node-object-hash..API)
 Generates node-object-hash API object
 
-**Kind**: inner method of <code>[node-object-hash](#module_node-object-hash)</code>  
-**Returns**: <code>[API](#module_node-object-hash..API)</code> - Node object hash API instance  
+**Kind**: inner method of [<code>node-object-hash</code>](#module_node-object-hash)  
+**Returns**: [<code>API</code>](#module_node-object-hash..API) - Node object hash API instance  
 
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -205,7 +205,7 @@ hashSortCoerce.sort(object.c);
 ### node-object-hash~API : <code>Object</code>
 Node object hash API object
 
-**Kind**: inner typedef of <code>[node-object-hash](#module_node-object-hash)</code>  
+**Kind**: inner typedef of [<code>node-object-hash</code>](#module_node-object-hash)  
 **Properties**
 
 | Name | Type | Description |
