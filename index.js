@@ -13,7 +13,6 @@ var objectSorter = require('./objectSorter');
  * @property {Function} sort Returns sorted object string (see {@link module:node-object-hash#sort})
  */
 
-
 /**
  * Generates node-object-hash API object
  * @param {Object} [options] Library options
@@ -21,7 +20,7 @@ var objectSorter = require('./objectSorter');
  * @param {boolean} [options.sort=true] Performs array, object, etc. sorting
  * @param {string} [options.alg=sha256] Default crypto algorithm to use (can be overridden)
  * @param {string} [options.enc=hex] Hash string encoding (can be overridden)
- * @returns {module:node-object-hash~API} Node object hash API instance
+ * @return {module:node-object-hash~API} Node object hash API instance
  * @memberOf module:node-object-hash
  * @inner
  * @example
@@ -50,8 +49,8 @@ var objectSorter = require('./objectSorter');
  * // returns '[0,1,2,3,4]'
  */
 function apiConstructor(options) {
-  var defaults = options || {},
-      _sortObject;
+  var defaults = options || {};
+  var _sortObject;
 
   defaults.alg = defaults.alg || 'sha256';
   defaults.enc = defaults.enc || 'hex';
@@ -61,7 +60,7 @@ function apiConstructor(options) {
   /**
    * Creates sorted string from given object
    * @param {*} obj JS object to be sorted
-   * @returns {string} Sorted object string
+   * @return {string} Sorted object string
    * @see {@link module:node-object-hash/objectSorter~makeObjectSorter~objectToString}
    * @memberOf module:node-object-hash
    * @instance
@@ -84,7 +83,7 @@ function apiConstructor(options) {
    * @param {Object} [opts] Options
    * @param {string} [opts.alg=sha256] Crypto algorithm to use
    * @param {string} [opts.enc=hex] Hash string encoding
-   * @returns {string} Object hash value
+   * @return {string} Object hash value
    * @memberOf module:node-object-hash
    * @instance
    * @public
@@ -98,11 +97,12 @@ function apiConstructor(options) {
    */
   function hashObject(obj, opts) {
     opts = opts || {};
-    var alg = opts.alg || defaults.alg,
-        enc = opts.enc || defaults.enc,
-        sorted = sortObject(obj);
+    var alg = opts.alg || defaults.alg;
+    var enc = opts.enc || defaults.enc;
+    var sorted = sortObject(obj);
 
-    return crypto.createHash(alg)
+    return crypto
+      .createHash(alg)
       .update(sorted)
       .digest(enc);
   }

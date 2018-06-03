@@ -7,7 +7,7 @@
  * @inner
  * @private
  * @param {Object} obj Object to guess type
- * @returns {string} Object type
+ * @return {string} Object type
  * @example
  * var a = [];
  * _guessObjectType(a) === 'array'; // true
@@ -18,36 +18,36 @@ function _guessObjectType(obj) {
   }
 
   switch (obj.constructor && obj.constructor.name) {
-    case 'Array':
-    case 'Int8Array':
-    case 'Uint8Array':
-    case 'Uint8ClampedArray':
-    case 'Int16Array':
-    case 'Uint16Array':
-    case 'Int32Array':
-    case 'Uint32Array':
-    case 'Float32Array':
-    case 'Float64Array':
-    case 'Buffer':
-      return 'array';
-    case 'Map':
-    case 'WeakMap':
-      return 'map';
-    case 'Set':
-    case 'WeakSet':
-      return 'set';
-    case 'Date':
-      return 'date';
-    case 'String':
-      return 'string';
-    case 'Number':
-      return 'number';
-    case 'Boolean':
-      return 'boolean';
-    case 'Object':
-      return 'object';
-    default:
-      return 'unknown';
+  case 'Array':
+  case 'Int8Array':
+  case 'Uint8Array':
+  case 'Uint8ClampedArray':
+  case 'Int16Array':
+  case 'Uint16Array':
+  case 'Int32Array':
+  case 'Uint32Array':
+  case 'Float32Array':
+  case 'Float64Array':
+  case 'Buffer':
+    return 'array';
+  case 'Map':
+  case 'WeakMap':
+    return 'map';
+  case 'Set':
+  case 'WeakSet':
+    return 'set';
+  case 'Date':
+    return 'date';
+  case 'String':
+    return 'string';
+  case 'Number':
+    return 'number';
+  case 'Boolean':
+    return 'boolean';
+  case 'Object':
+    return 'object';
+  default:
+    return 'unknown';
   }
 }
 
@@ -57,7 +57,7 @@ function _guessObjectType(obj) {
  * @inner
  * @private
  * @param {*} obj Variable to guess type
- * @returns {string} Variable type
+ * @return {string} Variable type
  * @example
  * var a = '';
  * _guessType(a) === 'string'; // true
@@ -76,7 +76,7 @@ function _guessType(obj) {
  * @param {Object} [options] Sorter options
  * @param {boolean} [options.coerce=true] Performs type coercion
  * @param {boolean} [options.sort=true] Performs array, object, etc. sorting
- * @returns {module:node-object-hash/objectSorter~makeObjectSorter~objectToString}
+ * @return {module:node-object-hash/objectSorter~makeObjectSorter~objectToString}
  * Object sorting function
  * @example
  * // with coercion
@@ -88,9 +88,9 @@ function _guessType(obj) {
  */
 function makeObjectSorter(options) {
   options = options || {};
-  var coerce = typeof options.coerce === 'undefined' ? true : options.coerce,
-      sort = typeof options.sort === 'undefined' ? true : options.sort,
-      stringifier = {};
+  var coerce = typeof options.coerce === 'undefined' ? true : options.coerce;
+  var sort = typeof options.sort === 'undefined' ? true : options.sort;
+  var stringifier = {};
 
   stringifier.string = function sortString(obj) {
     if (coerce) {
@@ -139,9 +139,9 @@ function makeObjectSorter(options) {
   };
 
   stringifier.array = function sortArray(obj) {
-    var item,
-        itemType,
-        result = [];
+    var item;
+    var itemType;
+    var result = [];
 
     for (var i = 0; i < obj.length; i++) {
       item = obj[i];
@@ -166,10 +166,12 @@ function makeObjectSorter(options) {
   };
 
   stringifier.object = function sortObject(obj) {
-    var keys = sort ? Object.keys(obj).sort() : Object.keys(obj),
-        objArray = [],
-        key, value, valueType,
-        i;
+    var keys = sort ? Object.keys(obj).sort() : Object.keys(obj);
+    var objArray = [];
+    var key;
+    var value;
+    var valueType;
+    var i;
 
     for (i = 0; i < keys.length; i++) {
       key = keys[i];
@@ -181,18 +183,17 @@ function makeObjectSorter(options) {
   };
 
   stringifier.map = function sortMap(obj) {
-    var arr = Array.from(obj),
-        key, value, item,
-        i;
+    var arr = Array.from(obj);
+    var key;
+    var value;
+    var item;
+    var i;
 
     for (i = 0; i < arr.length; i++) {
       item = arr[i];
       key = item[0];
       value = item[1];
-      item = [
-        stringifier[_guessType(key)](key),
-        stringifier[_guessType(value)](value)
-      ];
+      item = [stringifier[_guessType(key)](key), stringifier[_guessType(value)](value)];
       arr[i] = item;
     }
 
@@ -200,8 +201,8 @@ function makeObjectSorter(options) {
   };
 
   stringifier.unknown = function unknownToString(obj) {
-    const constructorName = obj.constructor ? obj.constructor.name : 'no `constructor`';
-    const objectName = typeof obj.toString === 'function' ? obj.toString() : 'no `toString`';
+    var constructorName = obj.constructor ? obj.constructor.name : 'unknonw';
+    var objectName = typeof obj.toString === 'function' ? obj.toString() : 'unknown';
 
     return '<:' + constructorName + '>:' + objectName;
   };
@@ -210,7 +211,7 @@ function makeObjectSorter(options) {
    * Object sorting function
    * @private
    * @param {Object} obj Object to sort
-   * @returns {string} Sorted string
+   * @return {string} Sorted string
    */
   function objectToString(obj) {
     return stringifier[_guessType(obj)](obj);

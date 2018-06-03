@@ -146,85 +146,112 @@ var testData = {
   }
 };
 
-describe(libName, function () {
-  describe('[sort=false, coerce=false]', function () {
-    describe('#sort(<object>)', function () {
-      it('should return different strings', function () {
-        assert.notEqual(hashNoSC.sort(testData.objects.noSort), hashNoSC.sort(testData.objects.sort));
+describe(libName, function() {
+  describe('[sort=false, coerce=false]', function() {
+    describe('#sort(<object>)', function() {
+      it('should return different strings', function() {
+        assert.notEqual(
+          hashNoSC.sort(testData.objects.noSort),
+          hashNoSC.sort(testData.objects.sort)
+        );
       });
-      it('should return different strings', function () {
-        assert.notEqual(hashNoSC.sort(testData.objects.noCoerce), hashNoSC.sort(testData.objects.coerce));
+      it('should return different strings', function() {
+        assert.notEqual(
+          hashNoSC.sort(testData.objects.noCoerce),
+          hashNoSC.sort(testData.objects.coerce)
+        );
       });
-      it('should return equal strings', function () {
-        assert.equal(hashNoSC.sort(testData.objects.noCoerce), hashNoSC.sort(testData.objects.noSort));
+      it('should return equal strings', function() {
+        assert.equal(
+          hashNoSC.sort(testData.objects.noCoerce),
+          hashNoSC.sort(testData.objects.noSort)
+        );
       });
     });
   });
-  describe('[sort=false, coerce=true]', function () {
-    describe('#sort(<object>)', function () {
-      it('should return different strings', function () {
+  describe('[sort=false, coerce=true]', function() {
+    describe('#sort(<object>)', function() {
+      it('should return different strings', function() {
         assert.notEqual(hashC.sort(testData.objects.noSort), hashC.sort(testData.objects.sort));
       });
-      it('should return different strings', function () {
-        assert.notEqual(hashC.sort(testData.objects.noCoerce), hashC.sort(testData.objects.sortCoerce));
+      it('should return different strings', function() {
+        assert.notEqual(
+          hashC.sort(testData.objects.noCoerce),
+          hashC.sort(testData.objects.sortCoerce)
+        );
       });
-      it('should return equal strings', function () {
+      it('should return equal strings', function() {
         assert.equal(hashC.sort(testData.objects.noCoerce), hashC.sort(testData.objects.coerce));
       });
-      it('should return equal strings', function () {
+      it('should return equal strings', function() {
         assert.equal(hashC.sort(testData.objects.noCoerce), hashC.sort(testData.objects.noSort));
       });
     });
   });
-  describe('[sort=true, coerce=false]', function () {
-    describe('#sort(<object>)', function () {
-      it('should return different strings', function () {
+  describe('[sort=true, coerce=false]', function() {
+    describe('#sort(<object>)', function() {
+      it('should return different strings', function() {
         assert.notEqual(hashS.sort(testData.objects.noCoerce), hashS.sort(testData.objects.coerce));
       });
-      it('should return different strings', function () {
-        assert.notEqual(hashS.sort(testData.objects.noSort), hashS.sort(testData.objects.sortCoerce));
+      it('should return different strings', function() {
+        assert.notEqual(
+          hashS.sort(testData.objects.noSort),
+          hashS.sort(testData.objects.sortCoerce)
+        );
       });
-      it('should return equal strings', function () {
+      it('should return equal strings', function() {
         assert.equal(hashS.sort(testData.objects.noSort), hashS.sort(testData.objects.sort));
       });
-      it('should return equal strings', function () {
+      it('should return equal strings', function() {
         assert.equal(hashS.sort(testData.objects.noCoerce), hashS.sort(testData.objects.noSort));
       });
     });
   });
-  describe('[sort=true, coerce=true]', function () {
-    describe('#hash(<object>)', function () {
-      it('should return equal hashes', function () {
+  describe('[sort=true, coerce=true]', function() {
+    describe('#hash(<object>)', function() {
+      it('should return equal hashes', function() {
         assert.equal(hashSC.hash(testData.objects.noSort), hashSC.hash(testData.objects.sort));
       });
-      it('should return equal hashes', function () {
+      it('should return equal hashes', function() {
         assert.equal(hashSC.hash(testData.objects.noCoerce), hashSC.hash(testData.objects.coerce));
       });
-      it('should return equal hashes', function () {
+      it('should return equal hashes', function() {
         assert.equal(hashSC.hash(testData.objects.sort), hashSC.hash(testData.objects.sortCoerce));
       });
-      it('should return equal hashes', function () {
-        assert.equal(hashSC.hash(testData.objects.coerce), hashSC.hash(testData.objects.sortCoerce));
+      it('should return equal hashes', function() {
+        assert.equal(
+          hashSC.hash(testData.objects.coerce),
+          hashSC.hash(testData.objects.sortCoerce)
+        );
       });
-      it('should return equal hashes', function () {
-        assert.equal(hashSC.hash(testData.objects.coerce), hashSC.hash(testData.objects.sortCoerce));
+      it('should return equal hashes', function() {
+        assert.equal(
+          hashSC.hash(testData.objects.coerce),
+          hashSC.hash(testData.objects.sortCoerce)
+        );
       });
     });
-    describe('#sort(<object>)', function () {
-      it('should return equal strings', function () {
+    describe('#sort(<object>)', function() {
+      it('should return equal strings', function() {
         assert.equal(hashSC.sort(testData.objects.noSort), hashSC.sort(testData.objects.sort));
       });
-      it('should return equal strings', function () {
+      it('should return equal strings', function() {
         assert.equal(hashSC.sort(testData.objects.noCoerce), hashSC.sort(testData.objects.coerce));
       });
-      it('should return equal strings', function () {
+      it('should return equal strings', function() {
         assert.equal(hashSC.sort(testData.objects.sort), hashSC.sort(testData.objects.sortCoerce));
       });
-      it('should return equal strings', function () {
-        assert.equal(hashSC.sort(testData.objects.coerce), hashSC.sort(testData.objects.sortCoerce));
+      it('should return equal strings', function() {
+        assert.equal(
+          hashSC.sort(testData.objects.coerce),
+          hashSC.sort(testData.objects.sortCoerce)
+        );
       });
-      it('should return equal strings', function () {
-        assert.equal(hashSC.sort(testData.objects.coerce), hashSC.sort(testData.objects.sortCoerce));
+      it('should return equal strings', function() {
+        assert.equal(
+          hashSC.sort(testData.objects.coerce),
+          hashSC.sort(testData.objects.sortCoerce)
+        );
       });
     });
   });
