@@ -3,7 +3,9 @@ checks:
   argument-count:
     enabled: true
   complex-logic:
-    enabled: false
+    enabled: true
+    config:
+      threshold: 50
   file-lines:
     enabled: true
     config:
