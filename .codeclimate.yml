@@ -1,30 +1,49 @@
+version: "2"
 engines:
   duplication:
     enabled: true
-    exclude_fingerprints:
-        - 817ae0cab126ae089a16ee45b86c28f6
-        - 9f527086542a4ed73995587d12e3c277
-        - 70388304146f13809d718b6c600e30c9
-        - 6448c06faf6b59c82de8af8c9241922c
-        - c4e38849a1f6b37dab44edc19246a495
-        - 6c6c608e36aa91b64ab75d0301b38ab8
-        - e0f5c187cb8739a1454911f20eb5ace5
-        - cc09ecb67cd7ea43dfbb54d20afc9c25
-        - a95d2a0384b98598bcd514cee344aa3e
-        - 4ff37ae6b7f8d41cf59b296c54b20782
-        - 73a8ab6d0835d62fb64b87696da3877c
-        - 6982700a3bc9b4129a34d4513551d727
     config:
       languages:
       - javascript
+checks:
+  argument-count:
+    enabled: true
+  complex-logic:
+    enabled: false
+  file-lines:
+    enabled: true
+    config:
+      threshold: 250
+  method-complexity:
+    enabled: true
+  method-count:
+    enabled: true
+  method-lines:
+    enabled: true
+    config:
+      threshold: 128
+  nested-control-flow:
+    enabled: true
+  return-statements:
+    enabled: false
+  similar-code:
+    enabled: true
+  identical-code:
+    enabled: true
+plugins:
+  nodesecurity:
+    enabled: true
   eslint:
     enabled: true
-    channel: "eslint-2"
+    channel: "stable"
     checks:
       complexity:
         enabled: false
-  fixme:
-    enabled: true
+exclude_patterns:
+- "**/test/"
+- "**/bench/"
+- "**/v0/"
+- "**/node_modules/"
 ratings:
   paths:
   - "index.js"
