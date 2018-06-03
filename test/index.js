@@ -44,6 +44,8 @@ var testData = {
       o: [5, 4, 3, 2, 1, 0],
       x: new UnknownClass(),
       y: true,
+      z: Object.create(null),
+      aa: Object.assign({}, {constructor: undefined})
     },
     noCoerce: {
       a: 1,
@@ -65,7 +67,9 @@ var testData = {
       },
       o: [5, 4, 3, 2, 1, 0],
       x: new UnknownClass(),
-      y: true
+      y: true,
+      z: Object.create(null),
+      aa: Object.assign({}, {constructor: undefined})
     },
     sort: {
       d: {
@@ -87,7 +91,9 @@ var testData = {
       i: null,
       m: Symbol(),
       x: new UnknownClass(),
-      y: new Boolean(true)
+      y: new Boolean(true),
+      z: Object.create(null),
+      aa: Object.assign({}, {constructor: undefined})
     },
     coerce: {
       a: true,
@@ -109,7 +115,9 @@ var testData = {
       },
       o: ['5', 4, '3', 2, true, false],
       x: new UnknownClass(),
-      y: true
+      y: true,
+      z: Object.create(null),
+      aa: Object.assign({}, {constructor: undefined})
     },
     sortCoerce: {
       b: 2,
@@ -131,7 +139,9 @@ var testData = {
       k: new Map([[2, 2], [3, 3], [1, 1]]),
       h: null,
       m: Symbol(),
-      y: new Number(1)
+      y: new Number(1),
+      z: Object.create(null),
+      aa: Object.assign({}, {constructor: undefined})
     }
   }
 };
