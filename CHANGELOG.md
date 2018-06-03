@@ -1,6 +1,13 @@
 # Changelog
 
-## 1.2.X -> 1.3.X
+## v1.3.X -> 1.4.X
+
+* Add support for objects without constructor #11 [PR @futpib](https://github.com/SkeLLLa/node-object-hash/pull/12)
+* Simplify eslint rules, update codestyle
+* Fix npm links issues in readme
+* Update dev dependencies
+
+## v1.2.X -> 1.3.X
 
 * Add definition types to support typescript
 * Add >=node-8.0.0 support in tests.
