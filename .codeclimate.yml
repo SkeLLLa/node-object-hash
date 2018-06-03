@@ -1,10 +1,4 @@
 version: "2"
-engines:
-  duplication:
-    enabled: true
-    config:
-      languages:
-      - javascript
 checks:
   argument-count:
     enabled: true
@@ -31,6 +25,11 @@ checks:
   identical-code:
     enabled: true
 plugins:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
   nodesecurity:
     enabled: true
   eslint:
@@ -44,7 +43,3 @@ exclude_patterns:
 - "**/bench/"
 - "**/v0/"
 - "**/node_modules/"
-ratings:
-  paths:
-  - "index.js"
-  - "objectSorter.js"
