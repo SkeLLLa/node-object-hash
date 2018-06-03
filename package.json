@@ -28,7 +28,6 @@
     "bench2": "node --expose-gc ./bench/bench.js",
     "jsdoc": "jsdoc2md -t ./README.hbs --private 'objectSorter.js' 'index.js' > README.md && jsdoc2md --private 'objectSorter.js' 'index.js' > API.md",
     "tsc": "tsc index.d.ts objectSorter.d.ts --noImplicitAny",
-    "typings": "typings install",
     "outdated": "npm outdate || true"
   },
   "repository": {

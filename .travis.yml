@@ -10,6 +10,10 @@ node_js:
   - "7"
   - "8.0"
   - "8"
+  - "9.0"
+  - "9"
+  - "10.0"
+  - "10"
 addons:
     code_climate:
         repo_token: aa8e46e24b3cb246433fba82c654cee400c6220bf1dc0202d73ca2b2c9e6b101
