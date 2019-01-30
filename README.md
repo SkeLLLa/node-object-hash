@@ -15,7 +15,7 @@ Hashes are built on top of node's crypto module
 
 # Features
 - Supports object property sorting for constant hashes for objects with same properties, but different order.
-- Supports ES6 (Weak)Maps and (Weak)Sets.
+- Supports ES6 Maps and Sets.
 - Supports type coercion (see table below)
 - Supports all hashes and encodings of crypto library
 - Supports large objects and arrays
@@ -41,10 +41,8 @@ equal string representations and hashes.
 | Float64Array              |              |
 | Buffer                    |              |
 | Set                       |              |
-| WeakSet                   |              |
 | | |
 | Map                       | array[array] |
-| WeakMap                   |              |
 | | |
 | string ('') | string      | string       |
 | String (new String())     |              |

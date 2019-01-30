@@ -31,10 +31,8 @@ function _guessObjectType(obj) {
   case 'Buffer':
     return 'array';
   case 'Map':
-  case 'WeakMap':
     return 'map';
   case 'Set':
-  case 'WeakSet':
     return 'set';
   case 'Date':
     return 'date';
