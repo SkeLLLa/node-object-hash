@@ -1,5 +1,10 @@
 .idea
 node_modules
-.npmrc
-npm-debug.log
-coverage/
+deploy
+build
+coverage
+config/local.*
+**/*.xxx.js
+**/*.xxx.ts
+dist
+browser
