@@ -64,7 +64,7 @@
     "build": "npm run build:node",
     "build:node": "tsc -p tsconfig.json",
     "prerelease": "npm run typedoc && git add -A ./docs",
-    "release": "git add -A && standard-version -A",
+    "release": "git add -A && standard-version -a",
     "typedoc": "rm -rf ./docs/* && typedoc --excludeExternals --name \"$npm_package_name\" --readme none --mode file --includeDeclarations --excludePrivate --theme markdown --out ./docs"
   },
   "repository": {
