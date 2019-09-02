@@ -33,7 +33,7 @@ namespace hasher {
      * @param object source object
      * @returns hash string of an object
      */
-    hash(object: any): string;
+    hash(object: any, opts?: hasher.HasherOptions): string;
     /**
      * Create sorted string from an object
      * @param object source object
