@@ -20,7 +20,7 @@
 
 ###  hash
 
-▸ **hash**(`object`: any): *string*
+▸ **hash**(`object`: any, `opts?`: [HasherOptions](hasher.hasheroptions.md)): *string*
 
 Defined in hasher.ts:36
 
@@ -31,6 +31,7 @@ Create hash of an object
 Name | Type | Description |
 ------ | ------ | ------ |
 `object` | any | source object |
+`opts?` | [HasherOptions](hasher.hasheroptions.md) | - |
 
 **Returns:** *string*
 
