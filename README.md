@@ -6,6 +6,17 @@ One of the fastest among other analogues (see [benchmarks](#benchmarks)).
 
 Hashes are built on top of node's crypto module. If you want to use it in browser it's recommented to use `objectSorter` only. It will provide you with unique string representation of your object. Afterwards you may use some hash library to reduce string size. Also you may use something like [browserify-crypto](https://github.com/crypto-browserify/crypto-browserify) or some kind of crypto functions polyfills.
 
+[![Node](https://img.shields.io/node/v/node-object-hash.svg)](https://nodejs.org/download/release/latest)
+[![NPM Version](https://img.shields.io/npm/v/node-object-hash.svg)](https://www.npmjs.com/package/node-object-hash)
+[![Downloads Count](https://img.shields.io/npm/dm/node-object-hash.svg)](https://www.npmjs.com/package/node-object-hash)
+[![Vunerabilities Count](https://snyk.io/test/npm/node-object-hash/badge.svg)](https://www.npmjs.com/package/node-object-hash)
+[![Npms.io Score](https://badges.npms.io/node-object-hash.svg)](https://npms.io/search?q=node-object-hash)
+[![Build Status](https://gitlab.com/m03geek/node-object-hash/badges/master/pipeline.svg)](https://gitlab.com/m03geek/node-object-hash/commits/master)
+[![License](https://img.shields.io/npm/l/node-object-hash.svg)](https://gitlab.com/m03geek/node-object-hash/blob/master/LICENSE)
+[![Codecov Coverage](https://img.shields.io/codecov/c/gl/m03geek/node-object-hash.svg)](https://codecov.io/gl/m03geek/node-object-hash)
+[![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
+[![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
+
 ## ToC
 - [node-object-hash](#node-object-hash)
   - [ToC](#toc)
