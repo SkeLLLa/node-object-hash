@@ -2,20 +2,19 @@
  * Created on 9/5/16.
  */
 'use strict';
-var Benchmark = require('benchmark');
-var suite = new Benchmark.Suite;
-var faker = require('faker');
+let Benchmark = require('benchmark');
+let suite = new Benchmark.Suite();
+let faker = require('faker');
 
-var dataArray = [];
-var dataStairs = {end: 'is near'};
+let dataArray = [];
+let dataStairs = {end: 'is near'};
 
-var objectHash = require('object-hash');
-var nodeObjectHash = require('../v0/index');
-var nodeObjectHash2 = require('../index')();
-var hashObject = require('hash-object');
+let objectHash = require('object-hash');
+let nodeObjectHash2 = require('../')();
+let hashObject = require('hash-object');
 
 console.log('Creating fake data...');
-var i;
+let i;
 for (i = 0; i < 50; i++) {
   dataArray.push({
     name: faker.name.firstName(),
@@ -23,13 +22,13 @@ for (i = 0; i < 50; i++) {
     address: {
       city: faker.address.city(),
       streetAddress: faker.address.streetAddress(),
-      country: faker.address.country()
+      country: faker.address.country(),
     },
     email: [
       faker.internet.email(),
       faker.internet.email(),
       faker.internet.email(),
-      faker.internet.email()
+      faker.internet.email(),
     ],
     randoms: [
       faker.random.number(),
@@ -37,61 +36,64 @@ for (i = 0; i < 50; i++) {
       faker.random.number(),
       faker.random.alphaNumeric(),
       faker.random.words(),
-      faker.random.word()
+      faker.random.word(),
     ],
     avatars: [
       {
         number: faker.random.number(),
-        avatar: faker.internet.avatar()
-      }, {
+        avatar: faker.internet.avatar(),
+      },
+      {
         number: faker.random.number(),
-        avatar: faker.internet.avatar()
-      }, {
+        avatar: faker.internet.avatar(),
+      },
+      {
         number: faker.random.number(),
-        avatar: faker.internet.avatar()
-      }, {
+        avatar: faker.internet.avatar(),
+      },
+      {
         number: faker.random.number(),
-        avatar: faker.internet.avatar()
-      }
-    ]
+        avatar: faker.internet.avatar(),
+      },
+    ],
   });
 }
-var tmp;
+let tmp;
 for (i = 0; i < 100; i++) {
   tmp = {
-    data: dataStairs
+    data: dataStairs,
   };
   dataStairs = tmp;
 }
 
 // test preparations
-var hashObjectOpts = {algorithm: 'sha256'};
-var objectHashOpts = {algorithm: 'sha256', encoding: 'hex', unorderedArrays: true};
+let hashObjectOpts = {algorithm: 'sha256'};
+let objectHashOpts = {
+  algorithm: 'sha256',
+  encoding: 'hex',
+  unorderedArrays: true,
+};
 
 // add tests
 suite
-  .add('node-object-hash-v0', function () {
-    nodeObjectHash.hash(dataStairs);
-    nodeObjectHash.hash(dataArray);
-  })
-  .add('node-object-hash-v1', function () {
+  .add('node-object-hash-v1', function() {
     nodeObjectHash2.hash(dataStairs);
     nodeObjectHash2.hash(dataArray);
   })
-  .add('hash-object', function () {
+  .add('hash-object', function() {
     hashObject(dataStairs, hashObjectOpts);
     hashObject(dataArray, hashObjectOpts);
   })
-  .add('object-hash', function () {
+  .add('object-hash', function() {
     objectHash(dataStairs, objectHashOpts);
     objectHash(dataArray, objectHashOpts);
   })
   // add listeners
-  .on('cycle', function (event) {
+  .on('cycle', function(event) {
     console.log(String(event.target));
   })
-  .on('complete', function () {
+  .on('complete', function() {
     console.log('Fastest is ' + this.filter('fastest').map('name'));
   })
   // run async
-  .run({'async': true});
+  .run({async: true});

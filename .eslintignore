@@ -1,4 +1,9 @@
-bench/
-v0/
-node_modules/
+logs/
 coverage/
+node_modules/
+.idea/
+.vscode/
+static/
+**/*.xxx.*
+dist/
+benchmark/

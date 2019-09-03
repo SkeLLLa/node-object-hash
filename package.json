@@ -2,42 +2,79 @@
   "name": "node-object-hash",
   "version": "1.4.2",
   "description": "Node.js object hash library with properties/arrays sorting to provide constant hashes",
-  "main": "index.js",
-  "homepage": "https://github.com/SkeLLLa/node-object-hash",
+  "main": "dist/hasher.js",
+  "types": "dist/hasher.d.ts",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib": "dist",
+    "doc": "docs"
   },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.ts",
+    "dist/**/*.map"
+  ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run test",
+      "postbump": "echo Version: v$npm_package_version",
+      "postchangelog": "replace \"https://github.com/SkeLLLa/\" \"https://gitlab.com/m03geek/\" CHANGELOG.md",
+      "posttag": "git push --follow-tags origin $npm_package_config_releaseBranch"
+    }
+  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^10.0.0",
-    "benchmark": "^2.1.4",
-    "chai": "^4.1.2",
-    "eslint": "^4.19.1",
-    "eslint-config-google": "^0.9.1",
-    "faker": "^4.1.0",
-    "hash-object": "^0.1.7",
-    "istanbul": "^0.4.5",
-    "jsdoc-to-markdown": "^4.0.0",
-    "mocha": "^5.2.0",
-    "object-hash": "^1.3.0",
-    "typescript": "^3.2.4"
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.7.3",
+    "codecov": "^3.5.0",
+    "eslint": "^6.3.0",
+    "eslint-config-google": "^0.14.0",
+    "faker": "^4.0.0",
+    "husky": "^3.0.5",
+    "jest": "^24.7.1",
+    "replace": "^1.1.0",
+    "standard-version": "^7.0.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typedoc": "^0.15.0",
+    "typedoc-plugin-markdown": "^2.1.9",
+    "typescript": "^3.6.2"
   },
   "scripts": {
-    "test": "mocha",
-    "lint": "eslint .",
-    "cover": "istanbul cover _mocha",
-    "bench": "node --expose-gc ./bench/index.js",
-    "bench2": "node --expose-gc ./bench/bench.js",
-    "jsdoc": "jsdoc2md -t ./README.hbs --private 'objectSorter.js' 'index.js' > README.md && jsdoc2md --private 'objectSorter.js' 'index.js' > API.md",
-    "tsc": "tsc index.d.ts objectSorter.d.ts --noImplicitAny",
-    "outdated": "npm outdate || true"
+    "lint:eslint": "eslint .",
+    "lint:tslint": "tslint -p ./ && tslint -p ./test",
+    "lint": "npm run lint:eslint && npm run lint:tslint",
+    "lint:fix": "eslint . --fix && tslint -p ./ --fix && tslint -p ./test --fix",
+    "test": "npm audit || true && npm run lint && npm run unit",
+    "unit": "jest --coverage",
+    "postunit": "codecov",
+    "prebenchmark": "npm i --no-save hash-object object-hash benchmark",
+    "benchmark": "node benchmark/bench.js",
+    "prebenchmark:custom": "npm i --no-save hash-object object-hash benchmark",
+    "benchmark:custom": "node --expose-gc benchmark/custom.js",
+    "build": "npm run build:node",
+    "build:node": "tsc -p tsconfig.json",
+    "prerelease": "npm run typedoc && git add -A ./docs",
+    "release": "git add -A && standard-version -a",
+    "typedoc": "rm -rf ./docs/* && typedoc --excludeExternals --name \"$npm_package_name\" --readme none --mode file --includeDeclarations --excludePrivate --theme markdown --out ./docs"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:SkeLLLa/node-object-hash.git"
+    "url": "https://github.com/SkeLLLa/node-object-hash.git"
   },
   "bugs": {
-    "url": "https://github.com/SkeLLLa/node-object-hash/issues"
+    "url": "https://gitlab.com/m03geek/node-object-hash/issues"
   },
+  "homepage": "https://gitlab.com/m03geek/node-object-hash#README",
   "keywords": [
     "hash",
     "object",
@@ -46,12 +83,8 @@
     "es6",
     "crypto"
   ],
-  "author": {
-    "name": "Alexander Kureniov",
-    "email": "s@zxc.pp.ua",
-    "url": "https://github.com/SkeLLLa"
-  },
-  "license": "ISC",
+  "author": "m03geek",
+  "license": "MIT",
   "engines": {
     "node": ">=0.10.0"
   }
