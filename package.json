@@ -1,6 +1,6 @@
 {
   "name": "node-object-hash",
-  "version": "1.4.2",
+  "version": "2.0.0-rc.0",
   "description": "Node.js object hash library with properties/arrays sorting to provide constant hashes",
   "main": "dist/hasher.js",
   "types": "dist/hasher.d.ts",
