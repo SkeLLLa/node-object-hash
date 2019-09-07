@@ -1,6 +1,6 @@
 # node-object-hash
 
-<div>
+<div style="margin: 24px 0 16px;">
 <img src="https://gitlab.com/m03geek/node-object-hash/raw/master/logo.svg" align="left" width="256" height="auto" alt="logo" />
 
 Tiny and fast node.js object hash library with properties/arrays sorting to provide constant hashes.
