@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://gitlab.com/m03geek/node-object-hash/compare/v2.0.0-rc.1...v2.0.0) (2019-09-07)
+
 ## [2.0.0-rc.1](https://gitlab.com/m03geek/node-object-hash/compare/v2.0.0-rc.0...v2.0.0-rc.1) (2019-09-03)
 
 ## [2.0.0-rc.0](https://gitlab.com/m03geek/node-object-hash/compare/v1.4.2...v2.0.0-rc.0) (2019-09-03)
@@ -35,7 +37,7 @@ const hasher = require('node-object-hash')({coerce: {set: true, symbol: true}})
 
 ### Features 
 
-* Add support for objects without constructor #11 [PR @futpib](https://github.com/SkeLLLa/node-object-hash/pull/12)
+* Add support for objects without constructor #11 [PR @futpib](https://gitlab.com/m03geek/node-object-hash/pull/12)
 * Simplify eslint rules, update codestyle
 
 ### Fixes
