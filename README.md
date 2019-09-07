@@ -22,6 +22,8 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
 
 </div>
 
+<br/>
+
 ## ToC
 - [node-object-hash](#node-object-hash)
   - [ToC](#toc)
