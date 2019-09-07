@@ -1,5 +1,8 @@
 # node-object-hash
 
+<div>
+<img src="https://gitlab.com/m03geek/node-object-hash/raw/master/logo.svg" align="left" width="256" height="auto" alt="logo" />
+
 Tiny and fast node.js object hash library with properties/arrays sorting to provide constant hashes.
 It also provides a method that returns sorted object strings that can be used for object comparison without hashes.
 One of the fastest among other analogues (see [benchmarks](#benchmarks)).
@@ -16,6 +19,8 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
 [![Codecov Coverage](https://img.shields.io/codecov/c/gl/m03geek/node-object-hash.svg)](https://codecov.io/gl/m03geek/node-object-hash)
 [![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
+
+</div>
 
 ## ToC
 - [node-object-hash](#node-object-hash)
