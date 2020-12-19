@@ -10,7 +10,7 @@ Hasher constructor
 
 ▸ **hasher**(`options`: [HasherOptions](../interfaces/hasher.hasheroptions.md)): *[Hasher](../interfaces/hasher.hasher-1.md)*
 
-Defined in hasher.ts:57
+*Defined in [hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/hasher.ts#L68)*
 
 Hasher constructor
 
@@ -26,5 +26,6 @@ Name | Type | Default | Description |
 
 ### Interfaces
 
+* [Hashable](../interfaces/hasher.hashable.md)
 * [Hasher](../interfaces/hasher.hasher-1.md)
 * [HasherOptions](../interfaces/hasher.hasheroptions.md)

@@ -10,7 +10,7 @@ Object sorter consturctor
 
 ▸ **objectSorter**(`options`: [SorterOptions](../interfaces/objectsorter.sorteroptions.md)): *function*
 
-Defined in objectSorter.ts:172
+*Defined in [objectSorter.ts:173](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L173)*
 
 Object sorter consturctor
 
@@ -24,13 +24,13 @@ Name | Type | Default | Description |
 
 function that transforms object to strings
 
-▸ (`obj`: any): *string*
+▸ (`obj`: [Hashable](../interfaces/hasher.hashable.md) | any): *string*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`obj` | any |
+`obj` | [Hashable](../interfaces/hasher.hashable.md) \| any |
 
 ## Index
 

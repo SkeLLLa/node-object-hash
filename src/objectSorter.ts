@@ -1,5 +1,6 @@
 import { guessType } from './typeGuess';
 import * as str from './stringifiers';
+import { Hashable } from './hasher';
 
 namespace objectSorter {
   /**
@@ -171,8 +172,8 @@ namespace objectSorter {
  */
 function objectSorter(
   options: objectSorter.SorterOptions = {}
-): (obj: any) => string {
-  const { sort, coerce, trim } = {
+): (obj: Hashable | any) => string {
+  const {sort, coerce, trim} = {
     sort: true,
     coerce: true,
     trim: false,
@@ -213,6 +214,7 @@ function objectSorter(
     function: typeof trim === 'boolean' ? trim : trim.function,
   };
 
+  stringifiers.hashable = str._hashable.bind(stringifiers);
   if (trimOptions.string) {
     stringifiers.string = coerceOptions.string
       ? str._stringTrimCoerce.bind(stringifiers)
