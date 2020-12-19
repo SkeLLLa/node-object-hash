@@ -1,5 +1,6 @@
 import objectSorter = require('./objectSorter');
 import crypto, { HexBase64Latin1Encoding } from 'crypto';
+import { Hashable } from './hasher';
 
 /**
  * Default hash algorithm
@@ -27,13 +28,23 @@ namespace hasher {
     enc?: HexBase64Latin1Encoding;
   }
 
+  /**
+   * If object implements Hashable interface then value from toHash
+   * will be used for hash function. It means that the different objects
+   * with the function toHash that return the same value will have the same hash
+   */
+  export interface Hashable {
+    toHash: ()=>string;
+    [key: string]: any;
+  }
+
   export interface Hasher {
     /**
      * Create hash of an object
      * @param object source object
      * @returns hash string of an object
      */
-    hash(object: any, opts?: hasher.HasherOptions): string;
+    hash(object: Hashable | any, opts?: hasher.HasherOptions): string;
     /**
      * Create sorted string from an object
      * @param object source object
@@ -60,7 +71,7 @@ function hasher(
 
   const sortObject = objectSorter(options);
 
-  function hashObject(obj: any, opts: hasher.HasherOptions = {}) {
+  function hashObject(obj: Hashable | any, opts: hasher.HasherOptions = {}) {
     const alg = opts.alg || options.alg || DEFAULT_ALG;
     const enc = opts.enc || options.enc || DEFAULT_ENV;
     const sorted = sortObject(obj);
