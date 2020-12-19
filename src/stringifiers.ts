@@ -3,7 +3,8 @@
  * @inner
  */
 
-import {guessType} from './typeGuess';
+import { guessType } from './typeGuess';
+import { Hashable } from './hasher';
 
 /**
  * List of functions responsible for converting certain types to string
@@ -26,6 +27,16 @@ export const PREFIX = {
   set: '<:set>',
   map: '<:map>',
 };
+
+/**
+ * Converts Hashable to string
+ * @private
+ * @param obj object to convert
+ * @returns object string representation
+ */
+export function _hashable(obj: Hashable): string {
+  return obj.toHash();
+}
 
 /**
  * Converts string to string
