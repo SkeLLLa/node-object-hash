@@ -59,6 +59,7 @@
     "postunit": "codecov",
     "prebenchmark": "npm i --no-save hash-object object-hash benchmark",
     "benchmark": "node benchmark/bench.js",
+    "benchmark:hash": "node benchmark/hash.js",
     "prebenchmark:custom": "npm i --no-save hash-object object-hash benchmark",
     "benchmark:custom": "node --expose-gc benchmark/custom.js",
     "build": "npm run build:node",
