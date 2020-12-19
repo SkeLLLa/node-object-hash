@@ -35,6 +35,7 @@ module.exports = {
     'eqeqeq': 'error',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/no-namespace': 'off',
   },
   overrides: [
     {

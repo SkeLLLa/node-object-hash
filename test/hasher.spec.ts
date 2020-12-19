@@ -13,10 +13,10 @@ describe('Hasher', () => {
 
     test('overrides', () => {
       expect(hash.sort(['2', true, 3])).toEqual('[1,2,3]');
-      expect(hash.hash(['2', true, 3], {alg: 'sha512'})).toEqual(
+      expect(hash.hash(['2', true, 3], { alg: 'sha512' })).toEqual(
         '60f7b5dc86ded48785436192a08dbfd04894d7f1b417c4f8d3714679a7f78cb3c833f16a8559a1cf1f32968747dc1d95ef34826263dacf125ded8f5c374be4c0'
       );
-      expect(hash.hash(['2', true, 3], {enc: 'base64'})).toEqual(
+      expect(hash.hash(['2', true, 3], { enc: 'base64' })).toEqual(
         'phXuruId5Red4IDejDBSyNqQEThAa6ccOMAyhF99VPQ='
       );
     });
