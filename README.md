@@ -16,7 +16,7 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
 [![Npms.io Score](https://badges.npms.io/node-object-hash.svg)](https://npms.io/search?q=node-object-hash)
 [![Build Status](https://github.com/SkeLLLa/node-object-hash/workflows/build/badge.svg)](https://github.com/SkeLLLa/node-object-hash/commits/master)
 [![License](https://img.shields.io/npm/l/node-object-hash.svg)](https://gitlab.com/m03geek/node-object-hash/blob/master/LICENSE)
-[![Codecov Coverage](https://img.shields.io/codecov/c/gl/m03geek/node-object-hash.svg)](https://codecov.io/gl/m03geek/node-object-hash)
+[![Codecov Coverage](https://codecov.io/gh/SkeLLLa/node-object-hash/branch/master/graph/badge.svg?token=wLjMou8TT7)](https://codecov.io/gh/SkeLLLa/node-object-hash)
 [![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
 [![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
 
