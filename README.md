@@ -14,7 +14,7 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
 [![Downloads Count](https://img.shields.io/npm/dm/node-object-hash.svg)](https://www.npmjs.com/package/node-object-hash)
 [![Vunerabilities Count](https://snyk.io/test/npm/node-object-hash/badge.svg)](https://www.npmjs.com/package/node-object-hash)
 [![Npms.io Score](https://badges.npms.io/node-object-hash.svg)](https://npms.io/search?q=node-object-hash)
-[![Build Status](https://gitlab.com/m03geek/node-object-hash/badges/master/pipeline.svg)](https://gitlab.com/m03geek/node-object-hash/commits/master)
+[![Build Status](https://github.com/SkeLLLa/node-object-hash/workflows/build/badge.svg)](https://github.com/SkeLLLa/node-object-hash/commits/master)
 [![License](https://img.shields.io/npm/l/node-object-hash.svg)](https://gitlab.com/m03geek/node-object-hash/blob/master/LICENSE)
 [![Codecov Coverage](https://img.shields.io/codecov/c/gl/m03geek/node-object-hash.svg)](https://codecov.io/gl/m03geek/node-object-hash)
 [![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
