@@ -50,6 +50,13 @@ export function guessType(obj: any): string {
   return type !== 'object' ? type : guessObjectType(obj);
 }
 
+/**
+ * Identify if object is instance of Hashable interface
+ * @param object analyzed variable
+ * @return true if object has toHash property and this property is function
+ * otherwise return false
+ */
 function instanceOfHashable(object: any): object is Hashable {
-  return 'toHash' in object;
+  const toHash = 'toHash';
+  return toHash in object && object[toHash] instanceof Function;
 }
