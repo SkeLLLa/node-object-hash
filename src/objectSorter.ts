@@ -187,7 +187,7 @@ function objectSorter(
       const objectName =
         typeof obj.toString === 'function' ? obj.toString() : 'unknown';
 
-      return '<:' + constructorName + '>:' + objectName;
+      return `<:${constructorName}>:${objectName}`;
     },
   };
 

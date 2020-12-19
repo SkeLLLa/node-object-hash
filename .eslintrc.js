@@ -36,6 +36,17 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/no-namespace': 'off',
+    'no-new-wrappers': 'off',
+    '@typescript-eslint/ban-types': 'warn',
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    'no-invalid-this': 'warn',
+    '@typescript-eslint/no-unsafe-assignment': 'warn',
+    '@typescript-eslint/no-this-alias': 'warn',
+    'no-invalid-this': 'warn',
+    '@typescript-eslint/no-unsafe-return': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+    '@typescript-eslint/no-unsafe-call': 'warn',
+    '@typescript-eslint/restrict-template-expressions': 'warn',
   },
   overrides: [
     {

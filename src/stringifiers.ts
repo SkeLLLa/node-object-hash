@@ -79,7 +79,7 @@ export function _numberCoerce(obj: number): string {
  * @return object string representation
  */
 export function _number(obj: number): string {
-  return PREFIX.number + ':' + obj;
+  return `${PREFIX.number}:${obj}`;
 }
 /**
  * Converts boolean to string
@@ -276,7 +276,7 @@ export function _setSortCoerce(obj: Set<any>): string {
  * @return object string representation
  */
 export function _setSort(obj: Set<any>): string {
-  return PREFIX.set + ':' + _arraySort.call(this, Array.from(obj));
+  return `${PREFIX.set}:${_arraySort.call(this, Array.from(obj))}`;
 }
 /**
  * Converts set to string
@@ -285,7 +285,7 @@ export function _setSort(obj: Set<any>): string {
  * @return object string representation
  */
 export function _set(obj: Set<any>): string {
-  return PREFIX.set + ':' + _array.call(this, Array.from(obj));
+  return `${PREFIX.set}:${_array.call(this, Array.from(obj))}`;
 }
 /**
  * Converts set to string
