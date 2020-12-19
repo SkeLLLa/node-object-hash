@@ -25,7 +25,7 @@ Advanced sort options
 
 • **array**? : *undefined | false | true*
 
-Defined in objectSorter.ts:113
+*Defined in [objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L114)*
 
 If `true` sort array entries before hash
 
@@ -35,7 +35,7 @@ ___
 
 • **map**? : *undefined | false | true*
 
-Defined in objectSorter.ts:125
+*Defined in [objectSorter.ts:126](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L126)*
 
 If `true` sort map entries before hash
 
@@ -45,7 +45,7 @@ ___
 
 • **object**? : *undefined | false | true*
 
-Defined in objectSorter.ts:117
+*Defined in [objectSorter.ts:118](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L118)*
 
 If `true` sort object entries before hash
 
@@ -55,6 +55,6 @@ ___
 
 • **set**? : *undefined | false | true*
 
-Defined in objectSorter.ts:121
+*Defined in [objectSorter.ts:122](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L122)*
 
 If `true` sort set entries before hash

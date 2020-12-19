@@ -1,3 +1,5 @@
+import { Hashable } from './hasher';
+
 /**
  * Type mapping rules.
  */
@@ -31,6 +33,9 @@ export function guessObjectType(obj: object): string {
   if (obj === null) {
     return 'null';
   }
+  if(instanceOfHashable(obj)){
+    return 'hashable';
+  }
   const type = obj.constructor ? obj.constructor.name : 'unknown';
   return TYPE_MAP[type] || 'unknown';
 }
@@ -43,4 +48,15 @@ export function guessObjectType(obj: object): string {
 export function guessType(obj: any): string {
   const type = typeof obj;
   return type !== 'object' ? type : guessObjectType(obj);
+}
+
+/**
+ * Identify if object is instance of Hashable interface
+ * @param object analyzed variable
+ * @return true if object has toHash property and this property is function
+ * otherwise return false
+ */
+function instanceOfHashable(object: any): object is Hashable {
+  const toHash = 'toHash';
+  return toHash in object && object[toHash] instanceof Function;
 }

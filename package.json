@@ -58,7 +58,7 @@
   },
   "scripts": {
     "lint:eslint": "eslint --ext .ts .",
-    "lint": "npm run lint:eslint",
+    "lint": "eslint",
     "lint:fix": "eslint --ext .ts . --fix",
     "test": "npm audit || true && npm run lint && npm run unit",
     "unit": "jest --coverage",
