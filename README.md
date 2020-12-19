@@ -238,8 +238,21 @@ Bench data - array of 100000 complex objects
 
 * `npm run bench` to run custom benchmark
 * `npm run benchmark` to run benchmark suite
+* `npm run benchmark:hash` to run hash benchmark suite
 
 ### Results
+
+| Hashing algorithm | Result hash bytes length| Performance (ops/sec) |
+| --- | --- | --- |
+|`sha256` (default)| 64 | 1,599 +- 5.77% |
+|`sha1`| 40 | 1,983 +- 1.50% |
+|`sha224`| 56 | 1,701 +- 2.81% |
+|`sha384`| 96 | 1,800 +- 0.81% |
+|`sha512`| 128 | 1,847 +- 1.75% |
+|`md4`| 32 | 1,971c +- 0.98% |
+|`md5`| 32 | 1,691 +- 3.18% |
+|`whirlpool`| 128 | 1,487 +- 2.33% |
+|  |  |  |
 
 #### Custom benchmark ([code](bench/index.js))
 
