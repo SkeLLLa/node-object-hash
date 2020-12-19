@@ -30,6 +30,7 @@
 * [_functionCoerce](README.md#private-_functioncoerce)
 * [_functionTrim](README.md#private-_functiontrim)
 * [_functionTrimCoerce](README.md#private-_functiontrimcoerce)
+* [_hashable](README.md#private-_hashable)
 * [_map](README.md#private-_map)
 * [_mapSort](README.md#private-_mapsort)
 * [_null](README.md#private-_null)
@@ -52,6 +53,7 @@
 * [_undefinedCoerce](README.md#private-_undefinedcoerce)
 * [guessObjectType](README.md#guessobjecttype)
 * [guessType](README.md#guesstype)
+* [instanceOfHashable](README.md#instanceofhashable)
 
 ### Object literals
 
@@ -64,7 +66,7 @@
 
 Ƭ **Stringifiers**: *object*
 
-Defined in stringifiers.ts:11
+*Defined in [stringifiers.ts:12](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L12)*
 
 List of functions responsible for converting certain types to string
 
@@ -86,7 +88,7 @@ Name | Type |
 
 • **DEFAULT_ALG**: *"sha256"* = "sha256"
 
-Defined in hasher.ts:7
+*Defined in [hasher.ts:8](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/hasher.ts#L8)*
 
 Default hash algorithm
 
@@ -96,7 +98,7 @@ ___
 
 • **DEFAULT_ENV**: *"hex"* = "hex"
 
-Defined in hasher.ts:11
+*Defined in [hasher.ts:12](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/hasher.ts#L12)*
 
 Default hash string enoding
 
@@ -106,7 +108,7 @@ Default hash string enoding
 
 ▸ **_array**(`obj`: Array‹any›): *string*
 
-Defined in stringifiers.ts:251
+*Defined in [stringifiers.ts:262](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L262)*
 
 Converts array to string
 
@@ -126,7 +128,7 @@ ___
 
 ▸ **_arraySort**(`obj`: Array‹any›): *string*
 
-Defined in stringifiers.ts:232
+*Defined in [stringifiers.ts:243](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L243)*
 
 Converts array to string
 
@@ -146,7 +148,7 @@ ___
 
 ▸ **_boolean**(`obj`: boolean): *string*
 
-Defined in stringifiers.ts:99
+*Defined in [stringifiers.ts:110](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L110)*
 
 Converts boolean to string
 
@@ -166,7 +168,7 @@ ___
 
 ▸ **_booleanCoerce**(`obj`: boolean): *string*
 
-Defined in stringifiers.ts:90
+*Defined in [stringifiers.ts:101](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L101)*
 
 Converts boolean to string
 
@@ -186,7 +188,7 @@ ___
 
 ▸ **_date**(`obj`: Date): *string*
 
-Defined in stringifiers.ts:223
+*Defined in [stringifiers.ts:234](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L234)*
 
 Converts date to string
 
@@ -206,7 +208,7 @@ ___
 
 ▸ **_dateCoerce**(`obj`: Date): *string*
 
-Defined in stringifiers.ts:214
+*Defined in [stringifiers.ts:225](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L225)*
 
 Converts date to string
 
@@ -226,7 +228,7 @@ ___
 
 ▸ **_function**(`obj`: Function): *string*
 
-Defined in stringifiers.ts:171
+*Defined in [stringifiers.ts:182](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L182)*
 
 Converts function to string
 
@@ -246,7 +248,7 @@ ___
 
 ▸ **_functionCoerce**(`obj`: Function): *string*
 
-Defined in stringifiers.ts:162
+*Defined in [stringifiers.ts:173](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L173)*
 
 Converts function to string
 
@@ -266,7 +268,7 @@ ___
 
 ▸ **_functionTrim**(`obj`: Function): *string*
 
-Defined in stringifiers.ts:196
+*Defined in [stringifiers.ts:207](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L207)*
 
 Converts function to string
 
@@ -286,7 +288,7 @@ ___
 
 ▸ **_functionTrimCoerce**(`obj`: Function): *string*
 
-Defined in stringifiers.ts:180
+*Defined in [stringifiers.ts:191](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L191)*
 
 Converts function to string
 
@@ -302,11 +304,31 @@ object string representation
 
 ___
 
+### `Private` _hashable
+
+▸ **_hashable**(`obj`: [Hashable](interfaces/hasher.hashable.md)): *string*
+
+*Defined in [stringifiers.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L37)*
+
+Converts Hashable to string
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`obj` | [Hashable](interfaces/hasher.hashable.md) | object to convert |
+
+**Returns:** *string*
+
+object string representation
+
+___
+
 ### `Private` _map
 
 ▸ **_map**(`obj`: Map‹any, any›): *string*
 
-Defined in stringifiers.ts:339
+*Defined in [stringifiers.ts:350](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L350)*
 
 Converts map to string
 
@@ -326,7 +348,7 @@ ___
 
 ▸ **_mapSort**(`obj`: Map‹any, any›): *string*
 
-Defined in stringifiers.ts:358
+*Defined in [stringifiers.ts:369](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L369)*
 
 Converts map to string
 
@@ -346,7 +368,7 @@ ___
 
 ▸ **_null**(): *string*
 
-Defined in stringifiers.ts:153
+*Defined in [stringifiers.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L164)*
 
 Converts null to string
 
@@ -360,7 +382,7 @@ ___
 
 ▸ **_nullCoerce**(): *string*
 
-Defined in stringifiers.ts:144
+*Defined in [stringifiers.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L155)*
 
 Converts null to string
 
@@ -374,7 +396,7 @@ ___
 
 ▸ **_number**(`obj`: number): *string*
 
-Defined in stringifiers.ts:81
+*Defined in [stringifiers.ts:92](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L92)*
 
 Converts number to string
 
@@ -394,7 +416,7 @@ ___
 
 ▸ **_numberCoerce**(`obj`: number): *string*
 
-Defined in stringifiers.ts:72
+*Defined in [stringifiers.ts:83](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L83)*
 
 Converts number to string
 
@@ -414,7 +436,7 @@ ___
 
 ▸ **_object**(`obj`: object): *string*
 
-Defined in stringifiers.ts:305
+*Defined in [stringifiers.ts:316](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L316)*
 
 Converts object to string
 
@@ -434,7 +456,7 @@ ___
 
 ▸ **_objectSort**(`obj`: object): *string*
 
-Defined in stringifiers.ts:322
+*Defined in [stringifiers.ts:333](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L333)*
 
 Converts object to string
 
@@ -454,7 +476,7 @@ ___
 
 ▸ **_set**(`obj`: Set‹any›): *string*
 
-Defined in stringifiers.ts:287
+*Defined in [stringifiers.ts:298](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L298)*
 
 Converts set to string
 
@@ -474,7 +496,7 @@ ___
 
 ▸ **_setCoerce**(`obj`: Set‹any›): *string*
 
-Defined in stringifiers.ts:296
+*Defined in [stringifiers.ts:307](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L307)*
 
 Converts set to string
 
@@ -494,7 +516,7 @@ ___
 
 ▸ **_setSort**(`obj`: Set‹any›): *string*
 
-Defined in stringifiers.ts:278
+*Defined in [stringifiers.ts:289](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L289)*
 
 Converts set to string
 
@@ -514,7 +536,7 @@ ___
 
 ▸ **_setSortCoerce**(`obj`: Set‹any›): *string*
 
-Defined in stringifiers.ts:269
+*Defined in [stringifiers.ts:280](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L280)*
 
 Converts set to string
 
@@ -534,7 +556,7 @@ ___
 
 ▸ **_string**(`obj`: string): *string*
 
-Defined in stringifiers.ts:45
+*Defined in [stringifiers.ts:56](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L56)*
 
 Converts string to string
 
@@ -554,7 +576,7 @@ ___
 
 ▸ **_stringCoerce**(`obj`: string): *string*
 
-Defined in stringifiers.ts:36
+*Defined in [stringifiers.ts:47](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L47)*
 
 Converts string to string
 
@@ -574,7 +596,7 @@ ___
 
 ▸ **_stringTrim**(`obj`: string): *string*
 
-Defined in stringifiers.ts:63
+*Defined in [stringifiers.ts:74](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L74)*
 
 Converts string to string
 
@@ -594,7 +616,7 @@ ___
 
 ▸ **_stringTrimCoerce**(`obj`: string): *string*
 
-Defined in stringifiers.ts:54
+*Defined in [stringifiers.ts:65](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L65)*
 
 Converts string to string
 
@@ -614,7 +636,7 @@ ___
 
 ▸ **_symbol**(`obj`: symbol): *string*
 
-Defined in stringifiers.ts:117
+*Defined in [stringifiers.ts:128](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L128)*
 
 Converts symbol to string
 
@@ -634,7 +656,7 @@ ___
 
 ▸ **_symbolCoerce**(): *string*
 
-Defined in stringifiers.ts:108
+*Defined in [stringifiers.ts:119](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L119)*
 
 Converts symbol to string
 
@@ -648,7 +670,7 @@ ___
 
 ▸ **_undefined**(): *string*
 
-Defined in stringifiers.ts:135
+*Defined in [stringifiers.ts:146](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L146)*
 
 Converts undefined to string
 
@@ -662,7 +684,7 @@ ___
 
 ▸ **_undefinedCoerce**(): *string*
 
-Defined in stringifiers.ts:126
+*Defined in [stringifiers.ts:137](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L137)*
 
 Converts undefined to string
 
@@ -676,7 +698,7 @@ ___
 
 ▸ **guessObjectType**(`obj`: object): *string*
 
-Defined in typeGuess.ts:30
+*Defined in [typeGuess.ts:32](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L32)*
 
 Guess object type
 
@@ -696,7 +718,7 @@ ___
 
 ▸ **guessType**(`obj`: any): *string*
 
-Defined in typeGuess.ts:43
+*Defined in [typeGuess.ts:48](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L48)*
 
 Guess variable type
 
@@ -710,13 +732,34 @@ Name | Type | Description |
 
 variable type
 
+___
+
+###  instanceOfHashable
+
+▸ **instanceOfHashable**(`object`: any): *boolean*
+
+*Defined in [typeGuess.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L59)*
+
+Identify if object is instance of Hashable interface
+
+**Parameters:**
+
+Name | Type | Description |
+------ | ------ | ------ |
+`object` | any | analyzed variable |
+
+**Returns:** *boolean*
+
+true if object has toHash property and this property is function
+otherwise return false
+
 ## Object literals
 
 ### `Const` PREFIX
 
 ### ▪ **PREFIX**: *object*
 
-Defined in stringifiers.ts:16
+*Defined in [stringifiers.ts:17](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L17)*
 
 Prefixes that used when type coercion is disabled
 
@@ -724,67 +767,67 @@ Prefixes that used when type coercion is disabled
 
 • **array**: *string* = ""
 
-Defined in stringifiers.ts:24
+*Defined in [stringifiers.ts:25](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L25)*
 
 ###  boolean
 
 • **boolean**: *string* = "<:b>"
 
-Defined in stringifiers.ts:19
+*Defined in [stringifiers.ts:20](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L20)*
 
 ###  date
 
 • **date**: *string* = "<:date>"
 
-Defined in stringifiers.ts:25
+*Defined in [stringifiers.ts:26](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L26)*
 
 ###  function
 
 • **function**: *string* = "<:func>"
 
-Defined in stringifiers.ts:23
+*Defined in [stringifiers.ts:24](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L24)*
 
 ###  map
 
 • **map**: *string* = "<:map>"
 
-Defined in stringifiers.ts:27
+*Defined in [stringifiers.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L28)*
 
 ###  null
 
 • **null**: *string* = "<:null>"
 
-Defined in stringifiers.ts:22
+*Defined in [stringifiers.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L23)*
 
 ###  number
 
 • **number**: *string* = "<:n>"
 
-Defined in stringifiers.ts:18
+*Defined in [stringifiers.ts:19](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L19)*
 
 ###  set
 
 • **set**: *string* = "<:set>"
 
-Defined in stringifiers.ts:26
+*Defined in [stringifiers.ts:27](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L27)*
 
 ###  string
 
 • **string**: *string* = "<:s>"
 
-Defined in stringifiers.ts:17
+*Defined in [stringifiers.ts:18](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L18)*
 
 ###  symbol
 
 • **symbol**: *string* = "<:smbl>"
 
-Defined in stringifiers.ts:20
+*Defined in [stringifiers.ts:21](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L21)*
 
 ###  undefined
 
 • **undefined**: *string* = "<:undf>"
 
-Defined in stringifiers.ts:21
+*Defined in [stringifiers.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/stringifiers.ts#L22)*
 
 ___
 
@@ -792,7 +835,7 @@ ___
 
 ### ▪ **TYPE_MAP**: *object*
 
-Defined in typeGuess.ts:4
+*Defined in [typeGuess.ts:6](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L6)*
 
 Type mapping rules.
 
@@ -800,106 +843,106 @@ Type mapping rules.
 
 • **Array**: *string* = "array"
 
-Defined in typeGuess.ts:5
+*Defined in [typeGuess.ts:7](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L7)*
 
 ###  Boolean
 
 • **Boolean**: *string* = "boolean"
 
-Defined in typeGuess.ts:21
+*Defined in [typeGuess.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L23)*
 
 ###  Buffer
 
 • **Buffer**: *string* = "array"
 
-Defined in typeGuess.ts:15
+*Defined in [typeGuess.ts:17](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L17)*
 
 ###  Date
 
 • **Date**: *string* = "date"
 
-Defined in typeGuess.ts:18
+*Defined in [typeGuess.ts:20](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L20)*
 
 ###  Float32Array
 
 • **Float32Array**: *string* = "array"
 
-Defined in typeGuess.ts:13
+*Defined in [typeGuess.ts:15](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L15)*
 
 ###  Float64Array
 
 • **Float64Array**: *string* = "array"
 
-Defined in typeGuess.ts:14
+*Defined in [typeGuess.ts:16](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L16)*
 
 ###  Int16Array
 
 • **Int16Array**: *string* = "array"
 
-Defined in typeGuess.ts:9
+*Defined in [typeGuess.ts:11](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L11)*
 
 ###  Int32Array
 
 • **Int32Array**: *string* = "array"
 
-Defined in typeGuess.ts:11
+*Defined in [typeGuess.ts:13](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L13)*
 
 ###  Int8Array
 
 • **Int8Array**: *string* = "array"
 
-Defined in typeGuess.ts:6
+*Defined in [typeGuess.ts:8](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L8)*
 
 ###  Map
 
 • **Map**: *string* = "map"
 
-Defined in typeGuess.ts:16
+*Defined in [typeGuess.ts:18](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L18)*
 
 ###  Number
 
 • **Number**: *string* = "number"
 
-Defined in typeGuess.ts:20
+*Defined in [typeGuess.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L22)*
 
 ###  Object
 
 • **Object**: *string* = "object"
 
-Defined in typeGuess.ts:22
+*Defined in [typeGuess.ts:24](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L24)*
 
 ###  Set
 
 • **Set**: *string* = "set"
 
-Defined in typeGuess.ts:17
+*Defined in [typeGuess.ts:19](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L19)*
 
 ###  String
 
 • **String**: *string* = "string"
 
-Defined in typeGuess.ts:19
+*Defined in [typeGuess.ts:21](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L21)*
 
 ###  Uint16Array
 
 • **Uint16Array**: *string* = "array"
 
-Defined in typeGuess.ts:10
+*Defined in [typeGuess.ts:12](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L12)*
 
 ###  Uint32Array
 
 • **Uint32Array**: *string* = "array"
 
-Defined in typeGuess.ts:12
+*Defined in [typeGuess.ts:14](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L14)*
 
 ###  Uint8Array
 
 • **Uint8Array**: *string* = "array"
 
-Defined in typeGuess.ts:7
+*Defined in [typeGuess.ts:9](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L9)*
 
 ###  Uint8ClampedArray
 
 • **Uint8ClampedArray**: *string* = "array"
 
-Defined in typeGuess.ts:8
+*Defined in [typeGuess.ts:10](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/typeGuess.ts#L10)*
