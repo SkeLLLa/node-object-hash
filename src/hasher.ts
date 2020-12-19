@@ -54,21 +54,15 @@ namespace hasher {
  * Hasher constructor
  * @param options hasher options
  */
-function hasher(
-  options: hasher.HasherOptions = {}
-): hasher.Hasher {
-
+function hasher(options: hasher.HasherOptions = {}): hasher.Hasher {
   const sortObject = objectSorter(options);
 
   function hashObject(obj: any, opts: hasher.HasherOptions = {}) {
     const alg = opts.alg || options.alg || DEFAULT_ALG;
     const enc = opts.enc || options.enc || DEFAULT_ENV;
     const sorted = sortObject(obj);
-    
-    return crypto
-      .createHash(alg)
-      .update(sorted)
-      .digest(enc);
+
+    return crypto.createHash(alg).update(sorted).digest(enc);
   }
 
   return {

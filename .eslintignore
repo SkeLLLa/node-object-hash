@@ -7,3 +7,5 @@ static/
 **/*.xxx.*
 dist/
 benchmark/
+.eslintrc.js
+jest.config.js

@@ -1,4 +1,4 @@
-import {guessType} from './typeGuess';
+import { guessType } from './typeGuess';
 import * as str from './stringifiers';
 
 namespace objectSorter {
@@ -167,12 +167,12 @@ namespace objectSorter {
 /**
  * Object sorter consturctor
  * @param options object transformation options
- * @returns function that transforms object to strings
+ * @return function that transforms object to strings
  */
 function objectSorter(
   options: objectSorter.SorterOptions = {}
 ): (obj: any) => string {
-  const {sort, coerce, trim} = {
+  const { sort, coerce, trim } = {
     sort: true,
     coerce: true,
     trim: false,

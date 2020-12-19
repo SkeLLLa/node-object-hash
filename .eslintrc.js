@@ -1,31 +1,52 @@
 module.exports = {
-  extends: ['eslint:recommended', 'google'],
-  parserOptions: {
-    ecmaVersion: 2018,
-  },
   env: {
     es6: true,
     node: true,
-    jest: false,
   },
+  extends: [
+    'eslint:recommended',
+    'google',
+    'prettier',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: 'tsconfig.json',
+    sourceType: 'module',
+  },
+  plugins: ['prettier', 'sort-requires', '@typescript-eslint'],
   rules: {
-    'new-cap': ['error', {capIsNewExceptions: ['ObjectId', 'Fastify']}],
-    'max-len': [
-      'error',
-      {
-        code: 80,
-        comments: 999,
-        ignoreComments: true,
-        ignoreStrings: true,
-        ignoreTrailingComments: true,
-        ignoreUrls: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
-    indent: ['error', 2, {SwitchCase: 1}],
-    'spaced-comment': ['error', 'always', {markers: ['/']}],
+    'prettier/prettier': 'error',
+    'arrow-body-style': 'off',
+    'global-require': 'off',
     'no-console': 'warn',
+    'spaced-comment': ['error', 'always', { markers: ['/'] }],
+    'no-param-reassign': ['error', { props: false }],
     'valid-jsdoc': 'off',
     'require-jsdoc': 'off',
+    'sort-requires/sort-requires': 'error',
+    'object-shorthand': 'error',
+    'eqeqeq': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/camelcase': 'off',
   },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*', '**/test/**/*'],
+      env: {
+        jest: true,
+      },
+      parserOptions: {
+        project: '.eslint.tsconfig.json',
+        sourceType: 'module',
+      },
+    },
+  ],
+  settings: {},
 };

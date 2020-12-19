@@ -1,7 +1,7 @@
 /**
  * Type mapping rules.
  */
-export const TYPE_MAP: {[type: string]: string} = {
+export const TYPE_MAP: { [type: string]: string } = {
   Array: 'array',
   Int8Array: 'array',
   Uint8Array: 'array',
@@ -25,7 +25,7 @@ export const TYPE_MAP: {[type: string]: string} = {
 /**
  * Guess object type
  * @param obj analyzed object
- * @returns object type
+ * @return object type
  */
 export function guessObjectType(obj: object): string {
   if (obj === null) {
@@ -38,7 +38,7 @@ export function guessObjectType(obj: object): string {
 /**
  * Guess variable type
  * @param obj analyzed variable
- * @returns variable type
+ * @return variable type
  */
 export function guessType(obj: any): string {
   const type = typeof obj;

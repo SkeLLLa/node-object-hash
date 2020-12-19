@@ -3,12 +3,12 @@
  * @inner
  */
 
-import {guessType} from './typeGuess';
+import { guessType } from './typeGuess';
 
 /**
  * List of functions responsible for converting certain types to string
  */
-export type Stringifiers = {[key: string]: (obj: any) => string};
+export type Stringifiers = { [key: string]: (obj: any) => string };
 
 /**
  * Prefixes that used when type coercion is disabled
@@ -31,7 +31,7 @@ export const PREFIX = {
  * Converts string to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _stringCoerce(obj: string): string {
   return obj;
@@ -40,7 +40,7 @@ export function _stringCoerce(obj: string): string {
  * Converts string to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _string(obj: string): string {
   return PREFIX.string + ':' + obj;
@@ -49,7 +49,7 @@ export function _string(obj: string): string {
  * Converts string to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _stringTrimCoerce(obj: string): string {
   return obj.replace(/(\s+|\t|\r\n|\n|\r)/gm, ' ').trim();
@@ -58,7 +58,7 @@ export function _stringTrimCoerce(obj: string): string {
  * Converts string to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _stringTrim(obj: string): string {
   return PREFIX.string + ':' + obj.replace(/(\s+|\t|\r\n|\n|\r)/gm, ' ').trim();
@@ -67,7 +67,7 @@ export function _stringTrim(obj: string): string {
  * Converts number to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _numberCoerce(obj: number): string {
   return obj.toString();
@@ -76,7 +76,7 @@ export function _numberCoerce(obj: number): string {
  * Converts number to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _number(obj: number): string {
   return PREFIX.number + ':' + obj;
@@ -85,7 +85,7 @@ export function _number(obj: number): string {
  * Converts boolean to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _booleanCoerce(obj: boolean): string {
   return obj ? '1' : '0';
@@ -94,7 +94,7 @@ export function _booleanCoerce(obj: boolean): string {
  * Converts boolean to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _boolean(obj: boolean): string {
   return PREFIX.boolean + ':' + obj.toString();
@@ -103,7 +103,7 @@ export function _boolean(obj: boolean): string {
  * Converts symbol to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _symbolCoerce(): string {
   return PREFIX.symbol;
@@ -112,7 +112,7 @@ export function _symbolCoerce(): string {
  * Converts symbol to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _symbol(obj: symbol): string {
   return PREFIX.symbol + ':' + obj.toString();
@@ -121,7 +121,7 @@ export function _symbol(obj: symbol): string {
  * Converts undefined to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _undefinedCoerce(): string {
   return '';
@@ -130,7 +130,7 @@ export function _undefinedCoerce(): string {
  * Converts undefined to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _undefined(): string {
   return PREFIX.undefined;
@@ -139,7 +139,7 @@ export function _undefined(): string {
  * Converts null to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _nullCoerce(): string {
   return '';
@@ -148,7 +148,7 @@ export function _nullCoerce(): string {
  * Converts null to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _null(): string {
   return PREFIX.null;
@@ -157,7 +157,7 @@ export function _null(): string {
  * Converts function to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _functionCoerce(obj: Function): string {
   return obj.name + '=>' + obj.toString();
@@ -166,7 +166,7 @@ export function _functionCoerce(obj: Function): string {
  * Converts function to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _function(obj: Function): string {
   return PREFIX.function + ':' + obj.name + '=>' + obj.toString();
@@ -175,7 +175,7 @@ export function _function(obj: Function): string {
  * Converts function to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _functionTrimCoerce(obj: Function): string {
   return (
@@ -191,7 +191,7 @@ export function _functionTrimCoerce(obj: Function): string {
  * Converts function to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _functionTrim(obj: Function): string {
   return (
@@ -209,7 +209,7 @@ export function _functionTrim(obj: Function): string {
  * Converts date to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _dateCoerce(obj: Date): string {
   return obj.toISOString();
@@ -218,7 +218,7 @@ export function _dateCoerce(obj: Date): string {
  * Converts date to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _date(obj: Date): string {
   return PREFIX.date + ':' + obj.toISOString();
@@ -227,7 +227,7 @@ export function _date(obj: Date): string {
  * Converts array to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _arraySort(obj: Array<any>): string {
   const stringifiers: Stringifiers = this;
@@ -246,7 +246,7 @@ export function _arraySort(obj: Array<any>): string {
  * Converts array to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _array(obj: Array<any>): string {
   const stringifiers: Stringifiers = this;
@@ -264,7 +264,7 @@ export function _array(obj: Array<any>): string {
  * Converts set to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _setSortCoerce(obj: Set<any>): string {
   return _arraySort.call(this, Array.from(obj));
@@ -273,7 +273,7 @@ export function _setSortCoerce(obj: Set<any>): string {
  * Converts set to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _setSort(obj: Set<any>): string {
   return PREFIX.set + ':' + _arraySort.call(this, Array.from(obj));
@@ -282,7 +282,7 @@ export function _setSort(obj: Set<any>): string {
  * Converts set to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _set(obj: Set<any>): string {
   return PREFIX.set + ':' + _array.call(this, Array.from(obj));
@@ -291,7 +291,7 @@ export function _set(obj: Set<any>): string {
  * Converts set to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _setCoerce(obj: Set<any>): string {
   return _array.call(this, Array.from(obj));
@@ -300,9 +300,9 @@ export function _setCoerce(obj: Set<any>): string {
  * Converts object to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
-export function _object(obj: {[key: string]: any}): string {
+export function _object(obj: { [key: string]: any }): string {
   const stringifiers: Stringifiers = this;
   const keys = Object.keys(obj);
   const objArray = [];
@@ -317,9 +317,9 @@ export function _object(obj: {[key: string]: any}): string {
  * Converts object to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
-export function _objectSort(obj: {[key: string]: any}): string {
+export function _objectSort(obj: { [key: string]: any }): string {
   const stringifiers: Stringifiers = this;
   const keys = Object.keys(obj).sort();
   const objArray = [];
@@ -334,7 +334,7 @@ export function _objectSort(obj: {[key: string]: any}): string {
  * Converts map to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _map(obj: Map<any, any>): string {
   const stringifiers: Stringifiers = this;
@@ -353,7 +353,7 @@ export function _map(obj: Map<any, any>): string {
  * Converts map to string
  * @private
  * @param obj object to convert
- * @returns object string representation
+ * @return object string representation
  */
 export function _mapSort(obj: Map<any, any>): string {
   const stringifiers: Stringifiers = this;
