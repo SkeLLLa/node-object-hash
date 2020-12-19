@@ -1,3 +1,5 @@
+import { Hashable } from './hasher';
+
 /**
  * Type mapping rules.
  */
@@ -31,6 +33,9 @@ export function guessObjectType(obj: object): string {
   if (obj === null) {
     return 'null';
   }
+  if(instanceOfHashable(obj)){
+    return 'hashable';
+  }
   const type = obj.constructor ? obj.constructor.name : 'unknown';
   return TYPE_MAP[type] || 'unknown';
 }
@@ -43,4 +48,8 @@ export function guessObjectType(obj: object): string {
 export function guessType(obj: any): string {
   const type = typeof obj;
   return type !== 'object' ? type : guessObjectType(obj);
+}
+
+function instanceOfHashable(object: any): object is Hashable {
+  return 'toHash' in object;
 }

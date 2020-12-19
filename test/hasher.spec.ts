@@ -1,4 +1,5 @@
 import 'jest';
+import {Hashable} from '../src/hasher';
 import hasher = require('../src/hasher');
 
 describe('Hasher', () => {
@@ -19,6 +20,52 @@ describe('Hasher', () => {
       expect(hash.hash(['2', true, 3], {enc: 'base64'})).toEqual(
         'phXuruId5Red4IDejDBSyNqQEThAa6ccOMAyhF99VPQ='
       );
+    });
+
+    test('hashable', () => {
+      const hashable: Hashable = {
+        value: 'value',
+        number: 1,
+        bool: true,
+        toHash: () => 'some_value_to_hash'
+      };
+      expect(hash.sort(hashable)).toEqual('some_value_to_hash');
+      expect(hash.hash(hashable)).toEqual(
+        '64204ff2ce2d6bfd2d1f576b58b71d98a08aaa39c8d726fd220b858bfb571039'
+      );
+
+      const anotherHashableWithSameHash: Hashable = {
+        value: 'value_another',
+        number: 5,
+        toHash: () => 'some_value_to_hash',
+      };
+      expect(hash.hash(hashable)).toEqual(hash.hash(anotherHashableWithSameHash));
+    });
+
+    test('hashable array', () => {
+      const arrayHashable = [{
+        value: 'value',
+        number: 1,
+        bool: true,
+        toHash: () => 'some_value_to_hash'
+      }, {
+        value: 'value_another',
+        number: 5,
+        toHash: () => 'another_value_to_hash',
+      }];
+      expect(hash.sort(arrayHashable)).toEqual('[another_value_to_hash,some_value_to_hash]');
+      expect(hash.hash(arrayHashable)).toEqual(
+        'c0705a3e2b55b54d55a6fe675b7dfb48572bd3adf0c54aab621da2b3663a0796'
+      );
+
+      const anotherHAshableArrayWithObjectWithTheSameHash = [{
+        someValue: 'somevalue',
+        toHash: () => 'another_value_to_hash'
+      }, {
+        numberValue: 5,
+        toHash: () => 'some_value_to_hash'
+      }];
+      expect(hash.hash(arrayHashable)).toEqual(hash.hash(anotherHAshableArrayWithObjectWithTheSameHash));
     });
   });
 });
