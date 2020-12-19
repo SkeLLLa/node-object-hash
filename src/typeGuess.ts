@@ -33,7 +33,7 @@ export function guessObjectType(obj: object): string {
   if (obj === null) {
     return 'null';
   }
-  if(instanceOfHashable(obj)){
+  if (instanceOfHashable(obj)) {
     return 'hashable';
   }
   const type = obj.constructor ? obj.constructor.name : 'unknown';

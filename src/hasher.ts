@@ -34,7 +34,7 @@ namespace hasher {
    * with the function toHash that return the same value will have the same hash
    */
   export interface Hashable {
-    toHash: ()=>string;
+    toHash: () => string;
     [key: string]: any;
   }
 

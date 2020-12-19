@@ -173,7 +173,7 @@ namespace objectSorter {
 function objectSorter(
   options: objectSorter.SorterOptions = {}
 ): (obj: Hashable | any) => string {
-  const {sort, coerce, trim} = {
+  const { sort, coerce, trim } = {
     sort: true,
     coerce: true,
     trim: false,
