@@ -23,7 +23,7 @@ Advanced trim options
 
 • **function**? : *undefined | false | true*
 
-Defined in objectSorter.ts:139
+*Defined in [objectSorter.ts:140](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L140)*
 
 If `true` replaces multiple space with one and trims whitespaces in function body
 
@@ -33,6 +33,6 @@ ___
 
 • **string**? : *undefined | false | true*
 
-Defined in objectSorter.ts:135
+*Defined in [objectSorter.ts:136](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L136)*
 
 If `true` replaces multiple space with one and trims whitespaces in strings

@@ -30,7 +30,7 @@ Advanced coerce options
 
 • **boolean**? : *undefined | false | true*
 
-Defined in objectSorter.ts:21
+*Defined in [objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L22)*
 
 If `true` converts booleans to string `1` and `0`
 
@@ -52,7 +52,7 @@ ___
 
 • **date**? : *undefined | false | true*
 
-Defined in objectSorter.ts:94
+*Defined in [objectSorter.ts:95](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L95)*
 
 If `true` dates may equal the same formatted strings
 
@@ -70,7 +70,7 @@ ___
 
 • **function**? : *undefined | false | true*
 
-Defined in objectSorter.ts:85
+*Defined in [objectSorter.ts:86](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L86)*
 
 If `true` functions may equal the same formatted strings
 
@@ -88,7 +88,7 @@ ___
 
 • **null**? : *undefined | false | true*
 
-Defined in objectSorter.ts:65
+*Defined in [objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L66)*
 
 If `true` null will be equal to empty string
 
@@ -108,7 +108,7 @@ ___
 
 • **number**? : *undefined | false | true*
 
-Defined in objectSorter.ts:32
+*Defined in [objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L33)*
 
 If `true` converts numbers to strings
 
@@ -128,7 +128,7 @@ ___
 
 • **set**? : *undefined | false | true*
 
-Defined in objectSorter.ts:103
+*Defined in [objectSorter.ts:104](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L104)*
 
 If `true` set will be coerced to array
 
@@ -146,7 +146,7 @@ ___
 
 • **string**? : *undefined | false | true*
 
-Defined in objectSorter.ts:43
+*Defined in [objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L44)*
 
 If `true` strings and coerced string will be equal to coerced numbers, booleans, etc
 
@@ -166,7 +166,7 @@ ___
 
 • **symbol**? : *undefined | false | true*
 
-Defined in objectSorter.ts:76
+*Defined in [objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L77)*
 
 If `true` all symbols will have eual representation
 
@@ -186,7 +186,7 @@ ___
 
 • **undefined**? : *undefined | false | true*
 
-Defined in objectSorter.ts:54
+*Defined in [objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L55)*
 
 If `true` undefined will be equal to empty string
 

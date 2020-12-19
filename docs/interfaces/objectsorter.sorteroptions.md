@@ -26,7 +26,7 @@ Object sorter options
 
 • **coerce**? : *boolean | [CoerceOptions](objectsorter.coerceoptions.md)*
 
-Defined in objectSorter.ts:151
+*Defined in [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L152)*
 
 If `true` enables type coercion.
 Advanced coerce options could be provided as object
@@ -39,7 +39,7 @@ ___
 
 • **sort**? : *boolean | [SortOptions](objectsorter.sortoptions.md)*
 
-Defined in objectSorter.ts:157
+*Defined in [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L158)*
 
 If `true` enables sorting.
 Advanced sorting options could be provided as object
@@ -52,7 +52,7 @@ ___
 
 • **trim**? : *boolean | [TrimOptions](objectsorter.trimoptions.md)*
 
-Defined in objectSorter.ts:163
+*Defined in [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L164)*
 
 If `true` enables trimming and multiple whitespace replacement.
 Advanced sorting options could be provided as object.

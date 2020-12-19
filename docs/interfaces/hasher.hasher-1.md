@@ -20,9 +20,9 @@
 
 ###  hash
 
-▸ **hash**(`object`: any, `opts?`: [HasherOptions](hasher.hasheroptions.md)): *string*
+▸ **hash**(`object`: [Hashable](hasher.hashable.md) | any, `opts?`: [HasherOptions](hasher.hasheroptions.md)): *string*
 
-Defined in hasher.ts:36
+*Defined in [hasher.ts:47](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/hasher.ts#L47)*
 
 Create hash of an object
 
@@ -30,7 +30,7 @@ Create hash of an object
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`object` | any | source object |
+`object` | [Hashable](hasher.hashable.md) \| any | source object |
 `opts?` | [HasherOptions](hasher.hasheroptions.md) | - |
 
 **Returns:** *string*
@@ -43,7 +43,7 @@ ___
 
 ▸ **sort**(`object`: any): *string*
 
-Defined in hasher.ts:42
+*Defined in [hasher.ts:53](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/hasher.ts#L53)*
 
 Create sorted string from an object
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **sortObject**(`object`: any): *string*
 
-Defined in hasher.ts:49
+*Defined in [hasher.ts:60](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/hasher.ts#L60)*
 
 Create sorted string from an object
 
