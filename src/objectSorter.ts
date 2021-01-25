@@ -1,4 +1,4 @@
-import {guessType} from './typeGuess';
+import { guessType } from './typeGuess';
 import * as str from './stringifiers';
 import { Hashable } from './hasher';
 
@@ -163,32 +163,32 @@ namespace objectSorter {
      */
     trim?: boolean | TrimOptions;
   }
+
+  export type StringifyFn = (obj: Hashable | any) => string;
 }
 
 /**
  * Object sorter consturctor
  * @param options object transformation options
- * @returns function that transforms object to strings
+ * @return function that transforms object to strings
  */
 function objectSorter(
   options: objectSorter.SorterOptions = {}
-): (obj: Hashable | any) => string {
-  const {sort, coerce, trim} = {
+): objectSorter.StringifyFn {
+  const { sort, coerce, trim } = {
     sort: true,
     coerce: true,
     trim: false,
     ...options,
   };
   const stringifiers: str.Stringifiers = {
-    unknown: function _unknown(obj) {
+    unknown: function _unknown(obj: Object) {
       // `unknonw` - is a typo, saved for backward compatibility
-      const constructorName = obj.constructor
-        ? obj.constructor.name
-        : 'unknonw';
+      const constructorName: string = obj?.constructor?.name ?? 'unknonw';
       const objectName =
         typeof obj.toString === 'function' ? obj.toString() : 'unknown';
 
-      return '<:' + constructorName + '>:' + objectName;
+      return `<:${constructorName}>:${objectName}`;
     },
   };
 
@@ -214,62 +214,69 @@ function objectSorter(
     function: typeof trim === 'boolean' ? trim : trim.function,
   };
 
-  stringifiers.hashable = str._hashable.bind(stringifiers);
+  stringifiers.hashable = str._hashable.bind(
+    stringifiers
+  ) as objectSorter.StringifyFn;
+
   if (trimOptions.string) {
     stringifiers.string = coerceOptions.string
-      ? str._stringTrimCoerce.bind(stringifiers)
-      : str._stringTrim.bind(stringifiers);
+      ? (str._stringTrimCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+      : (str._stringTrim.bind(stringifiers) as objectSorter.StringifyFn);
   } else {
     stringifiers.string = coerceOptions.string
-      ? str._stringCoerce.bind(stringifiers)
-      : str._string.bind(stringifiers);
+      ? (str._stringCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+      : (str._string.bind(stringifiers) as objectSorter.StringifyFn);
   }
   stringifiers.number = coerceOptions.number
-    ? str._numberCoerce.bind(stringifiers)
-    : str._number.bind(stringifiers);
+    ? (str._numberCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._number.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.boolean = coerceOptions.boolean
-    ? str._booleanCoerce.bind(stringifiers)
-    : str._boolean.bind(stringifiers);
+    ? (str._booleanCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._boolean.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.symbol = coerceOptions.symbol
-    ? str._symbolCoerce.bind(stringifiers)
-    : str._symbol.bind(stringifiers);
+    ? (str._symbolCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._symbol.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.undefined = coerceOptions.undefined
-    ? str._undefinedCoerce.bind(stringifiers)
-    : str._undefined.bind(stringifiers);
+    ? (str._undefinedCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._undefined.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.null = coerceOptions.null
-    ? str._nullCoerce.bind(stringifiers)
-    : str._null.bind(stringifiers);
+    ? (str._nullCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._null.bind(stringifiers) as objectSorter.StringifyFn);
   if (trimOptions.function) {
     stringifiers.function = coerceOptions.function
-      ? str._functionTrimCoerce.bind(stringifiers)
-      : str._functionTrim.bind(stringifiers);
+      ? (str._functionTrimCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+      : (str._functionTrim.bind(stringifiers) as objectSorter.StringifyFn);
   } else {
     stringifiers.function = coerceOptions.function
-      ? str._functionCoerce.bind(stringifiers)
-      : str._function.bind(stringifiers);
+      ? (str._functionCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+      : (str._function.bind(stringifiers) as objectSorter.StringifyFn);
   }
   stringifiers.date = coerceOptions.date
-    ? str._dateCoerce.bind(stringifiers)
-    : str._date.bind(stringifiers);
+    ? (str._dateCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._date.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.array = sortOptions.array
-    ? str._arraySort.bind(stringifiers)
-    : str._array.bind(stringifiers);
+    ? (str._arraySort.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._array.bind(stringifiers) as objectSorter.StringifyFn);
   if (sortOptions.set) {
     stringifiers.set = coerceOptions.set
-      ? str._setSortCoerce.bind(stringifiers)
-      : str._setSort.bind(stringifiers);
+      ? (str._setSortCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+      : (str._setSort.bind(stringifiers) as objectSorter.StringifyFn);
   } else {
     stringifiers.set = coerceOptions.set
-      ? str._setCoerce.bind(stringifiers)
-      : str._set.bind(stringifiers);
+      ? (str._setCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+      : (str._set.bind(stringifiers) as objectSorter.StringifyFn);
   }
   stringifiers.object = sortOptions.object
-    ? str._objectSort.bind(stringifiers)
-    : str._object.bind(stringifiers);
+    ? (str._objectSort.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._object.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.map = sortOptions.map
-    ? str._mapSort.bind(stringifiers)
-    : str._map.bind(stringifiers);
+    ? (str._mapSort.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._map.bind(stringifiers) as objectSorter.StringifyFn);
 
+  /**
+   * Serializes object to string
+   * @param obj object
+   */
   function objectToString(obj: any): string {
     return stringifiers[guessType(obj)](obj);
   }

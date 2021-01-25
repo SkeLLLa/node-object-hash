@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "newLine": "LF",
+    "noErrorTruncation": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": ["es2015", "es2018"],
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "ES5"
+  },
+  "exclude": [
+    "dist/**/*",
+    "coverage/**/*",
+    "node_modules/**/*",
+    "benchmark/**/*"
+  ]
+}

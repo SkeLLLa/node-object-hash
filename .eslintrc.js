@@ -1,31 +1,45 @@
 module.exports = {
-  extends: ['eslint:recommended', 'google'],
-  parserOptions: {
-    ecmaVersion: 2018,
-  },
   env: {
     es6: true,
     node: true,
-    jest: false,
   },
+  extends: [
+    'eslint:recommended',
+    'google',
+    'prettier',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+  ],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: 'tsconfig.eslint.json',
+    sourceType: 'module',
+  },
+  plugins: ['prettier', 'sort-requires', '@typescript-eslint'],
   rules: {
-    'new-cap': ['error', {capIsNewExceptions: ['ObjectId', 'Fastify']}],
-    'max-len': [
-      'error',
-      {
-        code: 80,
-        comments: 999,
-        ignoreComments: true,
-        ignoreStrings: true,
-        ignoreTrailingComments: true,
-        ignoreUrls: true,
-        ignoreTemplateLiterals: true,
-      },
-    ],
-    indent: ['error', 2, {SwitchCase: 1}],
-    'spaced-comment': ['error', 'always', {markers: ['/']}],
-    'no-console': 'warn',
+    'prettier/prettier': 'error',
+    '@typescript-eslint/no-namespace': 'off',
     'valid-jsdoc': 'off',
-    'require-jsdoc': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/ban-types': 'off',
+    'no-invalid-this': 'off',
   },
+  overrides: [
+    {
+      files: ['**/__tests__/**/*', '**/test/**/*'],
+      env: {
+        jest: true,
+      },
+      rules: {
+        'require-jsdoc': 'off',
+        'no-new-wrappers': 'off',
+      },
+    },
+  ],
+  settings: {},
 };

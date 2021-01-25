@@ -3,7 +3,7 @@ coverage/
 node_modules/
 .idea/
 .vscode/
-static/
+benchmark/
 **/*.xxx.*
 dist/
-benchmark/
+jest.config.js

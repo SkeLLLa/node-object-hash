@@ -1,4 +1,4 @@
-import objectSorter = require('./objectSorter');
+import objectSorter from './objectSorter';
 import crypto, { HexBase64Latin1Encoding } from 'crypto';
 import { Hashable } from './hasher';
 
@@ -34,8 +34,7 @@ namespace hasher {
    * with the function toHash that return the same value will have the same hash
    */
   export interface Hashable {
-    toHash: ()=>string;
-    [key: string]: any;
+    toHashableString: () => string;
   }
 
   export interface Hasher {
@@ -64,22 +63,23 @@ namespace hasher {
 /**
  * Hasher constructor
  * @param options hasher options
+ * @return hasher instance
  */
-function hasher(
-  options: hasher.HasherOptions = {}
-): hasher.Hasher {
-
+function hasher(options: hasher.HasherOptions = {}): hasher.Hasher {
   const sortObject = objectSorter(options);
 
+  /**
+   * Object hash function
+   * @param obj object to hash
+   * @param opts hasher options
+   * @returns hash string
+   */
   function hashObject(obj: Hashable | any, opts: hasher.HasherOptions = {}) {
     const alg = opts.alg || options.alg || DEFAULT_ALG;
     const enc = opts.enc || options.enc || DEFAULT_ENV;
     const sorted = sortObject(obj);
-    
-    return crypto
-      .createHash(alg)
-      .update(sorted)
-      .digest(enc);
+
+    return crypto.createHash(alg).update(sorted).digest(enc);
   }
 
   return {
