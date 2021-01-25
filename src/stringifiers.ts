@@ -35,7 +35,7 @@ export const PREFIX = {
  * @returns object string representation
  */
 export function _hashable(obj: Hashable): string {
-  return obj.toHash();
+  return obj.toHashableString();
 }
 
 /**
@@ -241,7 +241,7 @@ export function _date(obj: Date): string {
  * @return object string representation
  */
 export function _arraySort(obj: Array<any>): string {
-  const stringifiers: Stringifiers = this;
+  const stringifiers: Stringifiers = this as Stringifiers;
   return (
     '[' +
     obj
@@ -260,7 +260,7 @@ export function _arraySort(obj: Array<any>): string {
  * @return object string representation
  */
 export function _array(obj: Array<any>): string {
-  const stringifiers: Stringifiers = this;
+  const stringifiers: Stringifiers = this as Stringifiers;
   return (
     '[' +
     obj
@@ -278,7 +278,7 @@ export function _array(obj: Array<any>): string {
  * @return object string representation
  */
 export function _setSortCoerce(obj: Set<any>): string {
-  return _arraySort.call(this, Array.from(obj));
+  return _arraySort.call(this as Stringifiers, Array.from(obj)) as string;
 }
 /**
  * Converts set to string
@@ -287,7 +287,7 @@ export function _setSortCoerce(obj: Set<any>): string {
  * @return object string representation
  */
 export function _setSort(obj: Set<any>): string {
-  return `${PREFIX.set}:${_arraySort.call(this, Array.from(obj))}`;
+  return `${PREFIX.set}:${_arraySort.call(this, Array.from(obj)) as string}`;
 }
 /**
  * Converts set to string
@@ -296,7 +296,7 @@ export function _setSort(obj: Set<any>): string {
  * @return object string representation
  */
 export function _set(obj: Set<any>): string {
-  return `${PREFIX.set}:${_array.call(this, Array.from(obj))}`;
+  return `${PREFIX.set}:${_array.call(this, Array.from(obj)) as string}`;
 }
 /**
  * Converts set to string
@@ -305,7 +305,7 @@ export function _set(obj: Set<any>): string {
  * @return object string representation
  */
 export function _setCoerce(obj: Set<any>): string {
-  return _array.call(this, Array.from(obj));
+  return _array.call(this, Array.from(obj)) as string;
 }
 /**
  * Converts object to string
@@ -314,11 +314,11 @@ export function _setCoerce(obj: Set<any>): string {
  * @return object string representation
  */
 export function _object(obj: { [key: string]: any }): string {
-  const stringifiers: Stringifiers = this;
+  const stringifiers: Stringifiers = this as Stringifiers;
   const keys = Object.keys(obj);
   const objArray = [];
   for (const key of keys) {
-    const val = obj[key];
+    const val = obj[key] as unknown;
     const valT = guessType(val);
     objArray.push(key + ':' + stringifiers[valT](val));
   }
@@ -331,11 +331,11 @@ export function _object(obj: { [key: string]: any }): string {
  * @return object string representation
  */
 export function _objectSort(obj: { [key: string]: any }): string {
-  const stringifiers: Stringifiers = this;
+  const stringifiers: Stringifiers = this as Stringifiers;
   const keys = Object.keys(obj).sort();
   const objArray = [];
   for (const key of keys) {
-    const val = obj[key];
+    const val = obj[key] as unknown;
     const valT = guessType(val);
     objArray.push(key + ':' + stringifiers[valT](val));
   }
@@ -348,11 +348,11 @@ export function _objectSort(obj: { [key: string]: any }): string {
  * @return object string representation
  */
 export function _map(obj: Map<any, any>): string {
-  const stringifiers: Stringifiers = this;
+  const stringifiers: Stringifiers = this as Stringifiers;
   const arr = Array.from(obj);
   const mapped = [];
   for (const item of arr) {
-    const [key, value] = item;
+    const [key, value] = item as unknown[];
     mapped.push([
       stringifiers[guessType(key)](key),
       stringifiers[guessType(value)](value),
@@ -367,11 +367,11 @@ export function _map(obj: Map<any, any>): string {
  * @return object string representation
  */
 export function _mapSort(obj: Map<any, any>): string {
-  const stringifiers: Stringifiers = this;
+  const stringifiers: Stringifiers = this as Stringifiers;
   const arr = Array.from(obj);
   const mapped = [];
   for (const item of arr) {
-    const [key, value] = item;
+    const [key, value] = item as unknown[];
     mapped.push([
       stringifiers[guessType(key)](key),
       stringifiers[guessType(value)](value),
