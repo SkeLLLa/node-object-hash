@@ -69,10 +69,10 @@ jobs:
         run: |
           NPM_TAG=$([[ ${{ github.ref }} == *"-rc"* ]] && echo "next" || echo "latest")
           echo "::set-output name=tag::$NPM_TAG"
-      # - name: Publish
-      #   run: npm publish --tag ${{ steps.npm_tag.outputs.tag }}
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      - name: Publish
+        run: npm publish --tag ${{ steps.npm_tag.outputs.tag }}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
   # publish-gh:
   #   name: Publish to github packages
   #   runs-on: ubuntu-latest
