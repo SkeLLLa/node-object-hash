@@ -5,7 +5,7 @@ module.exports = {
   coverageReporters: ['lcov', 'text'],
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.json',
+      tsconfig: 'tsconfig.json',
       disableSourceMapSupport: true,
     },
   },
