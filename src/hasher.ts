@@ -1,5 +1,5 @@
 import objectSorter from './objectSorter';
-import crypto, { HexBase64Latin1Encoding } from 'crypto';
+import crypto, { BinaryToTextEncoding } from 'crypto';
 import { Hashable } from './hasher';
 
 /**
@@ -9,7 +9,7 @@ const DEFAULT_ALG = 'sha256';
 /**
  * Default hash string enoding
  */
-const DEFAULT_ENV = 'hex';
+const DEFAULT_ENC: BinaryToTextEncoding = 'hex';
 
 namespace hasher {
   /**
@@ -23,9 +23,9 @@ namespace hasher {
     alg?: string;
     /**
      * String encoding for hash
-     * @default 'hex'
+     * @default 'base64'
      */
-    enc?: HexBase64Latin1Encoding;
+    enc?: BinaryToTextEncoding;
   }
 
   /**
@@ -76,7 +76,7 @@ function hasher(options: hasher.HasherOptions = {}): hasher.Hasher {
    */
   function hashObject(obj: Hashable | any, opts: hasher.HasherOptions = {}) {
     const alg = opts.alg || options.alg || DEFAULT_ALG;
-    const enc = opts.enc || options.enc || DEFAULT_ENV;
+    const enc: BinaryToTextEncoding = opts.enc || options.enc || DEFAULT_ENC;
     const sorted = sortObject(obj);
 
     return crypto.createHash(alg).update(sorted).digest(enc);
