@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [hasher](../modules/hasher.md) / Hasher
+[Node object hash - v2.0.0](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / Hasher
 
 # Interface: Hasher
 
-[hasher](../modules/hasher.md).Hasher
+[hasher](../modules/hasher.md).[export=](../modules/hasher.export_.md).Hasher
 
 ## Hierarchy
 
@@ -12,9 +12,9 @@
 
 ### Methods
 
-- [hash](hasher.hasher-1.md#hash)
-- [sort](hasher.hasher-1.md#sort)
-- [sortObject](hasher.hasher-1.md#sortobject)
+- [hash](hasher.export_.hasher.md#hash)
+- [sort](hasher.export_.hasher.md#sort)
+- [sortObject](hasher.export_.hasher.md#sortobject)
 
 ## Methods
 

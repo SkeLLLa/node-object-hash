@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [hasher](../modules/hasher.md) / HasherOptions
+[Node object hash - v2.0.0](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
 
 # Interface: HasherOptions
 
-[hasher](../modules/hasher.md).HasherOptions
+[hasher](../modules/hasher.md).[export=](../modules/hasher.export_.md).HasherOptions
 
 Object hasher options
 
@@ -16,11 +16,11 @@ Object hasher options
 
 ### Properties
 
-- [alg](hasher.hasheroptions.md#alg)
-- [coerce](hasher.hasheroptions.md#coerce)
-- [enc](hasher.hasheroptions.md#enc)
-- [sort](hasher.hasheroptions.md#sort)
-- [trim](hasher.hasheroptions.md#trim)
+- [alg](hasher.export_.hasheroptions.md#alg)
+- [coerce](hasher.export_.hasheroptions.md#coerce)
+- [enc](hasher.export_.hasheroptions.md#enc)
+- [sort](hasher.export_.hasheroptions.md#sort)
+- [trim](hasher.export_.hasheroptions.md#trim)
 
 ## Properties
 

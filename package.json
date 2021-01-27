@@ -39,6 +39,7 @@
     "benchmark:custom": "node --expose-gc benchmark/custom.js",
     "build": "npm run build:node",
     "build:node": "tsc -p tsconfig.json",
+    "docs": "rm -rf ./docs/* && typedoc",
     "get-changelog": "conventional-changelog -r 2 -p angular",
     "lint": "npm run lint:eslint",
     "lint:eslint": "eslint . --ext js,jsx,ts,tsx",

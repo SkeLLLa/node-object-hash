@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
+[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / SortOptions
 
 # Interface: SortOptions
 
-[objectSorter](../modules/objectsorter.md).SortOptions
+[objectSorter](../modules/objectsorter.md).[export=](../modules/objectsorter.export_.md).SortOptions
 
 Advanced sort options
 
@@ -14,10 +14,10 @@ Advanced sort options
 
 ### Properties
 
-- [array](objectsorter.sortoptions.md#array)
-- [map](objectsorter.sortoptions.md#map)
-- [object](objectsorter.sortoptions.md#object)
-- [set](objectsorter.sortoptions.md#set)
+- [array](objectsorter.export_.sortoptions.md#array)
+- [map](objectsorter.export_.sortoptions.md#map)
+- [object](objectsorter.export_.sortoptions.md#object)
+- [set](objectsorter.export_.sortoptions.md#set)
 
 ## Properties
 

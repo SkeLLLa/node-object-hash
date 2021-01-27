@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / TrimOptions
+[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / TrimOptions
 
 # Interface: TrimOptions
 
-[objectSorter](../modules/objectsorter.md).TrimOptions
+[objectSorter](../modules/objectsorter.md).[export=](../modules/objectsorter.export_.md).TrimOptions
 
 Advanced trim options
 
@@ -14,8 +14,8 @@ Advanced trim options
 
 ### Properties
 
-- [function](objectsorter.trimoptions.md#function)
-- [string](objectsorter.trimoptions.md#string)
+- [function](objectsorter.export_.trimoptions.md#function)
+- [string](objectsorter.export_.trimoptions.md#string)
 
 ## Properties
 

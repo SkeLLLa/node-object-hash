@@ -1,5 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.shared.json",
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "typedocOptions": {
+    "entryPoints": ["src/hasher.ts", "src/objectSorter.ts"],
+    "out": "docs",
+    "name": "Node object hash",
+    "excludeExternals": true,
+    "includeVersion": true,
+    "hideGenerator": true,
+    "excludePrivate": true,
+    "readme": "none"
+  }
 }

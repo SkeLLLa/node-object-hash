@@ -1,42 +1,52 @@
-**[node-object-hash](../README.md)**
-
-[Globals](../README.md) › [objectSorter](objectsorter.md)
+[Node object hash - v2.0.0](../README.md) / objectSorter
 
 # Module: objectSorter
 
-Object sorter consturctor
+## Table of contents
 
-## Callable
+### Namespaces
 
-▸ **objectSorter**(`options`: [SorterOptions](../interfaces/objectsorter.sorteroptions.md)): *function*
-
-*Defined in [objectSorter.ts:173](https://github.com/SkeLLLa/node-object-hash/blob/e455f23/src/objectSorter.ts#L173)*
-
-Object sorter consturctor
-
-**Parameters:**
-
-Name | Type | Default | Description |
------- | ------ | ------ | ------ |
-`options` | [SorterOptions](../interfaces/objectsorter.sorteroptions.md) |  {} | object transformation options |
-
-**Returns:** *function*
-
-function that transforms object to strings
-
-▸ (`obj`: [Hashable](../interfaces/hasher.hashable.md) | any): *string*
-
-**Parameters:**
-
-Name | Type |
------- | ------ |
-`obj` | [Hashable](../interfaces/hasher.hashable.md) \| any |
-
-## Index
+- [export&#x3D;](objectsorter.export_.md)
 
 ### Interfaces
 
-* [CoerceOptions](../interfaces/objectsorter.coerceoptions.md)
-* [SortOptions](../interfaces/objectsorter.sortoptions.md)
-* [SorterOptions](../interfaces/objectsorter.sorteroptions.md)
-* [TrimOptions](../interfaces/objectsorter.trimoptions.md)
+- [CoerceOptions](../interfaces/objectsorter.coerceoptions.md)
+- [SortOptions](../interfaces/objectsorter.sortoptions.md)
+- [SorterOptions](../interfaces/objectsorter.sorteroptions.md)
+- [TrimOptions](../interfaces/objectsorter.trimoptions.md)
+
+### Type aliases
+
+- [StringifyFn](objectsorter.md#stringifyfn)
+
+### Functions
+
+- [export&#x3D;](objectsorter.md#export=)
+
+## Type aliases
+
+### StringifyFn
+
+Ƭ **StringifyFn**: (`obj`: [_Hashable_](../interfaces/hasher.export_.hashable.md) | _any_) => _string_
+
+Defined in: [objectSorter.ts:167](https://github.com/SkeLLLa/node-object-hash/blob/3114a1a/src/objectSorter.ts#L167)
+
+## Functions
+
+### export&#x3D;
+
+▸ **export=**(`options?`: [_SorterOptions_](../interfaces/objectsorter.export_.sorteroptions.md)): [_StringifyFn_](objectsorter.export_.md#stringifyfn)
+
+Object sorter consturctor
+
+#### Parameters:
+
+| Name      | Type                                                                   | Default value | Description                   |
+| --------- | ---------------------------------------------------------------------- | ------------- | ----------------------------- |
+| `options` | [_SorterOptions_](../interfaces/objectsorter.export_.sorteroptions.md) | ...           | object transformation options |
+
+**Returns:** [_StringifyFn_](objectsorter.export_.md#stringifyfn)
+
+function that transforms object to strings
+
+Defined in: [objectSorter.ts:175](https://github.com/SkeLLLa/node-object-hash/blob/3114a1a/src/objectSorter.ts#L175)

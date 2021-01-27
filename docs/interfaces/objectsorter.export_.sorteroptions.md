@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / SorterOptions
+[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / SorterOptions
 
 # Interface: SorterOptions
 
-[objectSorter](../modules/objectsorter.md).SorterOptions
+[objectSorter](../modules/objectsorter.md).[export=](../modules/objectsorter.export_.md).SorterOptions
 
 Object sorter options
 
@@ -10,13 +10,17 @@ Object sorter options
 
 - **SorterOptions**
 
+  ↳ [_HasherOptions_](hasher.export_.hasheroptions.md)
+
+  ↳ [_HasherOptions_](hasher.hasheroptions.md)
+
 ## Table of contents
 
 ### Properties
 
-- [coerce](objectsorter.sorteroptions.md#coerce)
-- [sort](objectsorter.sorteroptions.md#sort)
-- [trim](objectsorter.sorteroptions.md#trim)
+- [coerce](objectsorter.export_.sorteroptions.md#coerce)
+- [sort](objectsorter.export_.sorteroptions.md#sort)
+- [trim](objectsorter.export_.sorteroptions.md#trim)
 
 ## Properties
 

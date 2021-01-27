@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / CoerceOptions
+[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / CoerceOptions
 
 # Interface: CoerceOptions
 
-[objectSorter](../modules/objectsorter.md).CoerceOptions
+[objectSorter](../modules/objectsorter.md).[export=](../modules/objectsorter.export_.md).CoerceOptions
 
 Advanced coerce options
 
@@ -14,15 +14,15 @@ Advanced coerce options
 
 ### Properties
 
-- [boolean](objectsorter.coerceoptions.md#boolean)
-- [date](objectsorter.coerceoptions.md#date)
-- [function](objectsorter.coerceoptions.md#function)
-- [null](objectsorter.coerceoptions.md#null)
-- [number](objectsorter.coerceoptions.md#number)
-- [set](objectsorter.coerceoptions.md#set)
-- [string](objectsorter.coerceoptions.md#string)
-- [symbol](objectsorter.coerceoptions.md#symbol)
-- [undefined](objectsorter.coerceoptions.md#undefined)
+- [boolean](objectsorter.export_.coerceoptions.md#boolean)
+- [date](objectsorter.export_.coerceoptions.md#date)
+- [function](objectsorter.export_.coerceoptions.md#function)
+- [null](objectsorter.export_.coerceoptions.md#null)
+- [number](objectsorter.export_.coerceoptions.md#number)
+- [set](objectsorter.export_.coerceoptions.md#set)
+- [string](objectsorter.export_.coerceoptions.md#string)
+- [symbol](objectsorter.export_.coerceoptions.md#symbol)
+- [undefined](objectsorter.export_.coerceoptions.md#undefined)
 
 ## Properties
 

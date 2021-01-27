@@ -1,8 +1,8 @@
-[Node object hash - v2.0.0](../README.md) / [hasher](../modules/hasher.md) / Hashable
+[Node object hash - v2.0.0](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / Hashable
 
 # Interface: Hashable
 
-[hasher](../modules/hasher.md).Hashable
+[hasher](../modules/hasher.md).[export=](../modules/hasher.export_.md).Hashable
 
 If object implements Hashable interface then value from toHash
 will be used for hash function. It means that the different objects
@@ -16,7 +16,7 @@ with the function toHash that return the same value will have the same hash
 
 ### Properties
 
-- [toHashableString](hasher.hashable.md#tohashablestring)
+- [toHashableString](hasher.export_.hashable.md#tohashablestring)
 
 ## Properties
 
