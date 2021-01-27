@@ -32,7 +32,7 @@ Hash algorithm to use
 
 **`default`** 'sha256'
 
-Defined in: [hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L23)
+Defined in: [hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/hasher.ts#L23)
 
 ---
 
@@ -47,7 +47,7 @@ Advanced coerce options could be provided as object
 
 Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[coerce](objectsorter.export_.sorteroptions.md#coerce)
 
-Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L152)
+Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L152)
 
 ---
 
@@ -59,7 +59,7 @@ String encoding for hash
 
 **`default`** 'base64'
 
-Defined in: [hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L28)
+Defined in: [hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/hasher.ts#L28)
 
 ---
 
@@ -74,7 +74,7 @@ Advanced sorting options could be provided as object
 
 Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[sort](objectsorter.export_.sorteroptions.md#sort)
 
-Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L158)
+Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L158)
 
 ---
 
@@ -89,4 +89,4 @@ Advanced sorting options could be provided as object.
 
 Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[trim](objectsorter.export_.sorteroptions.md#trim)
 
-Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L164)
+Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L164)

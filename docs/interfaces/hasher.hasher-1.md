@@ -35,7 +35,7 @@ Create hash of an object
 
 hash string of an object
 
-Defined in: [hasher.ts:46](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L46)
+Defined in: [hasher.ts:46](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/hasher.ts#L46)
 
 ---
 
@@ -55,7 +55,7 @@ Create sorted string from an object
 
 sorted string from an object
 
-Defined in: [hasher.ts:52](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L52)
+Defined in: [hasher.ts:52](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/hasher.ts#L52)
 
 ---
 
@@ -77,4 +77,4 @@ Create sorted string from an object
 
 sorted string from an object
 
-Defined in: [hasher.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L59)
+Defined in: [hasher.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/hasher.ts#L59)

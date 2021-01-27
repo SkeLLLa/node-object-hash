@@ -27,7 +27,7 @@ Advanced sort options
 
 If `true` sort array entries before hash
 
-Defined in: [objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L114)
+Defined in: [objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L114)
 
 ---
 
@@ -37,7 +37,7 @@ Defined in: [objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort map entries before hash
 
-Defined in: [objectSorter.ts:126](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L126)
+Defined in: [objectSorter.ts:126](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L126)
 
 ---
 
@@ -47,7 +47,7 @@ Defined in: [objectSorter.ts:126](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort object entries before hash
 
-Defined in: [objectSorter.ts:118](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L118)
+Defined in: [objectSorter.ts:118](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L118)
 
 ---
 
@@ -57,4 +57,4 @@ Defined in: [objectSorter.ts:118](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort set entries before hash
 
-Defined in: [objectSorter.ts:122](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L122)
+Defined in: [objectSorter.ts:122](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L122)

@@ -36,4 +36,4 @@ Hasher constructor
 
 hasher instance
 
-Defined in: [hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L68)
+Defined in: [hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/hasher.ts#L68)
