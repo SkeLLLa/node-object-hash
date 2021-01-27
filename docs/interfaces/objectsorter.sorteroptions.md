@@ -29,7 +29,7 @@ Advanced coerce options could be provided as object
 
 **`default`** true
 
-Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/3114a1a/src/objectSorter.ts#L152)
+Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L152)
 
 ---
 
@@ -42,7 +42,7 @@ Advanced sorting options could be provided as object
 
 **`default`** true
 
-Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/3114a1a/src/objectSorter.ts#L158)
+Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L158)
 
 ---
 
@@ -55,4 +55,4 @@ Advanced sorting options could be provided as object.
 
 **`default`** false
 
-Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/3114a1a/src/objectSorter.ts#L164)
+Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/objectSorter.ts#L164)

@@ -24,4 +24,4 @@ with the function toHash that return the same value will have the same hash
 
 • **toHashableString**: () => _string_
 
-Defined in: [hasher.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/3114a1a/src/hasher.ts#L37)
+Defined in: [hasher.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/1e67826/src/hasher.ts#L37)

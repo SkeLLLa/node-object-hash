@@ -45,7 +45,7 @@
     "prerelease": "npm run typedoc && git add -A ./docs",
     "release": "git add -A && standard-version -a",
     "test": "npm audit --production && npm run lint && npm run unit",
-    "typedoc": "rm -rf ./docs/* && typedoc",
+    "typedoc": "rm -rf ./docs/* && typedoc && pretty-quick",
     "unit": "jest --coverage",
     "postunit": "codecov || true"
   },
