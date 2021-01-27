@@ -184,7 +184,7 @@ function objectSorter(
   const stringifiers: str.Stringifiers = {
     unknown: function _unknown(obj: Object) {
       // `unknonw` - is a typo, saved for backward compatibility
-      const constructorName: string = obj?.constructor?.name ?? 'unknonw';
+      const constructorName: string = obj.constructor?.name ?? 'unknonw';
       const objectName =
         typeof obj.toString === 'function' ? obj.toString() : 'unknown';
 

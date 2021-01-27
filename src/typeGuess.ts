@@ -36,7 +36,7 @@ export function guessObjectType(obj: unknown): string {
   if (instanceOfHashable(obj)) {
     return 'hashable';
   }
-  const type = (obj as Object)?.constructor?.name ?? 'unknown';
+  const type = (obj as Object).constructor?.name ?? 'unknown';
   return TYPE_MAP[type] || 'unknown';
 }
 
@@ -57,5 +57,5 @@ export function guessType(obj: unknown): string {
  * otherwise return false
  */
 function instanceOfHashable(object: Hashable | unknown): boolean {
-  return typeof (object as Hashable)?.toHashableString === 'function';
+  return typeof (object as Hashable).toHashableString === 'function';
 }
