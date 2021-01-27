@@ -98,7 +98,7 @@ This map displays what types will have identical string representation (e.g. new
 equal string representations and hashes.
 
 | Initial type              | Mapped type  |
-| ------------------------- | ------------ | ------ |
+| ------------------------- | ------------ |
 | Array ([])                | array        |
 | ArrayObject (new Array()) |              |
 | Int8Array                 |              |
@@ -115,7 +115,7 @@ equal string representations and hashes.
 |                           |              |
 | Map                       | array[array] |
 |                           |              |
-| string ('')               | string       | string |
+| string ('')               | string       |
 | String (new String())     |              |
 |                           |              |
 | boolean (true)            | boolean      |
