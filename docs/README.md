@@ -1,6 +1,6 @@
-Node object hash - v2.1.0
+Node object hash - v2.1.1
 
-# Node object hash - v2.1.0
+# Node object hash - v2.1.1
 
 ## Table of contents
 

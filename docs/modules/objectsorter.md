@@ -1,4 +1,4 @@
-[Node object hash - v2.1.0](../README.md) / objectSorter
+[Node object hash - v2.1.1](../README.md) / objectSorter
 
 # Module: objectSorter
 
@@ -29,7 +29,7 @@
 
 Ƭ **StringifyFn**: (`obj`: [_Hashable_](../interfaces/hasher.export_.hashable.md) | _any_) => _string_
 
-Defined in: [objectSorter.ts:167](https://github.com/SkeLLLa/node-object-hash/blob/629b546/src/objectSorter.ts#L167)
+Defined in: [objectSorter.ts:167](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L167)
 
 ## Functions
 
@@ -49,4 +49,4 @@ Object sorter consturctor
 
 function that transforms object to strings
 
-Defined in: [objectSorter.ts:175](https://github.com/SkeLLLa/node-object-hash/blob/629b546/src/objectSorter.ts#L175)
+Defined in: [objectSorter.ts:175](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L175)
