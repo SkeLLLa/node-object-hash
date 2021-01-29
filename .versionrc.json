@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "prerelease": "npm test",
-    "postbump": "echo Version: v$npm_package_version",
+    "postbump": "npm run version:update && git add VERSION",
     "posttag": "git push --follow-tags"
   }
 }
