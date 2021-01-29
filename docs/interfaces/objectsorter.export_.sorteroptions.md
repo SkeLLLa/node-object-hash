@@ -1,4 +1,4 @@
-[Node object hash - v2.0.0](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / SorterOptions
+[Node object hash - v2.1.0](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / SorterOptions
 
 # Interface: SorterOptions
 
@@ -33,7 +33,7 @@ Advanced coerce options could be provided as object
 
 **`default`** true
 
-Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L152)
+Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/629b546/src/objectSorter.ts#L152)
 
 ---
 
@@ -46,7 +46,7 @@ Advanced sorting options could be provided as object
 
 **`default`** true
 
-Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L158)
+Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/629b546/src/objectSorter.ts#L158)
 
 ---
 
@@ -59,4 +59,4 @@ Advanced sorting options could be provided as object.
 
 **`default`** false
 
-Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/77b6001/src/objectSorter.ts#L164)
+Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/629b546/src/objectSorter.ts#L164)
