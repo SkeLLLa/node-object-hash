@@ -32,6 +32,17 @@ namespace objectSorter {
      */
     number?: boolean;
     /**
+     * If `true` converts BigInt to string
+     * @example
+     * // coerce.bigint = true
+     * 1n === '1';
+     * @example
+     * // coerce.bigint = true
+     * 1n !== '1';
+     * @default true
+     */
+    bigint?: boolean;
+    /**
      * If `true` strings and coerced string will be equal to coerced numbers, booleans, etc
      * @example
      * // coerce.string = true
@@ -124,6 +135,10 @@ namespace objectSorter {
      * If `true` sort map entries before hash
      */
     map?: boolean;
+    /**
+     * If `true` sort BigInt entries before hash
+     */
+    bigint?: boolean;
   }
 
   /**
@@ -230,6 +245,9 @@ function objectSorter(
   stringifiers.number = coerceOptions.number
     ? (str._numberCoerce.bind(stringifiers) as objectSorter.StringifyFn)
     : (str._number.bind(stringifiers) as objectSorter.StringifyFn);
+  stringifiers.bigint = coerceOptions.bigint
+    ? (str._bigIntCoerce.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._bigInt.bind(stringifiers) as objectSorter.StringifyFn);
   stringifiers.boolean = coerceOptions.boolean
     ? (str._booleanCoerce.bind(stringifiers) as objectSorter.StringifyFn)
     : (str._boolean.bind(stringifiers) as objectSorter.StringifyFn);

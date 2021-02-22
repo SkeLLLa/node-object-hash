@@ -17,6 +17,7 @@ export type Stringifiers = { [key: string]: (obj: any) => string };
 export const PREFIX = {
   string: '<:s>',
   number: '<:n>',
+  bigint: '<:bi>',
   boolean: '<:b>',
   symbol: '<:smbl>',
   undefined: '<:undf>',
@@ -91,6 +92,24 @@ export function _numberCoerce(obj: number): string {
  */
 export function _number(obj: number): string {
   return `${PREFIX.number}:${obj}`;
+}
+/**
+ * Converts BigInt to string
+ * @private
+ * @param obj object to convert
+ * @return object string representation
+ */
+export function _bigIntCoerce(obj: BigInt): string {
+  return obj.toString();
+}
+/**
+ * Converts BigInt to string
+ * @private
+ * @param obj object to convert
+ * @return object string representation
+ */
+export function _bigInt(obj: BigInt): string {
+  return `${PREFIX.bigint}:${obj.toString()}`;
 }
 /**
  * Converts boolean to string
