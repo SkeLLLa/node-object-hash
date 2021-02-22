@@ -216,6 +216,7 @@ function objectSorter(
   const coerceOptions: objectSorter.CoerceOptions = {
     boolean: typeof coerce === 'boolean' ? coerce : coerce.boolean,
     number: typeof coerce === 'boolean' ? coerce : coerce.number,
+    bigint: typeof coerce === 'boolean' ? coerce : coerce.bigint,
     string: typeof coerce === 'boolean' ? coerce : coerce.string,
     undefined: typeof coerce === 'boolean' ? coerce : coerce.undefined,
     null: typeof coerce === 'boolean' ? coerce : coerce.null,
