@@ -70,7 +70,7 @@ describe('Hasher', () => {
         'c0705a3e2b55b54d55a6fe675b7dfb48572bd3adf0c54aab621da2b3663a0796'
       );
 
-      const anotherHAshableArrayWithObjectWithTheSameHash = [
+      const anotherHashableArrayWithObjectWithTheSameHash = [
         {
           someValue: 'somevalue',
           toHashableString: () => 'another_value_to_hash',
@@ -81,7 +81,7 @@ describe('Hasher', () => {
         },
       ];
       expect(hash.hash(arrayHashable)).toEqual(
-        hash.hash(anotherHAshableArrayWithObjectWithTheSameHash)
+        hash.hash(anotherHashableArrayWithObjectWithTheSameHash)
       );
     });
   });
