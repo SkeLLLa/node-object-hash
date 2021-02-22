@@ -26,7 +26,7 @@ namespace objectSorter {
      * // coerce.number = true
      * 1 === '1';
      * @example
-     * // coerce.number = true
+     * // coerce.number = false
      * 1 !== '1';
      * @default true
      */
@@ -37,7 +37,7 @@ namespace objectSorter {
      * // coerce.bigint = true
      * 1n === '1';
      * @example
-     * // coerce.bigint = true
+     * // coerce.bigint = false
      * 1n !== '1';
      * @default true
      */
