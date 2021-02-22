@@ -1,6 +1,6 @@
 # Contributing
 
-Feel free to contribute to this repo. Changes that improve overall performance, code quality, tests, etc. are highly appriciated.
+Feel free to contribute to this repo. Changes that improve overall performance, code quality, tests, etc. are highly appreciated.
 
 ## Pull Request Process
 
