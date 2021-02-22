@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/SkeLLLa/node-object-hash/compare/v2.1.2...v2.2.0) (2021-02-22)
+
+
+### Features
+
+* add bigint support ([544d97e](https://github.com/SkeLLLa/node-object-hash/commit/544d97e9712961effae0a6940357bb1f8b9adcc6))
+
+
+### Bug fixes
+
+* coerce option for bigint ([ca2f87c](https://github.com/SkeLLLa/node-object-hash/commit/ca2f87c7af8270ec5ce89de1bb166257000ffca1))
+* typo in doc ([d9d7e24](https://github.com/SkeLLLa/node-object-hash/commit/d9d7e24f2b45e5b14c92a01da648f6ad9daf8427))
+* **typos:** fix typos in test and contributing.md ([2ee3ddd](https://github.com/SkeLLLa/node-object-hash/commit/2ee3ddde2cd062844b2d3829f13647bf78b88eb7))
+
 ### [2.1.2](https://github.com/SkeLLLa/node-object-hash/compare/v2.1.1...v2.1.2) (2021-01-29)
 
 ### [2.1.1](https://github.com/SkeLLLa/node-object-hash/compare/v2.1.0...v2.1.1) (2021-01-29)

@@ -1,4 +1,4 @@
-[Node object hash - v2.1.1](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / CoerceOptions
+[Node object hash - v2.1.2](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / CoerceOptions
 
 # Interface: CoerceOptions
 
@@ -14,6 +14,7 @@ Advanced coerce options
 
 ### Properties
 
+- [bigint](objectsorter.export_.coerceoptions.md#bigint)
 - [boolean](objectsorter.export_.coerceoptions.md#boolean)
 - [date](objectsorter.export_.coerceoptions.md#date)
 - [function](objectsorter.export_.coerceoptions.md#function)
@@ -25,6 +26,26 @@ Advanced coerce options
 - [undefined](objectsorter.export_.coerceoptions.md#undefined)
 
 ## Properties
+
+### bigint
+
+• `Optional` **bigint**: _undefined_ | _boolean_
+
+If `true` converts BigInt to string
+
+**`example`**
+// coerce.bigint = true
+1n === '1';
+
+**`example`**
+// coerce.bigint = false
+1n !== '1';
+
+**`default`** true
+
+Defined in: [objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L44)
+
+---
 
 ### boolean
 
@@ -44,7 +65,7 @@ false !== '0'
 
 **`default`** true
 
-Defined in: [objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L22)
+Defined in: [objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L22)
 
 ---
 
@@ -62,7 +83,7 @@ If `true` dates may equal the same formatted strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:95](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L95)
+Defined in: [objectSorter.ts:106](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L106)
 
 ---
 
@@ -80,7 +101,7 @@ If `true` functions may equal the same formatted strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:86](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L86)
+Defined in: [objectSorter.ts:97](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L97)
 
 ---
 
@@ -100,7 +121,7 @@ null !== ''
 
 **`default`** true
 
-Defined in: [objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L66)
+Defined in: [objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L77)
 
 ---
 
@@ -115,12 +136,12 @@ If `true` converts numbers to strings
 1 === '1';
 
 **`example`**
-// coerce.number = true
+// coerce.number = false
 1 !== '1';
 
 **`default`** true
 
-Defined in: [objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L33)
+Defined in: [objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L33)
 
 ---
 
@@ -138,7 +159,7 @@ If `true` set will be coerced to array
 
 **`default`** true
 
-Defined in: [objectSorter.ts:104](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L104)
+Defined in: [objectSorter.ts:115](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L115)
 
 ---
 
@@ -158,7 +179,7 @@ If `true` strings and coerced string will be equal to coerced numbers, booleans,
 
 **`default`** true
 
-Defined in: [objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L44)
+Defined in: [objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L55)
 
 ---
 
@@ -178,7 +199,7 @@ Symbol.for('a') !== Symbol.for('b')
 
 **`default`** true
 
-Defined in: [objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L77)
+Defined in: [objectSorter.ts:88](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L88)
 
 ---
 
@@ -198,4 +219,4 @@ undefined !== ''
 
 **`default`** true
 
-Defined in: [objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L55)
+Defined in: [objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L66)

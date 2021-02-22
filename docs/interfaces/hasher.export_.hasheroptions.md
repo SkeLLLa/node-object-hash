@@ -1,4 +1,4 @@
-[Node object hash - v2.1.1](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
+[Node object hash - v2.1.2](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
 
 # Interface: HasherOptions
 
@@ -32,7 +32,7 @@ Hash algorithm to use
 
 **`default`** 'sha256'
 
-Defined in: [hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/hasher.ts#L23)
+Defined in: [hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/hasher.ts#L23)
 
 ---
 
@@ -47,7 +47,7 @@ Advanced coerce options could be provided as object
 
 Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[coerce](objectsorter.export_.sorteroptions.md#coerce)
 
-Defined in: [objectSorter.ts:152](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L152)
+Defined in: [objectSorter.ts:167](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L167)
 
 ---
 
@@ -59,7 +59,7 @@ String encoding for hash
 
 **`default`** 'base64'
 
-Defined in: [hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/hasher.ts#L28)
+Defined in: [hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/hasher.ts#L28)
 
 ---
 
@@ -74,7 +74,7 @@ Advanced sorting options could be provided as object
 
 Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[sort](objectsorter.export_.sorteroptions.md#sort)
 
-Defined in: [objectSorter.ts:158](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L158)
+Defined in: [objectSorter.ts:173](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L173)
 
 ---
 
@@ -89,4 +89,4 @@ Advanced sorting options could be provided as object.
 
 Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[trim](objectsorter.export_.sorteroptions.md#trim)
 
-Defined in: [objectSorter.ts:164](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L164)
+Defined in: [objectSorter.ts:179](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L179)

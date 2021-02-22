@@ -1,4 +1,4 @@
-[Node object hash - v2.1.1](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
+[Node object hash - v2.1.2](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
 
 # Interface: SortOptions
 
@@ -15,6 +15,7 @@ Advanced sort options
 ### Properties
 
 - [array](objectsorter.sortoptions.md#array)
+- [bigint](objectsorter.sortoptions.md#bigint)
 - [map](objectsorter.sortoptions.md#map)
 - [object](objectsorter.sortoptions.md#object)
 - [set](objectsorter.sortoptions.md#set)
@@ -27,7 +28,17 @@ Advanced sort options
 
 If `true` sort array entries before hash
 
-Defined in: [objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L114)
+Defined in: [objectSorter.ts:125](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L125)
+
+---
+
+### bigint
+
+• `Optional` **bigint**: _undefined_ | _boolean_
+
+If `true` sort BigInt entries before hash
+
+Defined in: [objectSorter.ts:141](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L141)
 
 ---
 
@@ -37,7 +48,7 @@ Defined in: [objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort map entries before hash
 
-Defined in: [objectSorter.ts:126](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L126)
+Defined in: [objectSorter.ts:137](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L137)
 
 ---
 
@@ -47,7 +58,7 @@ Defined in: [objectSorter.ts:126](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort object entries before hash
 
-Defined in: [objectSorter.ts:118](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L118)
+Defined in: [objectSorter.ts:129](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L129)
 
 ---
 
@@ -57,4 +68,4 @@ Defined in: [objectSorter.ts:118](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort set entries before hash
 
-Defined in: [objectSorter.ts:122](https://github.com/SkeLLLa/node-object-hash/blob/6398ebf/src/objectSorter.ts#L122)
+Defined in: [objectSorter.ts:133](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L133)
