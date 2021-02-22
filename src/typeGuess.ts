@@ -20,6 +20,7 @@ export const TYPE_MAP: { [type: string]: string } = {
   Date: 'date',
   String: 'string',
   Number: 'number',
+  BigInt: 'bigint',
   Boolean: 'boolean',
   Object: 'object',
 };

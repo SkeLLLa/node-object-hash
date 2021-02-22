@@ -37,6 +37,7 @@ describe('Backward compatibility', () => {
           return 'n';
         },
         o: [5, 4, 3, 2, 1, 0],
+        p: BigInt(123450),
         x: new UnknownClass(),
         y: true,
       },
@@ -63,6 +64,7 @@ describe('Backward compatibility', () => {
           return 'n';
         },
         o: [5, 4, 3, 2, 1, 0],
+        p: BigInt(123450),
         x: new UnknownClass(),
         y: true,
       },
@@ -81,6 +83,7 @@ describe('Backward compatibility', () => {
         ]),
         g: 0,
         o: [4, 2, 1, 3, 5, 0],
+        p: BigInt(123450),
         h: undefined,
         n: function n() {
           return 'n';
@@ -115,6 +118,7 @@ describe('Backward compatibility', () => {
           return 'n';
         },
         o: ['5', 4, '3', 2, true, false],
+        p: BigInt(123450),
         x: new UnknownClass(),
         y: true,
       },
@@ -133,6 +137,7 @@ describe('Backward compatibility', () => {
         },
         x: new UnknownClass(),
         o: ['5', 4, '3', 2, true, false],
+        p: BigInt(123450),
         c: '3',
         l: new Date(0),
         k: new Map([
@@ -152,27 +157,27 @@ describe('Backward compatibility', () => {
       const hash = hasher({ sort: true, coerce: true, trim: true });
       test('coerce', () => {
         expect(hash.hash(testData.objects.coerce)).toEqual(
-          '94d3c97e1c5a48b3167571dc2996d2c8f39c00849b8da60c89ce0e9451a595e2'
+          'd562fffb194de7210e60f930d9046f57541e81368043a46e6d0532104c5c1b5c'
         );
       });
       test('no coerce', () => {
         expect(hash.hash(testData.objects.noCoerce)).toEqual(
-          '94d3c97e1c5a48b3167571dc2996d2c8f39c00849b8da60c89ce0e9451a595e2'
+          'd562fffb194de7210e60f930d9046f57541e81368043a46e6d0532104c5c1b5c'
         );
       });
       test('sort', () => {
         expect(hash.hash(testData.objects.sort)).toEqual(
-          '94d3c97e1c5a48b3167571dc2996d2c8f39c00849b8da60c89ce0e9451a595e2'
+          'd562fffb194de7210e60f930d9046f57541e81368043a46e6d0532104c5c1b5c'
         );
       });
       test('no sort', () => {
         expect(hash.hash(testData.objects.noSort)).toEqual(
-          '94d3c97e1c5a48b3167571dc2996d2c8f39c00849b8da60c89ce0e9451a595e2'
+          'd562fffb194de7210e60f930d9046f57541e81368043a46e6d0532104c5c1b5c'
         );
       });
       test('sort and coerce', () => {
         expect(hash.hash(testData.objects.sortCoerce)).toEqual(
-          '94d3c97e1c5a48b3167571dc2996d2c8f39c00849b8da60c89ce0e9451a595e2'
+          'd562fffb194de7210e60f930d9046f57541e81368043a46e6d0532104c5c1b5c'
         );
       });
     });
@@ -186,27 +191,27 @@ describe('Backward compatibility', () => {
 
       test('coerce', () => {
         expect(hash.hash(testData.objects.coerce)).toEqual(
-          '9bc082f76d1fac974e42bddae1b68336b998c0cbbe11d33abf1aa5cdb7e3d6bf'
+          '4930c339209f05627234b5bdff0577abd99c5ba9c7f7998731183c5123d0057c'
         );
       });
       test('no coerce', () => {
         expect(hash.hash(testData.objects.noCoerce)).toEqual(
-          '5bc020a78ed173a4e99e8bf7e665a32812effd5bbc5295f6d427503d80106fe8'
+          '5394d25e67809bacb64ba04dc2daa4763c56918efb1c689438b86373a98e826e'
         );
       });
       test('sort', () => {
         expect(hash.hash(testData.objects.sort)).toEqual(
-          '5bc020a78ed173a4e99e8bf7e665a32812effd5bbc5295f6d427503d80106fe8'
+          '5394d25e67809bacb64ba04dc2daa4763c56918efb1c689438b86373a98e826e'
         );
       });
       test('no sort', () => {
         expect(hash.hash(testData.objects.noSort)).toEqual(
-          '5bc020a78ed173a4e99e8bf7e665a32812effd5bbc5295f6d427503d80106fe8'
+          '5394d25e67809bacb64ba04dc2daa4763c56918efb1c689438b86373a98e826e'
         );
       });
       test('sort and coerce', () => {
         expect(hash.hash(testData.objects.sortCoerce)).toEqual(
-          '12807cc6a369885cb81586c6b2970f3d7fdabcacaa5ffbb5be1ec71220457481'
+          '510f7a95d1d95671c35f912309450bdbd418d32188d34d3980171c4fbb36fbe7'
         );
       });
     });
@@ -215,27 +220,27 @@ describe('Backward compatibility', () => {
 
       test('coerce', () => {
         expect(hash.hash(testData.objects.coerce)).toEqual(
-          '1f694653901fd084895772ea46ca00525e43ffa1d4e30a6de962b1d45876d201'
+          '45216942fbca6f5962a9b47416baaa23b27fb4e9c521c18d69df9efb35d5419d'
         );
       });
       test('no coerce', () => {
         expect(hash.hash(testData.objects.noCoerce)).toEqual(
-          '1f694653901fd084895772ea46ca00525e43ffa1d4e30a6de962b1d45876d201'
+          '45216942fbca6f5962a9b47416baaa23b27fb4e9c521c18d69df9efb35d5419d'
         );
       });
       test('sort', () => {
         expect(hash.hash(testData.objects.sort)).toEqual(
-          '7aa16bdf487a76a26d99c36ac954ef7e55b676e78e6c4313cbcce9e561e39a22'
+          '0c5dbb0aee08318086864856540b9bc760ce1bf1073e934caac3482a4646201d'
         );
       });
       test('no sort', () => {
         expect(hash.hash(testData.objects.noSort)).toEqual(
-          '1f694653901fd084895772ea46ca00525e43ffa1d4e30a6de962b1d45876d201'
+          '45216942fbca6f5962a9b47416baaa23b27fb4e9c521c18d69df9efb35d5419d'
         );
       });
       test('sort and coerce', () => {
         expect(hash.hash(testData.objects.sortCoerce)).toEqual(
-          '39062455e48f34333fd33712e55e52ee582572ffbdfc401a8719af9386f46919'
+          'e566ff209cf13b51ce5f8e53a6ae262a2e7c39075d0caff2336140c32c1892c6'
         );
       });
     });
@@ -247,27 +252,27 @@ describe('Backward compatibility', () => {
       });
       test('coerce', () => {
         expect(hash.hash(testData.objects.coerce)).toEqual(
-          'b2e0ddf84f51275284558ea56ef4aef78c00bcf207ef19f47819ec0e8ece4459'
+          '85989bfe8c8a5aa29d3cd052bb50cf0b3cb5d2177f788bfa0b0b13756b5f9041'
         );
       });
       test('no coerce', () => {
         expect(hash.hash(testData.objects.noCoerce)).toEqual(
-          '058193872e4c4aeef8101341eccefd152fe5f019c65036669ff3dd086053f9ec'
+          'e302b813a63216fc4a2ccfe5d7412744438768f201116269fa185d60e805cd0c'
         );
       });
       test('sort', () => {
         expect(hash.hash(testData.objects.sort)).toEqual(
-          '8b062d88f305e28cd40e383b880244a205a04d9df055b2ca873fae753c8a687a'
+          '74e1458df6bd97860fd8cdf6db79408ee30dbcc4265371057cbb0733061debaf'
         );
       });
       test('no sort', () => {
         expect(hash.hash(testData.objects.noSort)).toEqual(
-          '058193872e4c4aeef8101341eccefd152fe5f019c65036669ff3dd086053f9ec'
+          'e302b813a63216fc4a2ccfe5d7412744438768f201116269fa185d60e805cd0c'
         );
       });
       test('sort and coerce', () => {
         expect(hash.hash(testData.objects.sortCoerce)).toEqual(
-          '09e422f68209dd588baa0cceda54ed7d1f8b2b32c5a7130bb495fe389b3ae5bd'
+          'ba5efaa940a6eb779cc1d739ad4d9f423cf1a76d75cc1a0475d992a627586889'
         );
       });
     });
@@ -279,36 +284,36 @@ describe('Backward compatibility', () => {
       describe('compatibility', function () {
         test('sort strings', () => {
           expect(hash.sort(testData.objects.coerce)).toEqual(
-            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],x:<:UnknownClass>:{"name":"unknown"},y:1}`
+            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],p:<:bi>:123450,x:<:UnknownClass>:{"name":"unknown"},y:1}`
           );
           expect(hash.sort(testData.objects.noCoerce)).toEqual(
-            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],x:<:UnknownClass>:{"name":"unknown"},y:1}`
+            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],p:<:bi>:123450,x:<:UnknownClass>:{"name":"unknown"},y:1}`
           );
           expect(hash.sort(testData.objects.sort)).toEqual(
-            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],x:<:UnknownClass>:{"name":"unknown"},y:1}`
+            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],p:<:bi>:123450,x:<:UnknownClass>:{"name":"unknown"},y:1}`
           );
           expect(hash.sort(testData.objects.noSort)).toEqual(
-            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],x:<:UnknownClass>:{"name":"unknown"},y:1}`
+            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],p:<:bi>:123450,x:<:UnknownClass>:{"name":"unknown"},y:1}`
           );
           expect(hash.sort(testData.objects.sortCoerce)).toEqual(
-            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],x:<:UnknownClass>:{"name":"unknown"},y:1}`
+            `{a:1,b:2,c:3,d:{e:4,f:5},g:0,h:,i:,j:[1,2,3,4,5],k:[1,1;2,2;3,3],l:1970-01-01T00:00:00.000Z,m:<:smbl>,n:n=>function n() {\n                    return 'n';\n                },o:[0,1,2,3,4,5],p:<:bi>:123450,x:<:UnknownClass>:{"name":"unknown"},y:1}`
           );
         });
         test('hash strings', () => {
           expect(hash.hash(testData.objects.coerce)).toEqual(
-            'fc3bd2b324abda8b46bbfc470ca2e4f6831352fc67866cb38d2be8d3cd11a09d'
+            '929a16265b70ecfb68dc252b2b4d40364d69711621b7ebdf8162043e344c1dc3'
           );
           expect(hash.hash(testData.objects.noCoerce)).toEqual(
-            'fc3bd2b324abda8b46bbfc470ca2e4f6831352fc67866cb38d2be8d3cd11a09d'
+            '929a16265b70ecfb68dc252b2b4d40364d69711621b7ebdf8162043e344c1dc3'
           );
           expect(hash.hash(testData.objects.sort)).toEqual(
-            'fc3bd2b324abda8b46bbfc470ca2e4f6831352fc67866cb38d2be8d3cd11a09d'
+            '929a16265b70ecfb68dc252b2b4d40364d69711621b7ebdf8162043e344c1dc3'
           );
           expect(hash.hash(testData.objects.noSort)).toEqual(
-            'fc3bd2b324abda8b46bbfc470ca2e4f6831352fc67866cb38d2be8d3cd11a09d'
+            '929a16265b70ecfb68dc252b2b4d40364d69711621b7ebdf8162043e344c1dc3'
           );
           expect(hash.hash(testData.objects.sortCoerce)).toEqual(
-            'fc3bd2b324abda8b46bbfc470ca2e4f6831352fc67866cb38d2be8d3cd11a09d'
+            '929a16265b70ecfb68dc252b2b4d40364d69711621b7ebdf8162043e344c1dc3'
           );
         });
       });
