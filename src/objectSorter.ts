@@ -276,6 +276,9 @@ function objectSorter(
   stringifiers.array = sortOptions.array
     ? (str._arraySort.bind(stringifiers) as objectSorter.StringifyFn)
     : (str._array.bind(stringifiers) as objectSorter.StringifyFn);
+  stringifiers.typedarray = sortOptions.array
+    ? (str._typedArraySort.bind(stringifiers) as objectSorter.StringifyFn)
+    : (str._typedArray.bind(stringifiers) as objectSorter.StringifyFn);
   if (sortOptions.set) {
     stringifiers.set = coerceOptions.set
       ? (str._setSortCoerce.bind(stringifiers) as objectSorter.StringifyFn)

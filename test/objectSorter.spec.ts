@@ -61,6 +61,18 @@ describe('Sorter', () => {
       const hash = hasher({ sort: { object: true } });
       expect(hash.sort({ c: 3, a: 1, b: 2 })).toEqual('{a:1,b:2,c:3}');
     });
+    test('buffer', () => {
+      const hash = hasher({ sort: true, coerce: false });
+      expect(hash.sort(Buffer.from([3, 2, 1]))).toEqual(
+        '[<:n>:1,<:n>:2,<:n>:3]'
+      );
+    });
+    test('Uint8Array', () => {
+      const hash = hasher({ sort: false, coerce: false });
+      expect(hash.sort(Uint8Array.from([2, 3, 1]))).toEqual(
+        '[<:n>:2,<:n>:3,<:n>:1]'
+      );
+    });
   });
 
   describe('trim', () => {
