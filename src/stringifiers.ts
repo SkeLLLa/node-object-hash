@@ -5,6 +5,7 @@
 
 import { guessType } from './typeGuess';
 import { Hashable } from './hasher';
+import TypedArray = NodeJS.TypedArray;
 
 /**
  * List of functions responsible for converting certain types to string
@@ -285,6 +286,47 @@ export function _array(obj: Array<any>): string {
     obj
       .map((item) => {
         return stringifiers[guessType(item)](item);
+      })
+      .toString() +
+    ']'
+  );
+}
+/**
+ * Converts TypedArray to string
+ * @private
+ * @param obj object to convert
+ * @return object string representation
+ */
+export function _typedArraySort(obj: TypedArray): string {
+  const stringifiers: Stringifiers = this as Stringifiers;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const values: Array<any> = Array.prototype.slice.call(obj);
+  return (
+    '[' +
+    values
+      .map((num) => {
+        return stringifiers[guessType(num)](num);
+      })
+      .sort()
+      .toString() +
+    ']'
+  );
+}
+/**
+ * Converts TypedArray to string
+ * @private
+ * @param obj object to convert
+ * @return object string representation
+ */
+export function _typedArray(obj: TypedArray): string {
+  const stringifiers: Stringifiers = this as Stringifiers;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const values: Array<any> = Array.prototype.slice.call(obj);
+  return (
+    '[' +
+    values
+      .map((num) => {
+        return stringifiers[guessType(num)](num);
       })
       .toString() +
     ']'
