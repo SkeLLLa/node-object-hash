@@ -64,13 +64,13 @@ describe('Sorter', () => {
     test('buffer', () => {
       const hash = hasher({ sort: true, coerce: false });
       expect(hash.sort(Buffer.from([3, 2, 1]))).toEqual(
-        '[<:n>:1,<:n>:2,<:n>:3]'
+        '[<:n>:3,<:n>:2,<:n>:1]'
       );
     });
     test('Uint8Array', () => {
-      const hash = hasher({ sort: false, coerce: false });
+      const hash = hasher({ sort: { typedArray: true }, coerce: false });
       expect(hash.sort(Uint8Array.from([2, 3, 1]))).toEqual(
-        '[<:n>:2,<:n>:3,<:n>:1]'
+        '[<:n>:1,<:n>:2,<:n>:3]'
       );
     });
   });

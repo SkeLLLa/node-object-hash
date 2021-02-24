@@ -172,7 +172,8 @@ Parameters:
 - `options`:`object` - object with hasher config options
 - `options.coerce`:`boolean|object` - if true performs type coercion (default: `true`);
   e.g. `hash(true) == hash('1') == hash(1)`, `hash(false) == hash('0') == hash(0)`
-- `options.sort`:`boolean|object` - if true performs sorting on objects, arrays, etc. (default: `true`);
+- `options.sort`:`boolean|object` - if true performs sorting on objects, arrays, etc. (default: `true`); in order to
+  perform sorting on `TypedArray` (`Buffer`, `Int8Array`, etc.), specify it explicitly: `typedArray: true`
 - `options.trim`:`boolean|object` - if true performs trim of spaces and replaces space-like characters with single space (default: `false`);
 - `options.alg`:`string` - sets default hash algorithm (default: `'sha256'`); can be overridden in `hash` method;
 - `options.enc`:`string` - sets default hash encoding (default: `'hex'`); can be overridden in `hash` method;
