@@ -1,4 +1,4 @@
-[Node object hash - v2.1.2](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
+[Node object hash - v2.2.0](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
 
 # Interface: SortOptions
 
@@ -19,6 +19,7 @@ Advanced sort options
 - [map](objectsorter.sortoptions.md#map)
 - [object](objectsorter.sortoptions.md#object)
 - [set](objectsorter.sortoptions.md#set)
+- [typedArray](objectsorter.sortoptions.md#typedarray)
 
 ## Properties
 
@@ -28,7 +29,7 @@ Advanced sort options
 
 If `true` sort array entries before hash
 
-Defined in: [objectSorter.ts:125](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L125)
+Defined in: [objectSorter.ts:125](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L125)
 
 ---
 
@@ -38,7 +39,7 @@ Defined in: [objectSorter.ts:125](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort BigInt entries before hash
 
-Defined in: [objectSorter.ts:141](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L141)
+Defined in: [objectSorter.ts:145](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L145)
 
 ---
 
@@ -48,7 +49,7 @@ Defined in: [objectSorter.ts:141](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort map entries before hash
 
-Defined in: [objectSorter.ts:137](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L137)
+Defined in: [objectSorter.ts:141](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L141)
 
 ---
 
@@ -58,7 +59,7 @@ Defined in: [objectSorter.ts:137](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort object entries before hash
 
-Defined in: [objectSorter.ts:129](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L129)
+Defined in: [objectSorter.ts:133](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L133)
 
 ---
 
@@ -68,4 +69,14 @@ Defined in: [objectSorter.ts:129](https://github.com/SkeLLLa/node-object-hash/bl
 
 If `true` sort set entries before hash
 
-Defined in: [objectSorter.ts:133](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L133)
+Defined in: [objectSorter.ts:137](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L137)
+
+---
+
+### typedArray
+
+• `Optional` **typedArray**: _undefined_ | _boolean_
+
+If `true` sort TypedArray entries before hash
+
+Defined in: [objectSorter.ts:129](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L129)

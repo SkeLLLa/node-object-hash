@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/SkeLLLa/node-object-hash/compare/v2.2.0...v2.3.0) (2021-02-24)
+
+
+### Features
+
+* add sorting option for typed arrays ([28d5344](https://github.com/SkeLLLa/node-object-hash/commit/28d53445d1f59213ac32de77890b0311a0dffe7f))
+
+
+### Bug fixes
+
+* stringification of typed arrays ([bc1e1a6](https://github.com/SkeLLLa/node-object-hash/commit/bc1e1a6654036935769006df4823cd16a67c0a62))
+
 ## [2.2.0](https://github.com/SkeLLLa/node-object-hash/compare/v2.1.2...v2.2.0) (2021-02-22)
 
 

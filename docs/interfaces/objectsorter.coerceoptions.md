@@ -1,4 +1,4 @@
-[Node object hash - v2.1.2](../README.md) / [objectSorter](../modules/objectsorter.md) / CoerceOptions
+[Node object hash - v2.2.0](../README.md) / [objectSorter](../modules/objectsorter.md) / CoerceOptions
 
 # Interface: CoerceOptions
 
@@ -43,7 +43,7 @@ If `true` converts BigInt to string
 
 **`default`** true
 
-Defined in: [objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L44)
+Defined in: [objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L44)
 
 ---
 
@@ -65,7 +65,7 @@ false !== '0'
 
 **`default`** true
 
-Defined in: [objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L22)
+Defined in: [objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L22)
 
 ---
 
@@ -83,7 +83,7 @@ If `true` dates may equal the same formatted strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:106](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L106)
+Defined in: [objectSorter.ts:106](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L106)
 
 ---
 
@@ -101,7 +101,7 @@ If `true` functions may equal the same formatted strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:97](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L97)
+Defined in: [objectSorter.ts:97](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L97)
 
 ---
 
@@ -121,7 +121,7 @@ null !== ''
 
 **`default`** true
 
-Defined in: [objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L77)
+Defined in: [objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L77)
 
 ---
 
@@ -141,7 +141,7 @@ If `true` converts numbers to strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L33)
+Defined in: [objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L33)
 
 ---
 
@@ -159,7 +159,7 @@ If `true` set will be coerced to array
 
 **`default`** true
 
-Defined in: [objectSorter.ts:115](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L115)
+Defined in: [objectSorter.ts:115](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L115)
 
 ---
 
@@ -179,7 +179,7 @@ If `true` strings and coerced string will be equal to coerced numbers, booleans,
 
 **`default`** true
 
-Defined in: [objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L55)
+Defined in: [objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L55)
 
 ---
 
@@ -199,7 +199,7 @@ Symbol.for('a') !== Symbol.for('b')
 
 **`default`** true
 
-Defined in: [objectSorter.ts:88](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L88)
+Defined in: [objectSorter.ts:88](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L88)
 
 ---
 
@@ -219,4 +219,4 @@ undefined !== ''
 
 **`default`** true
 
-Defined in: [objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/ca2f87c/src/objectSorter.ts#L66)
+Defined in: [objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/28d5344/src/objectSorter.ts#L66)
