@@ -124,6 +124,10 @@ namespace objectSorter {
      */
     array?: boolean;
     /**
+     * If `true` sort TypedArray entries before hash
+     */
+    typedArray?: boolean;
+    /**
      * If `true` sort object entries before hash
      */
     object?: boolean;
@@ -209,6 +213,7 @@ function objectSorter(
 
   const sortOptions: objectSorter.SortOptions = {
     array: typeof sort === 'boolean' ? sort : sort.array,
+    typedArray: typeof sort === 'boolean' ? false : sort.typedArray,
     object: typeof sort === 'boolean' ? sort : sort.object,
     set: typeof sort === 'boolean' ? sort : sort.set,
     map: typeof sort === 'boolean' ? sort : sort.map,
@@ -276,7 +281,7 @@ function objectSorter(
   stringifiers.array = sortOptions.array
     ? (str._arraySort.bind(stringifiers) as objectSorter.StringifyFn)
     : (str._array.bind(stringifiers) as objectSorter.StringifyFn);
-  stringifiers.typedarray = sortOptions.array
+  stringifiers.typedarray = sortOptions.typedArray
     ? (str._typedArraySort.bind(stringifiers) as objectSorter.StringifyFn)
     : (str._typedArray.bind(stringifiers) as objectSorter.StringifyFn);
   if (sortOptions.set) {
