@@ -1,5 +1,6 @@
 import 'jest';
 import hasher = require('../src/hasher');
+import { SortOptions } from '../src/objectSorter';
 
 describe('Backward compatibility', () => {
   class UnknownClass {
@@ -442,6 +443,86 @@ describe('Backward compatibility', () => {
           hash.sort(testData.objects.noSort)
         );
       });
+    });
+  });
+
+  describe('possible options', () => {
+    const coerceOptions: { [key: string]: boolean } = {
+      True: true,
+      False: false,
+    };
+    const sortOptions: { [key: string]: boolean | SortOptions } = {
+      True: true,
+      False: false,
+      TypedArrayTrue: { typedArray: true },
+    };
+    const trimOptions: { [key: string]: boolean } = {
+      True: true,
+      False: false,
+    };
+    const types: {
+      [key: string]: object | number | string | bigint | boolean;
+    } = {
+      Array: Array.from([-1, 21, 3]),
+      Int8Array: Int8Array.from([11, -22, 3]),
+      Uint8Array: Uint8Array.from([13, -2, -3]),
+      Int16Array: Int16Array.from([0, 5, 3]),
+      Uint16Array: Uint16Array.from([1, 2, 3]),
+      Int32Array: Int32Array.from([1, 3, 12]),
+      Uint32Array: Uint32Array.from([123, 4]),
+      Float32Array: Float32Array.from([1, 8, 3, 4]),
+      Float64Array: Float64Array.from([7, 3, 3, 1]),
+      BigUint64Array: BigUint64Array.from([
+        BigInt(-1),
+        BigInt(23),
+        BigInt(123),
+      ]),
+      Buffer: Buffer.from([1, 2, 3]),
+      Map: new Map([
+        [1, 2],
+        [2, 3],
+        [3, 4],
+      ]),
+      Set: new Set([1, 2, 3]),
+      Date: new Date(0),
+      string: 'some string',
+      number: 19284,
+      bigint: BigInt(1238573921),
+      boolean: true,
+      object: new UnknownClass(),
+    };
+
+    describe.each(Object.keys(types))('type: %s', (typeKey) => {
+      describe.each(Object.keys(coerceOptions))(
+        'coerce option  %s',
+        (coerceKey) => {
+          describe.each(Object.keys(sortOptions))(
+            'sort option: %s',
+            (sortKey) => {
+              describe.each(Object.keys(trimOptions))(
+                'trim option: %s',
+                (trimKey) => {
+                  const type = types[typeKey];
+                  const coerce = coerceOptions[coerceKey];
+                  const sort = sortOptions[sortKey];
+                  const trim = trimOptions[trimKey];
+                  const hash = hasher({
+                    coerce: coerce,
+                    sort: sort,
+                    trim: trim,
+                  });
+                  test('produces sorted string', () => {
+                    expect(hash.sort(type)).toMatchSnapshot();
+                  });
+                  test('produces valid hash', () => {
+                    expect(hash.hash(type)).toMatchSnapshot();
+                  });
+                }
+              );
+            }
+          );
+        }
+      );
     });
   });
 });
