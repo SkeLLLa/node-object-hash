@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.1](https://github.com/SkeLLLa/node-object-hash/compare/v2.3.0...v2.3.1) (2021-02-28)
+
+
+### Tests
+
+* add tests for every possible option ([0fc56f0](https://github.com/SkeLLLa/node-object-hash/commit/0fc56f08bb8d7cadcfed1d136eb3b2f5b89fa8ba))
+
 ## [2.3.0](https://github.com/SkeLLLa/node-object-hash/compare/v2.2.0...v2.3.0) (2021-02-24)
 
 
