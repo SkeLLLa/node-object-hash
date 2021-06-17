@@ -1,4 +1,4 @@
-import 'jest';
+import { describe, test, expect } from '@jest/globals';
 import hasher = require('../src/hasher');
 import { SortOptions } from '../src/objectSorter';
 
@@ -347,27 +347,27 @@ describe('Backward compatibility', () => {
       });
 
       describe('hash', () => {
-        it('should return equal hashes', function () {
+        test('should return equal hashes', function () {
           expect(hash.hash(testData.objects.noSort)).toEqual(
             hash.hash(testData.objects.sort)
           );
         });
-        it('should return equal hashes', function () {
+        test('should return equal hashes', function () {
           expect(hash.hash(testData.objects.noCoerce)).toEqual(
             hash.hash(testData.objects.coerce)
           );
         });
-        it('should return equal hashes', function () {
+        test('should return equal hashes', function () {
           expect(hash.hash(testData.objects.sort)).toEqual(
             hash.hash(testData.objects.sortCoerce)
           );
         });
-        it('should return equal hashes', function () {
+        test('should return equal hashes', function () {
           expect(hash.hash(testData.objects.coerce)).toEqual(
             hash.hash(testData.objects.sortCoerce)
           );
         });
-        it('should return equal hashes', function () {
+        test('should return equal hashes', function () {
           expect(hash.hash(testData.objects.coerce)).toEqual(
             hash.hash(testData.objects.sortCoerce)
           );
@@ -378,22 +378,22 @@ describe('Backward compatibility', () => {
     describe('sort=false coerce=true', () => {
       const hash = hasher({ sort: false });
 
-      it('should return different strings', function () {
+      test('should return different strings', function () {
         expect(hash.sort(testData.objects.noSort)).not.toEqual(
           hash.sort(testData.objects.sort)
         );
       });
-      it('should return different strings', function () {
+      test('should return different strings', function () {
         expect(hash.sort(testData.objects.noCoerce)).not.toEqual(
           hash.sort(testData.objects.sortCoerce)
         );
       });
-      it('should return equal strings', function () {
+      test('should return equal strings', function () {
         expect(hash.sort(testData.objects.noCoerce)).toEqual(
           hash.sort(testData.objects.coerce)
         );
       });
-      it('should return equal strings', function () {
+      test('should return equal strings', function () {
         expect(hash.sort(testData.objects.noCoerce)).toEqual(
           hash.sort(testData.objects.noSort)
         );
@@ -492,16 +492,16 @@ describe('Backward compatibility', () => {
       object: new UnknownClass(),
     };
 
-    describe.each(Object.keys(types))('type: %s', (typeKey) => {
+    describe.each(Object.keys(types))('type: %s', (typeKey: string) => {
       describe.each(Object.keys(coerceOptions))(
         'coerce option  %s',
-        (coerceKey) => {
+        (coerceKey: string) => {
           describe.each(Object.keys(sortOptions))(
             'sort option: %s',
-            (sortKey) => {
+            (sortKey: string) => {
               describe.each(Object.keys(trimOptions))(
                 'trim option: %s',
-                (trimKey) => {
+                (trimKey: string) => {
                   const type = types[typeKey];
                   const coerce = coerceOptions[coerceKey];
                   const sort = sortOptions[sortKey];
