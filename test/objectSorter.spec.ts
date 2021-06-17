@@ -1,4 +1,4 @@
-import 'jest';
+import { describe, test, expect } from '@jest/globals';
 import hasher = require('../src/hasher');
 import sorter = require('../src/objectSorter');
 

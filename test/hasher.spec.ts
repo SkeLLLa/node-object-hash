@@ -1,4 +1,4 @@
-import 'jest';
+import { describe, test, expect } from '@jest/globals';
 import { Hashable } from '../src/hasher';
 import hasher = require('../src/hasher');
 
