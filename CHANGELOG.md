@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.7](https://github.com/SkeLLLa/node-object-hash/compare/v2.3.6...v2.3.7) (2021-06-17)
+
+
+### Misc
+
+* update links ([f48c0c9](https://github.com/SkeLLLa/node-object-hash/commit/f48c0c99c7d9f60b7a75109e72a7d373d3913d1b))
+
 ### [2.3.6](https://github.com/SkeLLLa/node-object-hash/compare/v2.3.5...v2.3.6) (2021-06-17)
 
 

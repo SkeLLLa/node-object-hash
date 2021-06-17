@@ -1,4 +1,4 @@
-[Node object hash - v2.3.5](../README.md) / [objectSorter](objectsorter.md) / export%3D
+[Node object hash - v2.3.6](../README.md) / [objectSorter](objectsorter.md) / export%3D
 
 # Namespace: export=
 
@@ -39,4 +39,4 @@
 
 #### Defined in
 
-[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/b1a7774/src/objectSorter.ts#L186)
+[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/objectSorter.ts#L186)

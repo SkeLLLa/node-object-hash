@@ -1,4 +1,4 @@
-[Node object hash - v2.3.5](../README.md) / hasher
+[Node object hash - v2.3.6](../README.md) / hasher
 
 # Module: hasher
 
@@ -40,4 +40,4 @@ hasher instance
 
 #### Defined in
 
-[hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/b1a7774/src/hasher.ts#L68)
+[hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/hasher.ts#L68)
