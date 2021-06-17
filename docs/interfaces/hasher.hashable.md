@@ -1,4 +1,4 @@
-[Node object hash - v2.3.4](../README.md) / [hasher](../modules/hasher.md) / Hashable
+[Node object hash - v2.3.5](../README.md) / [hasher](../modules/hasher.md) / Hashable
 
 # Interface: Hashable
 
@@ -30,4 +30,4 @@ with the function toHash that return the same value will have the same hash
 
 #### Defined in
 
-[hasher.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/hasher.ts#L37)
+[hasher.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/b1a7774/src/hasher.ts#L37)

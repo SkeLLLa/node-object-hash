@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.6](https://github.com/SkeLLLa/node-object-hash/compare/v2.3.5...v2.3.6) (2021-06-17)
+
+
+### Tests
+
+* update jest types ([b1a7774](https://github.com/SkeLLLa/node-object-hash/commit/b1a7774e96d640e9cbce95527c629bdb9ba2d07e))
+
 ### [2.3.5](https://github.com/SkeLLLa/node-object-hash/compare/v2.3.4...v2.3.5) (2021-06-17)
 
 
