@@ -1,14 +1,10 @@
-[Node object hash - v2.3.3](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / CoerceOptions
+[Node object hash - v2.3.4](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / CoerceOptions
 
 # Interface: CoerceOptions
 
 [objectSorter](../modules/objectsorter.md).[export=](../modules/objectsorter.export_.md).CoerceOptions
 
 Advanced coerce options
-
-## Hierarchy
-
-- **CoerceOptions**
 
 ## Table of contents
 
@@ -29,7 +25,7 @@ Advanced coerce options
 
 ### bigint
 
-• `Optional` **bigint**: _undefined_ | _boolean_
+• `Optional` **bigint**: `boolean`
 
 If `true` converts BigInt to string
 
@@ -43,13 +39,15 @@ If `true` converts BigInt to string
 
 **`default`** true
 
-Defined in: [objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L44)
+#### Defined in
+
+[objectSorter.ts:44](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L44)
 
 ---
 
 ### boolean
 
-• `Optional` **boolean**: _undefined_ | _boolean_
+• `Optional` **boolean**: `boolean`
 
 If `true` converts booleans to string `1` and `0`
 
@@ -65,13 +63,15 @@ false !== '0'
 
 **`default`** true
 
-Defined in: [objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L22)
+#### Defined in
+
+[objectSorter.ts:22](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L22)
 
 ---
 
 ### date
 
-• `Optional` **date**: _undefined_ | _boolean_
+• `Optional` **date**: `boolean`
 
 If `true` dates may equal the same formatted strings
 
@@ -83,13 +83,15 @@ If `true` dates may equal the same formatted strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:106](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L106)
+#### Defined in
+
+[objectSorter.ts:106](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L106)
 
 ---
 
 ### function
 
-• `Optional` **function**: _undefined_ | _boolean_
+• `Optional` **function**: `boolean`
 
 If `true` functions may equal the same formatted strings
 
@@ -101,13 +103,15 @@ If `true` functions may equal the same formatted strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:97](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L97)
+#### Defined in
+
+[objectSorter.ts:97](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L97)
 
 ---
 
 ### null
 
-• `Optional` **null**: _undefined_ | _boolean_
+• `Optional` **null**: `boolean`
 
 If `true` null will be equal to empty string
 
@@ -121,13 +125,15 @@ null !== ''
 
 **`default`** true
 
-Defined in: [objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L77)
+#### Defined in
+
+[objectSorter.ts:77](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L77)
 
 ---
 
 ### number
 
-• `Optional` **number**: _undefined_ | _boolean_
+• `Optional` **number**: `boolean`
 
 If `true` converts numbers to strings
 
@@ -141,13 +147,15 @@ If `true` converts numbers to strings
 
 **`default`** true
 
-Defined in: [objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L33)
+#### Defined in
+
+[objectSorter.ts:33](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L33)
 
 ---
 
 ### set
 
-• `Optional` **set**: _undefined_ | _boolean_
+• `Optional` **set**: `boolean`
 
 If `true` set will be coerced to array
 
@@ -159,13 +167,15 @@ If `true` set will be coerced to array
 
 **`default`** true
 
-Defined in: [objectSorter.ts:115](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L115)
+#### Defined in
+
+[objectSorter.ts:115](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L115)
 
 ---
 
 ### string
 
-• `Optional` **string**: _undefined_ | _boolean_
+• `Optional` **string**: `boolean`
 
 If `true` strings and coerced string will be equal to coerced numbers, booleans, etc
 
@@ -179,13 +189,15 @@ If `true` strings and coerced string will be equal to coerced numbers, booleans,
 
 **`default`** true
 
-Defined in: [objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L55)
+#### Defined in
+
+[objectSorter.ts:55](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L55)
 
 ---
 
 ### symbol
 
-• `Optional` **symbol**: _undefined_ | _boolean_
+• `Optional` **symbol**: `boolean`
 
 If `true` all symbols will have eual representation
 
@@ -199,13 +211,15 @@ Symbol.for('a') !== Symbol.for('b')
 
 **`default`** true
 
-Defined in: [objectSorter.ts:88](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L88)
+#### Defined in
+
+[objectSorter.ts:88](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L88)
 
 ---
 
 ### undefined
 
-• `Optional` **undefined**: _undefined_ | _boolean_
+• `Optional` **undefined**: `boolean`
 
 If `true` undefined will be equal to empty string
 
@@ -219,4 +233,6 @@ undefined !== ''
 
 **`default`** true
 
-Defined in: [objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L66)
+#### Defined in
+
+[objectSorter.ts:66](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L66)

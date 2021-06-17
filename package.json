@@ -1,6 +1,6 @@
 {
   "name": "node-object-hash",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "Node.js object hash library with properties/arrays sorting to provide constant hashes",
   "keywords": [
     "hash",

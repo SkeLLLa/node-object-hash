@@ -1,4 +1,4 @@
-[Node object hash - v2.3.3](../README.md) / objectSorter
+[Node object hash - v2.3.4](../README.md) / objectSorter
 
 # Module: objectSorter
 
@@ -27,26 +27,46 @@
 
 ### StringifyFn
 
-Ƭ **StringifyFn**: (`obj`: [_Hashable_](../interfaces/hasher.export_.hashable.md) | _any_) => _string_
+Ƭ **StringifyFn**: (`obj`: [Hashable](../interfaces/hasher.export_.hashable.md) \| `any`) => `string`
 
-Defined in: [objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L186)
+#### Type declaration
+
+▸ (`obj`): `string`
+
+##### Parameters
+
+| Name  | Type                                                          |
+| :---- | :------------------------------------------------------------ |
+| `obj` | [Hashable](../interfaces/hasher.export_.hashable.md) \| `any` |
+
+##### Returns
+
+`string`
+
+#### Defined in
+
+[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L186)
 
 ## Functions
 
 ### export&#x3D;
 
-▸ **export=**(`options?`: [_SorterOptions_](../interfaces/objectsorter.export_.sorteroptions.md)): [_StringifyFn_](objectsorter.export_.md#stringifyfn)
+▸ **export=**(`options?`): [StringifyFn](objectsorter.export_.md#stringifyfn)
 
 Object sorter consturctor
 
-#### Parameters:
+#### Parameters
 
-| Name      | Type                                                                   | Default value | Description                   |
-| --------- | ---------------------------------------------------------------------- | ------------- | ----------------------------- |
-| `options` | [_SorterOptions_](../interfaces/objectsorter.export_.sorteroptions.md) | ...           | object transformation options |
+| Name      | Type                                                                 | Description                   |
+| :-------- | :------------------------------------------------------------------- | :---------------------------- |
+| `options` | [SorterOptions](../interfaces/objectsorter.export_.sorteroptions.md) | object transformation options |
 
-**Returns:** [_StringifyFn_](objectsorter.export_.md#stringifyfn)
+#### Returns
+
+[StringifyFn](objectsorter.export_.md#stringifyfn)
 
 function that transforms object to strings
 
-Defined in: [objectSorter.ts:194](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L194)
+#### Defined in
+
+[objectSorter.ts:194](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L194)

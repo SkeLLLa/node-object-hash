@@ -1,4 +1,4 @@
-[Node object hash - v2.3.3](../README.md) / [objectSorter](objectsorter.md) / export%3D
+[Node object hash - v2.3.4](../README.md) / [objectSorter](objectsorter.md) / export%3D
 
 # Namespace: export=
 
@@ -21,6 +21,22 @@
 
 ### StringifyFn
 
-Ƭ **StringifyFn**: (`obj`: [_Hashable_](../interfaces/hasher.export_.hashable.md) | _any_) => _string_
+Ƭ **StringifyFn**: (`obj`: [Hashable](../interfaces/hasher.export_.hashable.md) \| `any`) => `string`
 
-Defined in: [objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L186)
+#### Type declaration
+
+▸ (`obj`): `string`
+
+##### Parameters
+
+| Name  | Type                                                          |
+| :---- | :------------------------------------------------------------ |
+| `obj` | [Hashable](../interfaces/hasher.export_.hashable.md) \| `any` |
+
+##### Returns
+
+`string`
+
+#### Defined in
+
+[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L186)

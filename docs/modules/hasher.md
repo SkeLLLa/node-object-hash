@@ -1,4 +1,4 @@
-[Node object hash - v2.3.3](../README.md) / hasher
+[Node object hash - v2.3.4](../README.md) / hasher
 
 # Module: hasher
 
@@ -22,18 +22,22 @@
 
 ### export&#x3D;
 
-▸ **export=**(`options?`: [_HasherOptions_](../interfaces/hasher.export_.hasheroptions.md)): [_Hasher_](../interfaces/hasher.export_.hasher.md)
+▸ **export=**(`options?`): [Hasher](../interfaces/hasher.export_.hasher.md)
 
 Hasher constructor
 
-#### Parameters:
+#### Parameters
 
-| Name      | Type                                                             | Default value | Description    |
-| --------- | ---------------------------------------------------------------- | ------------- | -------------- |
-| `options` | [_HasherOptions_](../interfaces/hasher.export_.hasheroptions.md) | ...           | hasher options |
+| Name      | Type                                                           | Description    |
+| :-------- | :------------------------------------------------------------- | :------------- |
+| `options` | [HasherOptions](../interfaces/hasher.export_.hasheroptions.md) | hasher options |
 
-**Returns:** [_Hasher_](../interfaces/hasher.export_.hasher.md)
+#### Returns
+
+[Hasher](../interfaces/hasher.export_.hasher.md)
 
 hasher instance
 
-Defined in: [hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/hasher.ts#L68)
+#### Defined in
+
+[hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/hasher.ts#L68)

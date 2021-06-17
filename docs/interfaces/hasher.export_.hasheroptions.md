@@ -1,4 +1,4 @@
-[Node object hash - v2.3.3](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
+[Node object hash - v2.3.4](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
 
 # Interface: HasherOptions
 
@@ -8,7 +8,7 @@ Object hasher options
 
 ## Hierarchy
 
-- [_SorterOptions_](objectsorter.export_.sorteroptions.md)
+- [SorterOptions](objectsorter.export_.sorteroptions.md)
 
   ↳ **HasherOptions**
 
@@ -26,67 +26,83 @@ Object hasher options
 
 ### alg
 
-• `Optional` **alg**: _undefined_ | _string_
+• `Optional` **alg**: `string`
 
 Hash algorithm to use
 
 **`default`** 'sha256'
 
-Defined in: [hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/hasher.ts#L23)
+#### Defined in
+
+[hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/hasher.ts#L23)
 
 ---
 
 ### coerce
 
-• `Optional` **coerce**: _undefined_ | _boolean_ | [_CoerceOptions_](objectsorter.export_.coerceoptions.md)
+• `Optional` **coerce**: `boolean` \| [CoerceOptions](objectsorter.export_.coerceoptions.md)
 
 If `true` enables type coercion.
 Advanced coerce options could be provided as object
 
 **`default`** true
 
-Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[coerce](objectsorter.export_.sorteroptions.md#coerce)
+#### Inherited from
 
-Defined in: [objectSorter.ts:171](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L171)
+[SorterOptions](objectsorter.export_.sorteroptions.md).[coerce](objectsorter.export_.sorteroptions.md#coerce)
+
+#### Defined in
+
+[objectSorter.ts:171](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L171)
 
 ---
 
 ### enc
 
-• `Optional` **enc**: _undefined_ | _base64_ | _hex_
+• `Optional` **enc**: `BinaryToTextEncoding`
 
 String encoding for hash
 
 **`default`** 'base64'
 
-Defined in: [hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/hasher.ts#L28)
+#### Defined in
+
+[hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/hasher.ts#L28)
 
 ---
 
 ### sort
 
-• `Optional` **sort**: _undefined_ | _boolean_ | [_SortOptions_](objectsorter.export_.sortoptions.md)
+• `Optional` **sort**: `boolean` \| [SortOptions](objectsorter.export_.sortoptions.md)
 
 If `true` enables sorting.
 Advanced sorting options could be provided as object
 
 **`default`** true
 
-Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[sort](objectsorter.export_.sorteroptions.md#sort)
+#### Inherited from
 
-Defined in: [objectSorter.ts:177](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L177)
+[SorterOptions](objectsorter.export_.sorteroptions.md).[sort](objectsorter.export_.sorteroptions.md#sort)
+
+#### Defined in
+
+[objectSorter.ts:177](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L177)
 
 ---
 
 ### trim
 
-• `Optional` **trim**: _undefined_ | _boolean_ | [_TrimOptions_](objectsorter.export_.trimoptions.md)
+• `Optional` **trim**: `boolean` \| [TrimOptions](objectsorter.export_.trimoptions.md)
 
 If `true` enables trimming and multiple whitespace replacement.
 Advanced sorting options could be provided as object.
 
 **`default`** false
 
-Inherited from: [SorterOptions](objectsorter.export_.sorteroptions.md).[trim](objectsorter.export_.sorteroptions.md#trim)
+#### Inherited from
 
-Defined in: [objectSorter.ts:183](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L183)
+[SorterOptions](objectsorter.export_.sorteroptions.md).[trim](objectsorter.export_.sorteroptions.md#trim)
+
+#### Defined in
+
+[objectSorter.ts:183](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L183)

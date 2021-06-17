@@ -1,14 +1,10 @@
-[Node object hash - v2.3.3](../README.md) / [objectSorter](../modules/objectsorter.md) / TrimOptions
+[Node object hash - v2.3.4](../README.md) / [objectSorter](../modules/objectsorter.md) / TrimOptions
 
 # Interface: TrimOptions
 
 [objectSorter](../modules/objectsorter.md).TrimOptions
 
 Advanced trim options
-
-## Hierarchy
-
-- **TrimOptions**
 
 ## Table of contents
 
@@ -21,18 +17,22 @@ Advanced trim options
 
 ### function
 
-• `Optional` **function**: _undefined_ | _boolean_
+• `Optional` **function**: `boolean`
 
 If `true` replaces multiple space with one and trims whitespaces in function body
 
-Defined in: [objectSorter.ts:159](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L159)
+#### Defined in
+
+[objectSorter.ts:159](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L159)
 
 ---
 
 ### string
 
-• `Optional` **string**: _undefined_ | _boolean_
+• `Optional` **string**: `boolean`
 
 If `true` replaces multiple space with one and trims whitespaces in strings
 
-Defined in: [objectSorter.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/2e623c6/src/objectSorter.ts#L155)
+#### Defined in
+
+[objectSorter.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/db2f49f/src/objectSorter.ts#L155)
