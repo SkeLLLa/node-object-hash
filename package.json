@@ -10,9 +10,9 @@
     "es6",
     "crypto"
   ],
-  "homepage": "https://gitlab.com/m03geek/node-object-hash#README",
+  "homepage": "https://github.com/SkeLLLa/node-object-hash#readme",
   "bugs": {
-    "url": "https://gitlab.com/m03geek/node-object-hash/issues"
+    "url": "https://github.com/SkeLLLa/node-object-hash/issues"
   },
   "repository": {
     "type": "git",
