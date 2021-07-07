@@ -23,7 +23,7 @@ namespace hasher {
     alg?: string;
     /**
      * String encoding for hash
-     * @default 'base64'
+     * @default 'hex'
      */
     enc?: BinaryToTextEncoding;
   }
