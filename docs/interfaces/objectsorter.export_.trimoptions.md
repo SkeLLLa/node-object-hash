@@ -1,4 +1,4 @@
-[Node object hash - v2.3.6](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / TrimOptions
+[Node object hash - v2.3.7](../README.md) / [objectSorter](../modules/objectsorter.md) / [export%3D](../modules/objectsorter.export_.md) / TrimOptions
 
 # Interface: TrimOptions
 
@@ -23,7 +23,7 @@ If `true` replaces multiple space with one and trims whitespaces in function bod
 
 #### Defined in
 
-[objectSorter.ts:159](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/objectSorter.ts#L159)
+[objectSorter.ts:159](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L159)
 
 ---
 
@@ -35,4 +35,4 @@ If `true` replaces multiple space with one and trims whitespaces in strings
 
 #### Defined in
 
-[objectSorter.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/objectSorter.ts#L155)
+[objectSorter.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L155)

@@ -1,4 +1,4 @@
-[Node object hash - v2.3.6](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
+[Node object hash - v2.3.7](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / HasherOptions
 
 # Interface: HasherOptions
 
@@ -34,7 +34,7 @@ Hash algorithm to use
 
 #### Defined in
 
-[hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/hasher.ts#L23)
+[hasher.ts:23](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/hasher.ts#L23)
 
 ---
 
@@ -53,7 +53,7 @@ Advanced coerce options could be provided as object
 
 #### Defined in
 
-[objectSorter.ts:171](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/objectSorter.ts#L171)
+[objectSorter.ts:171](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L171)
 
 ---
 
@@ -63,11 +63,11 @@ Advanced coerce options could be provided as object
 
 String encoding for hash
 
-**`default`** 'base64'
+**`default`** 'hex'
 
 #### Defined in
 
-[hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/hasher.ts#L28)
+[hasher.ts:28](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/hasher.ts#L28)
 
 ---
 
@@ -86,7 +86,7 @@ Advanced sorting options could be provided as object
 
 #### Defined in
 
-[objectSorter.ts:177](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/objectSorter.ts#L177)
+[objectSorter.ts:177](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L177)
 
 ---
 
@@ -105,4 +105,4 @@ Advanced sorting options could be provided as object.
 
 #### Defined in
 
-[objectSorter.ts:183](https://github.com/SkeLLLa/node-object-hash/blob/f48c0c9/src/objectSorter.ts#L183)
+[objectSorter.ts:183](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L183)

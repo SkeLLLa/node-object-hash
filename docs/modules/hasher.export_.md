@@ -1,4 +1,4 @@
-[Node object hash - v2.3.6](../README.md) / [hasher](hasher.md) / export%3D
+[Node object hash - v2.3.7](../README.md) / [hasher](hasher.md) / export%3D
 
 # Namespace: export=
 
