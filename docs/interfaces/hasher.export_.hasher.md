@@ -1,4 +1,4 @@
-[Node object hash - v2.3.7](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / Hasher
+[Node object hash - v2.3.8](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / Hasher
 
 # Interface: Hasher
 
@@ -35,7 +35,7 @@ hash string of an object
 
 #### Defined in
 
-[hasher.ts:46](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/hasher.ts#L46)
+[hasher.ts:46](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/hasher.ts#L46)
 
 ---
 
@@ -59,7 +59,7 @@ sorted string from an object
 
 #### Defined in
 
-[hasher.ts:52](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/hasher.ts#L52)
+[hasher.ts:52](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/hasher.ts#L52)
 
 ---
 
@@ -85,4 +85,4 @@ sorted string from an object
 
 #### Defined in
 
-[hasher.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/hasher.ts#L59)
+[hasher.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/hasher.ts#L59)

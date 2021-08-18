@@ -1,4 +1,4 @@
-[Node object hash - v2.3.7](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
+[Node object hash - v2.3.8](../README.md) / [objectSorter](../modules/objectsorter.md) / SortOptions
 
 # Interface: SortOptions
 
@@ -27,7 +27,7 @@ If `true` sort array entries before hash
 
 #### Defined in
 
-[objectSorter.ts:125](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L125)
+[objectSorter.ts:125](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/objectSorter.ts#L125)
 
 ---
 
@@ -39,7 +39,7 @@ If `true` sort BigInt entries before hash
 
 #### Defined in
 
-[objectSorter.ts:145](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L145)
+[objectSorter.ts:145](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/objectSorter.ts#L145)
 
 ---
 
@@ -51,7 +51,7 @@ If `true` sort map entries before hash
 
 #### Defined in
 
-[objectSorter.ts:141](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L141)
+[objectSorter.ts:141](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/objectSorter.ts#L141)
 
 ---
 
@@ -63,7 +63,7 @@ If `true` sort object entries before hash
 
 #### Defined in
 
-[objectSorter.ts:133](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L133)
+[objectSorter.ts:133](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/objectSorter.ts#L133)
 
 ---
 
@@ -75,7 +75,7 @@ If `true` sort set entries before hash
 
 #### Defined in
 
-[objectSorter.ts:137](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L137)
+[objectSorter.ts:137](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/objectSorter.ts#L137)
 
 ---
 
@@ -87,4 +87,4 @@ If `true` sort TypedArray entries before hash
 
 #### Defined in
 
-[objectSorter.ts:129](https://github.com/SkeLLLa/node-object-hash/blob/d264cc4/src/objectSorter.ts#L129)
+[objectSorter.ts:129](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/objectSorter.ts#L129)
