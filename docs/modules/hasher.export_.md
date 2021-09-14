@@ -1,4 +1,4 @@
-[Node object hash - v2.3.8](../README.md) / [hasher](hasher.md) / export%3D
+[Node object hash - v2.3.9](../README.md) / [hasher](hasher.md) / export%3D
 
 # Namespace: export=
 
@@ -8,6 +8,6 @@
 
 ### Interfaces
 
-- [Hashable](../interfaces/hasher.export_.hashable.md)
-- [Hasher](../interfaces/hasher.export_.hasher.md)
-- [HasherOptions](../interfaces/hasher.export_.hasheroptions.md)
+- [Hashable](../interfaces/hasher.export_.Hashable.md)
+- [Hasher](../interfaces/hasher.export_.Hasher.md)
+- [HasherOptions](../interfaces/hasher.export_.HasherOptions.md)
