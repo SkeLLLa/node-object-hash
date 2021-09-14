@@ -1,4 +1,4 @@
-[Node object hash - v2.3.8](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / Hasher
+[Node object hash - v2.3.9](../README.md) / [hasher](../modules/hasher.md) / [export%3D](../modules/hasher.export_.md) / Hasher
 
 # Interface: Hasher
 
@@ -8,9 +8,9 @@
 
 ### Methods
 
-- [hash](hasher.export_.hasher.md#hash)
-- [sort](hasher.export_.hasher.md#sort)
-- [sortObject](hasher.export_.hasher.md#sortobject)
+- [hash](hasher.export_.Hasher.md#hash)
+- [sort](hasher.export_.Hasher.md#sort)
+- [sortObject](hasher.export_.Hasher.md#sortobject)
 
 ## Methods
 
@@ -22,10 +22,10 @@ Create hash of an object
 
 #### Parameters
 
-| Name     | Type                                             | Description   |
-| :------- | :----------------------------------------------- | :------------ |
-| `object` | `any`                                            | source object |
-| `opts?`  | [HasherOptions](hasher.export_.hasheroptions.md) | -             |
+| Name     | Type                                               | Description   |
+| :------- | :------------------------------------------------- | :------------ |
+| `object` | `any`                                              | source object |
+| `opts?`  | [`HasherOptions`](hasher.export_.HasherOptions.md) | -             |
 
 #### Returns
 
@@ -35,7 +35,7 @@ hash string of an object
 
 #### Defined in
 
-[hasher.ts:46](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/hasher.ts#L46)
+[hasher.ts:46](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/hasher.ts#L46)
 
 ---
 
@@ -59,7 +59,7 @@ sorted string from an object
 
 #### Defined in
 
-[hasher.ts:52](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/hasher.ts#L52)
+[hasher.ts:52](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/hasher.ts#L52)
 
 ---
 
@@ -85,4 +85,4 @@ sorted string from an object
 
 #### Defined in
 
-[hasher.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/9b047ca/src/hasher.ts#L59)
+[hasher.ts:59](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/hasher.ts#L59)
