@@ -26,4 +26,4 @@ with the function toHash that return the same value will have the same hash
 
 #### Defined in
 
-[hasher.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/hasher.ts#L37)
+[hasher.ts:37](https://github.com/SkeLLLa/node-object-hash/blob/996e344/src/hasher.ts#L37)

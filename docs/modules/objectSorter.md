@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/objectSorter.ts#L186)
+[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/996e344/src/objectSorter.ts#L186)
 
 ## Functions
 
@@ -69,4 +69,4 @@ function that transforms object to strings
 
 #### Defined in
 
-[objectSorter.ts:194](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/objectSorter.ts#L194)
+[objectSorter.ts:194](https://github.com/SkeLLLa/node-object-hash/blob/996e344/src/objectSorter.ts#L194)

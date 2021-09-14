@@ -23,7 +23,7 @@ If `true` replaces multiple space with one and trims whitespaces in function bod
 
 #### Defined in
 
-[objectSorter.ts:159](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/objectSorter.ts#L159)
+[objectSorter.ts:159](https://github.com/SkeLLLa/node-object-hash/blob/996e344/src/objectSorter.ts#L159)
 
 ---
 
@@ -35,4 +35,4 @@ If `true` replaces multiple space with one and trims whitespaces in strings
 
 #### Defined in
 
-[objectSorter.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/objectSorter.ts#L155)
+[objectSorter.ts:155](https://github.com/SkeLLLa/node-object-hash/blob/996e344/src/objectSorter.ts#L155)

@@ -39,4 +39,4 @@
 
 #### Defined in
 
-[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/7665e39/src/objectSorter.ts#L186)
+[objectSorter.ts:186](https://github.com/SkeLLLa/node-object-hash/blob/996e344/src/objectSorter.ts#L186)
