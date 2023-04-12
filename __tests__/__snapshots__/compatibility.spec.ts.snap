@@ -1,0 +1,913 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:-1,<:n>:21,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"fda0717f859a28a65f497260e076336cea9e02bcb90364bea8c8af4257d1c30f"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:-1,<:n>:21,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"fda0717f859a28a65f497260e076336cea9e02bcb90364bea8c8af4257d1c30f"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:-1,<:n>:21,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"fda0717f859a28a65f497260e076336cea9e02bcb90364bea8c8af4257d1c30f"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:-1,<:n>:21,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"fda0717f859a28a65f497260e076336cea9e02bcb90364bea8c8af4257d1c30f"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:-1,<:n>:21,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"fda0717f859a28a65f497260e076336cea9e02bcb90364bea8c8af4257d1c30f"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:-1,<:n>:21,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"fda0717f859a28a65f497260e076336cea9e02bcb90364bea8c8af4257d1c30f"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[-1,21,3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"f77ac6eb57940a92cee22e24660b5699f30e4194aa2e90035812023690e9547b"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[-1,21,3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"f77ac6eb57940a92cee22e24660b5699f30e4194aa2e90035812023690e9547b"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[-1,21,3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"f77ac6eb57940a92cee22e24660b5699f30e4194aa2e90035812023690e9547b"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[-1,21,3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"f77ac6eb57940a92cee22e24660b5699f30e4194aa2e90035812023690e9547b"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[-1,21,3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"f77ac6eb57940a92cee22e24660b5699f30e4194aa2e90035812023690e9547b"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[-1,21,3]"`;
+
+exports[`Backward compatibility possible options type: Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"f77ac6eb57940a92cee22e24660b5699f30e4194aa2e90035812023690e9547b"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:bi>:18446744073709551615,<:bi>:23,<:bi>:123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"c17a1404e9fcde51ae8efb353de8a2ad56bc4fa65447e89d1666da07e63a8fd5"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:bi>:18446744073709551615,<:bi>:23,<:bi>:123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"c17a1404e9fcde51ae8efb353de8a2ad56bc4fa65447e89d1666da07e63a8fd5"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:bi>:18446744073709551615,<:bi>:23,<:bi>:123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"c17a1404e9fcde51ae8efb353de8a2ad56bc4fa65447e89d1666da07e63a8fd5"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:bi>:18446744073709551615,<:bi>:23,<:bi>:123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"c17a1404e9fcde51ae8efb353de8a2ad56bc4fa65447e89d1666da07e63a8fd5"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:bi>:123,<:bi>:18446744073709551615,<:bi>:23]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"58e802b18ce684309a3d3580b06321894791c56879d0c0c76c4eec64d99867ec"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:bi>:123,<:bi>:18446744073709551615,<:bi>:23]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"58e802b18ce684309a3d3580b06321894791c56879d0c0c76c4eec64d99867ec"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[18446744073709551615,23,123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"175741df390194e4049a0f89c830ad17cae1d28bcb88e33e7f5f8ed21f242ba6"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[18446744073709551615,23,123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"175741df390194e4049a0f89c830ad17cae1d28bcb88e33e7f5f8ed21f242ba6"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[18446744073709551615,23,123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"175741df390194e4049a0f89c830ad17cae1d28bcb88e33e7f5f8ed21f242ba6"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[18446744073709551615,23,123]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"175741df390194e4049a0f89c830ad17cae1d28bcb88e33e7f5f8ed21f242ba6"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[123,18446744073709551615,23]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"986f4840c2d333b01de76a1f4235e8a02d517e4005c0e99bfc77b3d77155388b"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[123,18446744073709551615,23]"`;
+
+exports[`Backward compatibility possible options type: BigUint64Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"986f4840c2d333b01de76a1f4235e8a02d517e4005c0e99bfc77b3d77155388b"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: False trim option: False produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: False trim option: True produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: True trim option: False produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: True trim option: True produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: False trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: False trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: True trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: True trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Buffer coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:date>:1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: False trim option: False produces valid hash 1`] = `"1da2cee5350f17f14248577667954320bb95589411c1a838ddb49b944a183b2d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:date>:1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: False trim option: True produces valid hash 1`] = `"1da2cee5350f17f14248577667954320bb95589411c1a838ddb49b944a183b2d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:date>:1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: True trim option: False produces valid hash 1`] = `"1da2cee5350f17f14248577667954320bb95589411c1a838ddb49b944a183b2d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:date>:1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: True trim option: True produces valid hash 1`] = `"1da2cee5350f17f14248577667954320bb95589411c1a838ddb49b944a183b2d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:date>:1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"1da2cee5350f17f14248577667954320bb95589411c1a838ddb49b944a183b2d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:date>:1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"1da2cee5350f17f14248577667954320bb95589411c1a838ddb49b944a183b2d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: False trim option: False produces sorted string 1`] = `"1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: False trim option: False produces valid hash 1`] = `"7d5ee5d890d67326d685789ea030e6571284171792ef48328db6894643dedd8d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: False trim option: True produces sorted string 1`] = `"1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: False trim option: True produces valid hash 1`] = `"7d5ee5d890d67326d685789ea030e6571284171792ef48328db6894643dedd8d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: True trim option: False produces sorted string 1`] = `"1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: True trim option: False produces valid hash 1`] = `"7d5ee5d890d67326d685789ea030e6571284171792ef48328db6894643dedd8d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: True trim option: True produces sorted string 1`] = `"1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: True trim option: True produces valid hash 1`] = `"7d5ee5d890d67326d685789ea030e6571284171792ef48328db6894643dedd8d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"7d5ee5d890d67326d685789ea030e6571284171792ef48328db6894643dedd8d"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"1970-01-01T00:00:00.000Z"`;
+
+exports[`Backward compatibility possible options type: Date coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"7d5ee5d890d67326d685789ea030e6571284171792ef48328db6894643dedd8d"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:8,<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"ce57ef0890fa3f6a9cd1a4087d1253cbd64860fe8c54de91152ed2b503abe425"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:8,<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"ce57ef0890fa3f6a9cd1a4087d1253cbd64860fe8c54de91152ed2b503abe425"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:8,<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"ce57ef0890fa3f6a9cd1a4087d1253cbd64860fe8c54de91152ed2b503abe425"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:8,<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"ce57ef0890fa3f6a9cd1a4087d1253cbd64860fe8c54de91152ed2b503abe425"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:4,<:n>:8]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"7fa85d16c6e25de279bd38bcfc9a0b6c022021674efa50822fe66c69840323cc"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:4,<:n>:8]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"7fa85d16c6e25de279bd38bcfc9a0b6c022021674efa50822fe66c69840323cc"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[1,8,3,4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"1eed22003ad1bc0e099f0ce85192a2a6f7a08e04bf985f1ec0fa8523c5798d99"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[1,8,3,4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"1eed22003ad1bc0e099f0ce85192a2a6f7a08e04bf985f1ec0fa8523c5798d99"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[1,8,3,4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"1eed22003ad1bc0e099f0ce85192a2a6f7a08e04bf985f1ec0fa8523c5798d99"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[1,8,3,4]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"1eed22003ad1bc0e099f0ce85192a2a6f7a08e04bf985f1ec0fa8523c5798d99"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,3,4,8]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"ebd37e510c8cdaf6904c311ccd829f1a4632a911e6e6d0de355b59c73135a984"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,3,4,8]"`;
+
+exports[`Backward compatibility possible options type: Float32Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"ebd37e510c8cdaf6904c311ccd829f1a4632a911e6e6d0de355b59c73135a984"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:7,<:n>:3,<:n>:3,<:n>:1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"618a3ab0c7fcf12d07af2b3e838a4dedb1488c9406cdf63977070c5bfab30658"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:7,<:n>:3,<:n>:3,<:n>:1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"618a3ab0c7fcf12d07af2b3e838a4dedb1488c9406cdf63977070c5bfab30658"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:7,<:n>:3,<:n>:3,<:n>:1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"618a3ab0c7fcf12d07af2b3e838a4dedb1488c9406cdf63977070c5bfab30658"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:7,<:n>:3,<:n>:3,<:n>:1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"618a3ab0c7fcf12d07af2b3e838a4dedb1488c9406cdf63977070c5bfab30658"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:3,<:n>:7]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"4bd2f29a233934f95d681bb1a246a17dc1cd6cc222e1381bd6f09b289822a302"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:3,<:n>:7]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"4bd2f29a233934f95d681bb1a246a17dc1cd6cc222e1381bd6f09b289822a302"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[7,3,3,1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"7900be525e0265af2f95ba54458c7e69c991be61d6d08b0edc648c5ba6fa1e45"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[7,3,3,1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"7900be525e0265af2f95ba54458c7e69c991be61d6d08b0edc648c5ba6fa1e45"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[7,3,3,1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"7900be525e0265af2f95ba54458c7e69c991be61d6d08b0edc648c5ba6fa1e45"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[7,3,3,1]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"7900be525e0265af2f95ba54458c7e69c991be61d6d08b0edc648c5ba6fa1e45"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,3,3,7]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"98a1516c2e298868fcb1b4b21504bbcf720d7333d76fe50d0d92b4dad35990a9"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,3,3,7]"`;
+
+exports[`Backward compatibility possible options type: Float64Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"98a1516c2e298868fcb1b4b21504bbcf720d7333d76fe50d0d92b4dad35990a9"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:11,<:n>:-22,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"eab9c2e10e57a8828c031640653b8e815463f806179e7edeccdca4e5889813ee"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:11,<:n>:-22,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"eab9c2e10e57a8828c031640653b8e815463f806179e7edeccdca4e5889813ee"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:11,<:n>:-22,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"eab9c2e10e57a8828c031640653b8e815463f806179e7edeccdca4e5889813ee"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:11,<:n>:-22,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"eab9c2e10e57a8828c031640653b8e815463f806179e7edeccdca4e5889813ee"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:-22,<:n>:11,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"2386b66009ed2de52189a7a51eb41809570029e5304631618d7fdad68d56b981"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:-22,<:n>:11,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"2386b66009ed2de52189a7a51eb41809570029e5304631618d7fdad68d56b981"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[11,-22,3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"6982e8ebc3fb65a75cd0b1014a3bc8fad41390b650a6ab7af3aae450434fef3e"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[11,-22,3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"6982e8ebc3fb65a75cd0b1014a3bc8fad41390b650a6ab7af3aae450434fef3e"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[11,-22,3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"6982e8ebc3fb65a75cd0b1014a3bc8fad41390b650a6ab7af3aae450434fef3e"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[11,-22,3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"6982e8ebc3fb65a75cd0b1014a3bc8fad41390b650a6ab7af3aae450434fef3e"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[-22,11,3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"148bdab2b7c7ed18a0b7530c629cc7fdcd9e581dedd1bff1f3c04881dc013091"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[-22,11,3]"`;
+
+exports[`Backward compatibility possible options type: Int8Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"148bdab2b7c7ed18a0b7530c629cc7fdcd9e581dedd1bff1f3c04881dc013091"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:0,<:n>:5,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"eaaf9283362997097212288934ebb5e3adda3fd5a75ab383337d3c4f45530790"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:0,<:n>:5,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"eaaf9283362997097212288934ebb5e3adda3fd5a75ab383337d3c4f45530790"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:0,<:n>:5,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"eaaf9283362997097212288934ebb5e3adda3fd5a75ab383337d3c4f45530790"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:0,<:n>:5,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"eaaf9283362997097212288934ebb5e3adda3fd5a75ab383337d3c4f45530790"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:0,<:n>:3,<:n>:5]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"b411a4b2ad067bede38cfc517406de4981e1982c3a93ffe4919d02d522644533"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:0,<:n>:3,<:n>:5]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"b411a4b2ad067bede38cfc517406de4981e1982c3a93ffe4919d02d522644533"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[0,5,3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"849b8b150cf7af7573d8c869c2de0474f96696357a7a9e6a43cc53e48f69b912"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[0,5,3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"849b8b150cf7af7573d8c869c2de0474f96696357a7a9e6a43cc53e48f69b912"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[0,5,3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"849b8b150cf7af7573d8c869c2de0474f96696357a7a9e6a43cc53e48f69b912"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[0,5,3]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"849b8b150cf7af7573d8c869c2de0474f96696357a7a9e6a43cc53e48f69b912"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[0,3,5]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"acca29b897e885e2b08c3eda2c57262d3339c559072001f13a24b9a37c44129f"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[0,3,5]"`;
+
+exports[`Backward compatibility possible options type: Int16Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"acca29b897e885e2b08c3eda2c57262d3339c559072001f13a24b9a37c44129f"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"1d6156a47c7b5d0a32896d764f0079b9596eb2dc4ea402edbdc0c147d7022419"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"1d6156a47c7b5d0a32896d764f0079b9596eb2dc4ea402edbdc0c147d7022419"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"1d6156a47c7b5d0a32896d764f0079b9596eb2dc4ea402edbdc0c147d7022419"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:3,<:n>:12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"1d6156a47c7b5d0a32896d764f0079b9596eb2dc4ea402edbdc0c147d7022419"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:12,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"72fdd1d9c4e0aea96f9aa1e1f3128d6662ae819e86dbe31e1493f3a3e20f4e00"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:12,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"72fdd1d9c4e0aea96f9aa1e1f3128d6662ae819e86dbe31e1493f3a3e20f4e00"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[1,3,12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"af44a93b2e5f26ec2990e7bc7a4014c774980838ad0b2feab7b40c0eedb23d5c"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[1,3,12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"af44a93b2e5f26ec2990e7bc7a4014c774980838ad0b2feab7b40c0eedb23d5c"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[1,3,12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"af44a93b2e5f26ec2990e7bc7a4014c774980838ad0b2feab7b40c0eedb23d5c"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[1,3,12]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"af44a93b2e5f26ec2990e7bc7a4014c774980838ad0b2feab7b40c0eedb23d5c"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,12,3]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"1a77f013ef325e7a095f32906556bf3c06f597429e43e4d19d1168b3c2af04a7"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,12,3]"`;
+
+exports[`Backward compatibility possible options type: Int32Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"1a77f013ef325e7a095f32906556bf3c06f597429e43e4d19d1168b3c2af04a7"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2;<:n>:2,<:n>:3;<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: False trim option: False produces valid hash 1`] = `"9abc27af45f70fee16a68f4b60db840882d1f9ab9e75474ac85d043468d0786c"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2;<:n>:2,<:n>:3;<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: False trim option: True produces valid hash 1`] = `"9abc27af45f70fee16a68f4b60db840882d1f9ab9e75474ac85d043468d0786c"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2;<:n>:2,<:n>:3;<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: True trim option: False produces valid hash 1`] = `"9abc27af45f70fee16a68f4b60db840882d1f9ab9e75474ac85d043468d0786c"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2;<:n>:2,<:n>:3;<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: True trim option: True produces valid hash 1`] = `"9abc27af45f70fee16a68f4b60db840882d1f9ab9e75474ac85d043468d0786c"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2;<:n>:2,<:n>:3;<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"9abc27af45f70fee16a68f4b60db840882d1f9ab9e75474ac85d043468d0786c"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2;<:n>:2,<:n>:3;<:n>:3,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"9abc27af45f70fee16a68f4b60db840882d1f9ab9e75474ac85d043468d0786c"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[1,2;2,3;3,4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: False trim option: False produces valid hash 1`] = `"c2b55813b1024be1f6ad7d25b3d7b0bcdcef5c0d7a6a7841c92b06327e9e7b18"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[1,2;2,3;3,4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: False trim option: True produces valid hash 1`] = `"c2b55813b1024be1f6ad7d25b3d7b0bcdcef5c0d7a6a7841c92b06327e9e7b18"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[1,2;2,3;3,4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: True trim option: False produces valid hash 1`] = `"c2b55813b1024be1f6ad7d25b3d7b0bcdcef5c0d7a6a7841c92b06327e9e7b18"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[1,2;2,3;3,4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: True trim option: True produces valid hash 1`] = `"c2b55813b1024be1f6ad7d25b3d7b0bcdcef5c0d7a6a7841c92b06327e9e7b18"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,2;2,3;3,4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"c2b55813b1024be1f6ad7d25b3d7b0bcdcef5c0d7a6a7841c92b06327e9e7b18"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,2;2,3;3,4]"`;
+
+exports[`Backward compatibility possible options type: Map coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"c2b55813b1024be1f6ad7d25b3d7b0bcdcef5c0d7a6a7841c92b06327e9e7b18"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:set>:[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: False trim option: False produces valid hash 1`] = `"ed7ecce9ea26c0cdfbc0168af81ef33b4967168368cc41d495d021ba6629eac3"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:set>:[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: False trim option: True produces valid hash 1`] = `"ed7ecce9ea26c0cdfbc0168af81ef33b4967168368cc41d495d021ba6629eac3"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:set>:[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: True trim option: False produces valid hash 1`] = `"ed7ecce9ea26c0cdfbc0168af81ef33b4967168368cc41d495d021ba6629eac3"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:set>:[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: True trim option: True produces valid hash 1`] = `"ed7ecce9ea26c0cdfbc0168af81ef33b4967168368cc41d495d021ba6629eac3"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:set>:[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"ed7ecce9ea26c0cdfbc0168af81ef33b4967168368cc41d495d021ba6629eac3"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:set>:[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"ed7ecce9ea26c0cdfbc0168af81ef33b4967168368cc41d495d021ba6629eac3"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: False trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: False trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: True trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: True trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Set coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:13,<:n>:254,<:n>:253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"9fc7dbb54b68ab4a64bd6450e2022ede2383d9fc58b5f4a9bc2e52d4c568a007"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:13,<:n>:254,<:n>:253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"9fc7dbb54b68ab4a64bd6450e2022ede2383d9fc58b5f4a9bc2e52d4c568a007"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:13,<:n>:254,<:n>:253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"9fc7dbb54b68ab4a64bd6450e2022ede2383d9fc58b5f4a9bc2e52d4c568a007"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:13,<:n>:254,<:n>:253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"9fc7dbb54b68ab4a64bd6450e2022ede2383d9fc58b5f4a9bc2e52d4c568a007"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:13,<:n>:253,<:n>:254]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"8c00927792ac474e4ef34abfe859e2c88ffdbdd64f56d08069d3e383968ca668"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:13,<:n>:253,<:n>:254]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"8c00927792ac474e4ef34abfe859e2c88ffdbdd64f56d08069d3e383968ca668"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[13,254,253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"3241abff1bd917d5aaa71b87f0739452fde8c104e7f49a9c2be564a4ecb16595"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[13,254,253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"3241abff1bd917d5aaa71b87f0739452fde8c104e7f49a9c2be564a4ecb16595"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[13,254,253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"3241abff1bd917d5aaa71b87f0739452fde8c104e7f49a9c2be564a4ecb16595"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[13,254,253]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"3241abff1bd917d5aaa71b87f0739452fde8c104e7f49a9c2be564a4ecb16595"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[13,253,254]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"69131d32e7ec1a5e817d572bcc37dc42494ba931003ae81e18762f0301cf6545"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[13,253,254]"`;
+
+exports[`Backward compatibility possible options type: Uint8Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"69131d32e7ec1a5e817d572bcc37dc42494ba931003ae81e18762f0301cf6545"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:1,<:n>:2,<:n>:3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"8725c0fa43aed2afad780f6bbee6033cad07b504ccdcb4503ec1072b28821c93"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[1,2,3]"`;
+
+exports[`Backward compatibility possible options type: Uint16Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"a615eeaee21de5179de080de8c3052c8da901138406ba71c38c032845f7d54f4"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: False trim option: False produces sorted string 1`] = `"[<:n>:123,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: False trim option: False produces valid hash 1`] = `"eb055807e9f45f440fe5f441802a5dfdeaceef937cfb39f0129a1c8e8c1b5c83"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: False trim option: True produces sorted string 1`] = `"[<:n>:123,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: False trim option: True produces valid hash 1`] = `"eb055807e9f45f440fe5f441802a5dfdeaceef937cfb39f0129a1c8e8c1b5c83"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: True trim option: False produces sorted string 1`] = `"[<:n>:123,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: True trim option: False produces valid hash 1`] = `"eb055807e9f45f440fe5f441802a5dfdeaceef937cfb39f0129a1c8e8c1b5c83"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: True trim option: True produces sorted string 1`] = `"[<:n>:123,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: True trim option: True produces valid hash 1`] = `"eb055807e9f45f440fe5f441802a5dfdeaceef937cfb39f0129a1c8e8c1b5c83"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[<:n>:123,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"eb055807e9f45f440fe5f441802a5dfdeaceef937cfb39f0129a1c8e8c1b5c83"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[<:n>:123,<:n>:4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"eb055807e9f45f440fe5f441802a5dfdeaceef937cfb39f0129a1c8e8c1b5c83"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: False trim option: False produces sorted string 1`] = `"[123,4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: False trim option: False produces valid hash 1`] = `"7f8aba9ee43f78717314ca8e3e6e3148cbd8db85c31b749452ca8bef14ec2fa6"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: False trim option: True produces sorted string 1`] = `"[123,4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: False trim option: True produces valid hash 1`] = `"7f8aba9ee43f78717314ca8e3e6e3148cbd8db85c31b749452ca8bef14ec2fa6"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: True trim option: False produces sorted string 1`] = `"[123,4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: True trim option: False produces valid hash 1`] = `"7f8aba9ee43f78717314ca8e3e6e3148cbd8db85c31b749452ca8bef14ec2fa6"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: True trim option: True produces sorted string 1`] = `"[123,4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: True trim option: True produces valid hash 1`] = `"7f8aba9ee43f78717314ca8e3e6e3148cbd8db85c31b749452ca8bef14ec2fa6"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"[123,4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"7f8aba9ee43f78717314ca8e3e6e3148cbd8db85c31b749452ca8bef14ec2fa6"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"[123,4]"`;
+
+exports[`Backward compatibility possible options type: Uint32Array coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"7f8aba9ee43f78717314ca8e3e6e3148cbd8db85c31b749452ca8bef14ec2fa6"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:bi>:1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: False trim option: False produces valid hash 1`] = `"afe682f65445dd62cb34d3d162d7d3160ddc152657a30d6fa3bb7ddbfe1e95c8"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:bi>:1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: False trim option: True produces valid hash 1`] = `"afe682f65445dd62cb34d3d162d7d3160ddc152657a30d6fa3bb7ddbfe1e95c8"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:bi>:1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: True trim option: False produces valid hash 1`] = `"afe682f65445dd62cb34d3d162d7d3160ddc152657a30d6fa3bb7ddbfe1e95c8"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:bi>:1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: True trim option: True produces valid hash 1`] = `"afe682f65445dd62cb34d3d162d7d3160ddc152657a30d6fa3bb7ddbfe1e95c8"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:bi>:1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"afe682f65445dd62cb34d3d162d7d3160ddc152657a30d6fa3bb7ddbfe1e95c8"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:bi>:1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"afe682f65445dd62cb34d3d162d7d3160ddc152657a30d6fa3bb7ddbfe1e95c8"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: False trim option: False produces sorted string 1`] = `"1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: False trim option: False produces valid hash 1`] = `"25e2e8455dc0f02562ec2c86360dcaad5bf05d3b58aaf9f5682f2ab8368cccb6"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: False trim option: True produces sorted string 1`] = `"1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: False trim option: True produces valid hash 1`] = `"25e2e8455dc0f02562ec2c86360dcaad5bf05d3b58aaf9f5682f2ab8368cccb6"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: True trim option: False produces sorted string 1`] = `"1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: True trim option: False produces valid hash 1`] = `"25e2e8455dc0f02562ec2c86360dcaad5bf05d3b58aaf9f5682f2ab8368cccb6"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: True trim option: True produces sorted string 1`] = `"1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: True trim option: True produces valid hash 1`] = `"25e2e8455dc0f02562ec2c86360dcaad5bf05d3b58aaf9f5682f2ab8368cccb6"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"25e2e8455dc0f02562ec2c86360dcaad5bf05d3b58aaf9f5682f2ab8368cccb6"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"1238573921"`;
+
+exports[`Backward compatibility possible options type: bigint coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"25e2e8455dc0f02562ec2c86360dcaad5bf05d3b58aaf9f5682f2ab8368cccb6"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:b>:true"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: False trim option: False produces valid hash 1`] = `"176764f03246b65b3eaa82bce207f1543c083cbf7039218e23b3867007eabb92"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:b>:true"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: False trim option: True produces valid hash 1`] = `"176764f03246b65b3eaa82bce207f1543c083cbf7039218e23b3867007eabb92"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:b>:true"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: True trim option: False produces valid hash 1`] = `"176764f03246b65b3eaa82bce207f1543c083cbf7039218e23b3867007eabb92"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:b>:true"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: True trim option: True produces valid hash 1`] = `"176764f03246b65b3eaa82bce207f1543c083cbf7039218e23b3867007eabb92"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:b>:true"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"176764f03246b65b3eaa82bce207f1543c083cbf7039218e23b3867007eabb92"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:b>:true"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"176764f03246b65b3eaa82bce207f1543c083cbf7039218e23b3867007eabb92"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: False trim option: False produces sorted string 1`] = `"1"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: False trim option: False produces valid hash 1`] = `"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: False trim option: True produces sorted string 1`] = `"1"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: False trim option: True produces valid hash 1`] = `"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: True trim option: False produces sorted string 1`] = `"1"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: True trim option: False produces valid hash 1`] = `"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: True trim option: True produces sorted string 1`] = `"1"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: True trim option: True produces valid hash 1`] = `"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"1"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"1"`;
+
+exports[`Backward compatibility possible options type: boolean coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:n>:19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: False trim option: False produces valid hash 1`] = `"60d59fdc8f59f9a9e1ceddaa8606db45c9aa5ee49b80f62b04a2cfd94731f40d"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:n>:19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: False trim option: True produces valid hash 1`] = `"60d59fdc8f59f9a9e1ceddaa8606db45c9aa5ee49b80f62b04a2cfd94731f40d"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:n>:19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: True trim option: False produces valid hash 1`] = `"60d59fdc8f59f9a9e1ceddaa8606db45c9aa5ee49b80f62b04a2cfd94731f40d"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:n>:19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: True trim option: True produces valid hash 1`] = `"60d59fdc8f59f9a9e1ceddaa8606db45c9aa5ee49b80f62b04a2cfd94731f40d"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:n>:19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"60d59fdc8f59f9a9e1ceddaa8606db45c9aa5ee49b80f62b04a2cfd94731f40d"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:n>:19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"60d59fdc8f59f9a9e1ceddaa8606db45c9aa5ee49b80f62b04a2cfd94731f40d"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: False trim option: False produces sorted string 1`] = `"19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: False trim option: False produces valid hash 1`] = `"e31ea9e1c738c14e61b644cb2e78c703bd2b1614134a8fd569641467a9ffea04"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: False trim option: True produces sorted string 1`] = `"19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: False trim option: True produces valid hash 1`] = `"e31ea9e1c738c14e61b644cb2e78c703bd2b1614134a8fd569641467a9ffea04"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: True trim option: False produces sorted string 1`] = `"19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: True trim option: False produces valid hash 1`] = `"e31ea9e1c738c14e61b644cb2e78c703bd2b1614134a8fd569641467a9ffea04"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: True trim option: True produces sorted string 1`] = `"19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: True trim option: True produces valid hash 1`] = `"e31ea9e1c738c14e61b644cb2e78c703bd2b1614134a8fd569641467a9ffea04"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"e31ea9e1c738c14e61b644cb2e78c703bd2b1614134a8fd569641467a9ffea04"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"19284"`;
+
+exports[`Backward compatibility possible options type: number coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"e31ea9e1c738c14e61b644cb2e78c703bd2b1614134a8fd569641467a9ffea04"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: False trim option: False produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: False trim option: True produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: True trim option: False produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: True trim option: True produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: False trim option: False produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: False trim option: False produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: False trim option: True produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: False trim option: True produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: True trim option: False produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: True trim option: False produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: True trim option: True produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: True trim option: True produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:UnknownClass>:{"name":"unknown"}"`;
+
+exports[`Backward compatibility possible options type: object coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"32363a23a5c195e6659c3cb51f428ec9775d519780eacbfddb8d26bc10d9849d"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: False trim option: False produces sorted string 1`] = `"<:s>:some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: False trim option: False produces valid hash 1`] = `"1c8a48f4dc5a01175cdf8863672913240869a2a72a61b3683f151e4151b34079"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: False trim option: True produces sorted string 1`] = `"<:s>:some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: False trim option: True produces valid hash 1`] = `"1c8a48f4dc5a01175cdf8863672913240869a2a72a61b3683f151e4151b34079"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: True trim option: False produces sorted string 1`] = `"<:s>:some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: True trim option: False produces valid hash 1`] = `"1c8a48f4dc5a01175cdf8863672913240869a2a72a61b3683f151e4151b34079"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: True trim option: True produces sorted string 1`] = `"<:s>:some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: True trim option: True produces valid hash 1`] = `"1c8a48f4dc5a01175cdf8863672913240869a2a72a61b3683f151e4151b34079"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"<:s>:some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"1c8a48f4dc5a01175cdf8863672913240869a2a72a61b3683f151e4151b34079"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"<:s>:some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  False sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"1c8a48f4dc5a01175cdf8863672913240869a2a72a61b3683f151e4151b34079"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: False trim option: False produces sorted string 1`] = `"some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: False trim option: False produces valid hash 1`] = `"61d034473102d7dac305902770471fd50f4c5b26f6831a56dd90b5184b3c30fc"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: False trim option: True produces sorted string 1`] = `"some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: False trim option: True produces valid hash 1`] = `"61d034473102d7dac305902770471fd50f4c5b26f6831a56dd90b5184b3c30fc"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: True trim option: False produces sorted string 1`] = `"some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: True trim option: False produces valid hash 1`] = `"61d034473102d7dac305902770471fd50f4c5b26f6831a56dd90b5184b3c30fc"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: True trim option: True produces sorted string 1`] = `"some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: True trim option: True produces valid hash 1`] = `"61d034473102d7dac305902770471fd50f4c5b26f6831a56dd90b5184b3c30fc"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: TypedArrayTrue trim option: False produces sorted string 1`] = `"some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: TypedArrayTrue trim option: False produces valid hash 1`] = `"61d034473102d7dac305902770471fd50f4c5b26f6831a56dd90b5184b3c30fc"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: TypedArrayTrue trim option: True produces sorted string 1`] = `"some string"`;
+
+exports[`Backward compatibility possible options type: string coerce option  True sort option: TypedArrayTrue trim option: True produces valid hash 1`] = `"61d034473102d7dac305902770471fd50f4c5b26f6831a56dd90b5184b3c30fc"`;

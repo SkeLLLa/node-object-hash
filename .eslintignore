@@ -6,4 +6,5 @@ node_modules/
 benchmark/
 **/*.xxx.*
 dist/
+ci/
 jest.config.js

@@ -1,11 +1,42 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.shared.json",
-  "include": ["src/**/*"],
+  "compilerOptions": {
+    // "resolvePackageJsonImports": true,
+    // "resolvePackageJsonExports": true,
+    "declaration": true,
+    "declarationMap": true,
+    "newLine": "LF",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noEmit": true,
+    // Not supported until move to ESM
+    "verbatimModuleSyntax": false,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "checkJs": false
+  },
+  "exclude": ["dist/**/*", "coverage/**/*", "node_modules/**/*", "benchmark/**/*"],
+  "extends": "@tsconfig/node-lts/tsconfig",
+  "include": ["src/**/*", "package.json", "__tests__/**/*"],
+  "ts-node": {
+    "files": true
+  },
+  "typeAcquisition": {
+    "enable": true
+  },
   "typedocOptions": {
     "entryPoints": ["src/hasher.ts", "src/objectSorter.ts"],
-    "out": "docs",
-    "name": "Node object hash",
+    "out": "docs/api",
+    "name": "# Node object hash",
     "excludeExternals": true,
     "includeVersion": true,
     "hideGenerator": true,

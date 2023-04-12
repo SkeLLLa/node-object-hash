@@ -17,8 +17,6 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
 [![Build Status](https://github.com/SkeLLLa/node-object-hash/workflows/build/badge.svg)](https://github.com/SkeLLLa/node-object-hash/commits/master)
 [![License](https://img.shields.io/npm/l/node-object-hash.svg)](https://gitlab.com/m03geek/node-object-hash/blob/master/LICENSE)
 [![Codecov Coverage](https://codecov.io/gh/SkeLLLa/node-object-hash/branch/master/graph/badge.svg?token=wLjMou8TT7)](https://codecov.io/gh/SkeLLLa/node-object-hash)
-[![LGTM Alerts](https://img.shields.io/lgtm/alerts/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
-[![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/SkeLLLa/node-object-hash.svg)](https://lgtm.com/projects/g/SkeLLLa/node-object-hash/)
 
 </div>
 
@@ -28,6 +26,7 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
 
 - [node-object-hash](#node-object-hash)
   - [ToC](#toc)
+  - [What's new in v3.0.0](#whats-new-in-v300)
   - [What's new in v2.0.0](#whats-new-in-v200)
     - [Breaking changes](#breaking-changes)
     - [New features](#new-features)
@@ -45,7 +44,7 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
     - [Hashing custom objects](#hashing-custom-objects)
   - [Requirements](#requirements)
     - [version \>=1.0.0](#version-100)
-    - [version \>=0.1.0 && <1.0.0](#version-010--100)
+    - [version \>=0.1.0 \&\& \<1.0.0](#version-010--100)
   - [Examples](#examples)
   - [Benchmarks](#benchmarks)
     - [Usage](#usage)
@@ -54,6 +53,17 @@ Hashes are built on top of node's crypto module. If you want to use it in browse
       - [Benchmark suite module (code)](#benchmark-suite-module-code)
     - [Links](#links)
   - [License](#license)
+
+## What's new in v3.0.0
+
+**Disclaimer**: No new features or changes that may break hashes from previous versions. There's no need to update unless you're starting project from scratch.
+
+- Refactor and migration to typescript 5.
+- Drop old node support.
+- Removed typescript namespaces.
+- Updated exported functions and object structure.
+- Removed faker and old benchmarks.
+- New CI and release automation.
 
 ## What's new in v2.0.0
 
@@ -151,18 +161,19 @@ equal string representations and hashes.
 
 ## Changes
 
-See [changelog](CHANGELOG.md)
+See [changelog](docs/CHANGELOG.md)
+For v2 changes see [changelog-v2](docs/CHANGELOG-v2.md)
 
 ## Docs
 
-Full API docs could be found in [docs](./docs/README.md).
+Full API docs could be found in [docs](./docs/api/README.md).
 
 ### API overview
 
 #### Constructor
 
 ```js
-require('node-object-hash')([options]);
+require('node-object-hash').hasher([options]);
 ```
 
 Returns preconfigured object with API
@@ -215,7 +226,7 @@ For typescript users you may add to your classes `implements Hashable`.
 ## Examples
 
 ```js
-var hasher = require('node-object-hash');
+var { hasher } = require('node-object-hash');
 
 var hashSortCoerce = hasher({ sort: true, coerce: true });
 // or

@@ -1,7 +1,6 @@
 .vscode
 test
-tsconfig.json
-tslint.json
+tsconfig*.json
 coverage
 .*
 *.config.js
@@ -11,3 +10,4 @@ example/
 benchmark/
 test/
 jest.config.js
+ci/

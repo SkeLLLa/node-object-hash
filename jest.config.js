@@ -11,7 +11,7 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'js', 'json'],
   testEnvironment: 'node',
-  testMatch: ['**/test/**/*.spec.(ts|js)'],
+  testMatch: ['**/__tests__/**/*.spec.(ts|js)'],
   testPathIgnorePatterns: ['/node_modules/', '/dist/'],
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',

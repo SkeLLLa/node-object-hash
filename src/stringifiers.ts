@@ -1,15 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+/* eslint-disable @typescript-eslint/no-this-alias */
+
 /**
  * @private
  * @inner
  */
-
+import type { Hashable } from './hasher';
 import { guessType } from './typeGuess';
-import { Hashable } from './hasher';
+
 import TypedArray = NodeJS.TypedArray;
 
 /**
  * List of functions responsible for converting certain types to string
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Stringifiers = { [key: string]: (obj: any) => string };
 
 /**
@@ -100,7 +105,7 @@ export function _number(obj: number): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _bigIntCoerce(obj: BigInt): string {
+export function _bigIntCoerce(obj: bigint): string {
   return obj.toString();
 }
 /**
@@ -109,7 +114,7 @@ export function _bigIntCoerce(obj: BigInt): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _bigInt(obj: BigInt): string {
+export function _bigInt(obj: bigint): string {
   return `${PREFIX.bigint}:${obj.toString()}`;
 }
 /**
@@ -190,6 +195,7 @@ export function _null(): string {
  * @param obj object to convert
  * @return object string representation
  */
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function _functionCoerce(obj: Function): string {
   return obj.name + '=>' + obj.toString();
 }
@@ -199,6 +205,7 @@ export function _functionCoerce(obj: Function): string {
  * @param obj object to convert
  * @return object string representation
  */
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function _function(obj: Function): string {
   return PREFIX.function + ':' + obj.name + '=>' + obj.toString();
 }
@@ -208,6 +215,7 @@ export function _function(obj: Function): string {
  * @param obj object to convert
  * @return object string representation
  */
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function _functionTrimCoerce(obj: Function): string {
   return (
     obj.name +
@@ -224,6 +232,7 @@ export function _functionTrimCoerce(obj: Function): string {
  * @param obj object to convert
  * @return object string representation
  */
+// eslint-disable-next-line @typescript-eslint/ban-types
 export function _functionTrim(obj: Function): string {
   return (
     PREFIX.function +
@@ -260,13 +269,13 @@ export function _date(obj: Date): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _arraySort(obj: Array<any>): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
+export function _arraySort(this: Stringifiers, obj: any[]): string {
+  const stringifiers: Stringifiers = this;
   return (
     '[' +
     obj
       .map((item) => {
-        return stringifiers[guessType(item)](item);
+        return stringifiers[guessType(item)]!(item);
       })
       .sort()
       .toString() +
@@ -279,13 +288,13 @@ export function _arraySort(obj: Array<any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _array(obj: Array<any>): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
+export function _array(this: Stringifiers, obj: any[]): string {
+  const stringifiers: Stringifiers = this;
   return (
     '[' +
     obj
       .map((item) => {
-        return stringifiers[guessType(item)](item);
+        return stringifiers[guessType(item)]!(item);
       })
       .toString() +
     ']'
@@ -297,15 +306,15 @@ export function _array(obj: Array<any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _typedArraySort(obj: TypedArray): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const values: Array<any> = Array.prototype.slice.call(obj);
+export function _typedArraySort(this: Stringifiers, obj: TypedArray): string {
+  const stringifiers: Stringifiers = this;
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-explicit-any
+  const values: any[] = Array.prototype.slice.call(obj);
   return (
     '[' +
     values
       .map((num) => {
-        return stringifiers[guessType(num)](num);
+        return stringifiers[guessType(num)]!(num);
       })
       .sort()
       .toString() +
@@ -318,15 +327,14 @@ export function _typedArraySort(obj: TypedArray): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _typedArray(obj: TypedArray): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-  const values: Array<any> = Array.prototype.slice.call(obj);
+export function _typedArray(this: Stringifiers, obj: TypedArray): string {
+  const stringifiers: Stringifiers = this;
+  const values: any[] = Array.prototype.slice.call(obj);
   return (
     '[' +
     values
       .map((num) => {
-        return stringifiers[guessType(num)](num);
+        return stringifiers[guessType(num)]!(num);
       })
       .toString() +
     ']'
@@ -338,8 +346,8 @@ export function _typedArray(obj: TypedArray): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _setSortCoerce(obj: Set<any>): string {
-  return _arraySort.call(this as Stringifiers, Array.from(obj)) as string;
+export function _setSortCoerce(this: Stringifiers, obj: Set<any>): string {
+  return _arraySort.call(this, Array.from(obj));
 }
 /**
  * Converts set to string
@@ -347,8 +355,8 @@ export function _setSortCoerce(obj: Set<any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _setSort(obj: Set<any>): string {
-  return `${PREFIX.set}:${_arraySort.call(this, Array.from(obj)) as string}`;
+export function _setSort(this: Stringifiers, obj: Set<any>): string {
+  return `${PREFIX.set}:${_arraySort.call(this, Array.from(obj))}`;
 }
 /**
  * Converts set to string
@@ -356,8 +364,8 @@ export function _setSort(obj: Set<any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _set(obj: Set<any>): string {
-  return `${PREFIX.set}:${_array.call(this, Array.from(obj)) as string}`;
+export function _set(this: Stringifiers, obj: Set<any>): string {
+  return `${PREFIX.set}:${_array.call(this, Array.from(obj))}`;
 }
 /**
  * Converts set to string
@@ -365,8 +373,8 @@ export function _set(obj: Set<any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _setCoerce(obj: Set<any>): string {
-  return _array.call(this, Array.from(obj)) as string;
+export function _setCoerce(this: Stringifiers, obj: Set<any>): string {
+  return _array.call(this, Array.from(obj));
 }
 /**
  * Converts object to string
@@ -374,14 +382,14 @@ export function _setCoerce(obj: Set<any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _object(obj: { [key: string]: any }): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
+export function _object(this: Stringifiers, obj: { [key: string]: any }): string {
+  const stringifiers: Stringifiers = this;
   const keys = Object.keys(obj);
   const objArray = [];
   for (const key of keys) {
     const val = obj[key] as unknown;
     const valT = guessType(val);
-    objArray.push(key + ':' + stringifiers[valT](val));
+    objArray.push(key + ':' + stringifiers[valT]!(val));
   }
   return '{' + objArray.toString() + '}';
 }
@@ -391,14 +399,14 @@ export function _object(obj: { [key: string]: any }): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _objectSort(obj: { [key: string]: any }): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
+export function _objectSort(this: Stringifiers, obj: { [key: string]: any }): string {
+  const stringifiers: Stringifiers = this;
   const keys = Object.keys(obj).sort();
   const objArray = [];
   for (const key of keys) {
     const val = obj[key] as unknown;
     const valT = guessType(val);
-    objArray.push(key + ':' + stringifiers[valT](val));
+    objArray.push(key + ':' + stringifiers[valT]!(val));
   }
   return '{' + objArray.toString() + '}';
 }
@@ -408,16 +416,13 @@ export function _objectSort(obj: { [key: string]: any }): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _map(obj: Map<any, any>): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
+export function _map(this: Stringifiers, obj: Map<any, any>): string {
+  const stringifiers: Stringifiers = this;
   const arr = Array.from(obj);
   const mapped = [];
   for (const item of arr) {
     const [key, value] = item as unknown[];
-    mapped.push([
-      stringifiers[guessType(key)](key),
-      stringifiers[guessType(value)](value),
-    ]);
+    mapped.push([stringifiers[guessType(key)]!(key), stringifiers[guessType(value)]!(value)]);
   }
   return '[' + mapped.join(';') + ']';
 }
@@ -427,16 +432,13 @@ export function _map(obj: Map<any, any>): string {
  * @param obj object to convert
  * @return object string representation
  */
-export function _mapSort(obj: Map<any, any>): string {
-  const stringifiers: Stringifiers = this as Stringifiers;
+export function _mapSort(this: Stringifiers, obj: Map<any, any>): string {
+  const stringifiers: Stringifiers = this;
   const arr = Array.from(obj);
   const mapped = [];
   for (const item of arr) {
     const [key, value] = item as unknown[];
-    mapped.push([
-      stringifiers[guessType(key)](key),
-      stringifiers[guessType(value)](value),
-    ]);
+    mapped.push([stringifiers[guessType(key)]!(key), stringifiers[guessType(value)]!(value)]);
   }
   return '[' + mapped.sort().join(';') + ']';
 }
