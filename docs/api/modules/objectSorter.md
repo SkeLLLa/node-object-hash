@@ -1,4 +1,4 @@
-[Node object hash](../README.md) / objectSorter
+[# Node object hash](../README.md) / objectSorter
 
 # Module: objectSorter
 
@@ -47,7 +47,7 @@
 
 #### Defined in
 
-[objectSorter.ts:185](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/objectSorter.ts#L185)
+[objectSorter.ts:185](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L185)
 
 ## Functions
 
@@ -71,4 +71,4 @@ function that transforms object to strings
 
 #### Defined in
 
-[objectSorter.ts:192](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/objectSorter.ts#L192)
+[objectSorter.ts:192](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L192)

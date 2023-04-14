@@ -1,4 +1,4 @@
-[Node object hash](../README.md) / [hasher](../modules/hasher.md) / HasherOptions
+[# Node object hash](../README.md) / [hasher](../modules/hasher.md) / HasherOptions
 
 # Interface: HasherOptions
 
@@ -38,7 +38,7 @@ Hash algorithm to use
 
 #### Defined in
 
-[hasher.ts:24](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/hasher.ts#L24)
+[hasher.ts:24](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/hasher.ts#L24)
 
 ---
 
@@ -61,7 +61,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:170](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/objectSorter.ts#L170)
+[objectSorter.ts:170](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L170)
 
 ---
 
@@ -79,7 +79,7 @@ String encoding for hash
 
 #### Defined in
 
-[hasher.ts:29](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/hasher.ts#L29)
+[hasher.ts:29](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/hasher.ts#L29)
 
 ---
 
@@ -102,7 +102,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:176](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/objectSorter.ts#L176)
+[objectSorter.ts:176](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L176)
 
 ---
 
@@ -125,4 +125,4 @@ false;
 
 #### Defined in
 
-[objectSorter.ts:182](https://github.com/SkeLLLa/node-object-hash/blob/56d25e0/src/objectSorter.ts#L182)
+[objectSorter.ts:182](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L182)
