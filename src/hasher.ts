@@ -1,5 +1,5 @@
 import type { BinaryToTextEncoding } from 'crypto';
-import { createHash } from 'node:crypto';
+import { createHash } from 'crypto';
 
 import type { SorterOptions } from './objectSorter';
 import { objectSorter } from './objectSorter';
