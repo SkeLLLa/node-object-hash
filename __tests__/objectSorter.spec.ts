@@ -93,5 +93,13 @@ describe('Sorter', () => {
       const hash = hasher();
       expect(hash.sort(Object.create(null))).toBe('<:unknonw>:unknown');
     });
+    test('unknown with data', () => {
+      const hash = hasher();
+
+      const obj = Object.create(null) as Record<string, number>;
+      obj['a'] = 1;
+
+      expect(hash.sort(obj)).toBe('<:unknonw>:{"a":1}');
+    });
   });
 });
