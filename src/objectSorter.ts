@@ -226,7 +226,14 @@ export const objectSorter = (options?: SorterOptions): StringifyFn => {
     unknown: function _unknown(obj: Object) {
       // `unknonw` - is a typo, saved for backward compatibility
       const constructorName: string = obj.constructor?.name ?? 'unknonw';
-      const objectName = typeof obj.toString === 'function' ? obj.toString() : 'unknown';
+
+      let objectName = 'unknown';
+
+      if (typeof obj.toString === 'function') {
+        objectName = obj.toString();
+      } else if (Object.keys(obj).length > 0) {
+        objectName = JSON.stringify(obj);
+      }
 
       return `<:${constructorName}>:${objectName}`;
     },
