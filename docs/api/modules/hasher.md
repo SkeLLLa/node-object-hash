@@ -36,4 +36,4 @@ hasher instance
 
 #### Defined in
 
-[hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/hasher.ts#L68)
+[hasher.ts:68](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/hasher.ts#L68)

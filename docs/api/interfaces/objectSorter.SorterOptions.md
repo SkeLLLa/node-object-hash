@@ -37,7 +37,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:170](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L170)
+[objectSorter.ts:170](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L170)
 
 ---
 
@@ -56,7 +56,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:176](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L176)
+[objectSorter.ts:176](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L176)
 
 ---
 
@@ -75,4 +75,4 @@ false;
 
 #### Defined in
 
-[objectSorter.ts:182](https://github.com/SkeLLLa/node-object-hash/blob/22b763e/src/objectSorter.ts#L182)
+[objectSorter.ts:182](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L182)
