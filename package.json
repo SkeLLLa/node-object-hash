@@ -91,6 +91,10 @@
     "node": ">=16",
     "pnpm": ">=8"
   },
+  "volta": {
+    "node": "22.12.0",
+    "pnpm": "9.15.0"
+  },
   "pnpm": {
     "updateConfig": {
       "ignoreDependencies": [
