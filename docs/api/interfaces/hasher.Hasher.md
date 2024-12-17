@@ -41,7 +41,7 @@ hash string of an object
 
 #### Defined in
 
-[hasher.ts:47](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/hasher.ts#L47)
+[hasher.ts:47](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/hasher.ts#L47)
 
 ---
 
@@ -65,7 +65,7 @@ sorted string from an object
 
 #### Defined in
 
-[hasher.ts:53](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/hasher.ts#L53)
+[hasher.ts:53](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/hasher.ts#L53)
 
 ---
 
@@ -93,4 +93,4 @@ sorted string from an object
 
 #### Defined in
 
-[hasher.ts:60](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/hasher.ts#L60)
+[hasher.ts:60](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/hasher.ts#L60)

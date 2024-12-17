@@ -51,7 +51,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:43](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L43)
+[objectSorter.ts:43](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L43)
 
 ---
 
@@ -85,7 +85,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:21](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L21)
+[objectSorter.ts:21](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L21)
 
 ---
 
@@ -115,7 +115,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:105](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L105)
+[objectSorter.ts:105](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L105)
 
 ---
 
@@ -145,7 +145,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:96](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L96)
+[objectSorter.ts:96](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L96)
 
 ---
 
@@ -177,7 +177,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:76](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L76)
+[objectSorter.ts:76](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L76)
 
 ---
 
@@ -209,7 +209,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:32](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L32)
+[objectSorter.ts:32](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L32)
 
 ---
 
@@ -239,7 +239,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L114)
+[objectSorter.ts:114](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L114)
 
 ---
 
@@ -271,7 +271,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:54](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L54)
+[objectSorter.ts:54](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L54)
 
 ---
 
@@ -303,7 +303,7 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:87](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L87)
+[objectSorter.ts:87](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L87)
 
 ---
 
@@ -335,4 +335,4 @@ true;
 
 #### Defined in
 
-[objectSorter.ts:65](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/objectSorter.ts#L65)
+[objectSorter.ts:65](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/objectSorter.ts#L65)

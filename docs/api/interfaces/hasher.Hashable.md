@@ -30,4 +30,4 @@ with the function toHash that return the same value will have the same hash
 
 #### Defined in
 
-[hasher.ts:38](https://github.com/SkeLLLa/node-object-hash/blob/89ac590/src/hasher.ts#L38)
+[hasher.ts:38](https://github.com/SkeLLLa/node-object-hash/blob/a6d1c08/src/hasher.ts#L38)

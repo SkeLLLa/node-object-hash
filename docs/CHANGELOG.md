@@ -1,3 +1,10 @@
+## [3.1.1](https://github.com/SkeLLLa/node-object-hash/compare/v3.1.0...v3.1.1) (2024-12-17)
+
+
+### 🛠 Fixes
+
+* Objects without prototype are now properly stringified ([a6d1c08](https://github.com/SkeLLLa/node-object-hash/commit/a6d1c0810ef14642bba6254708820cab795f6829))
+
 ## [3.1.0](https://github.com/SkeLLLa/node-object-hash/compare/v3.0.0...v3.1.0) (2024-12-17)
 
 
